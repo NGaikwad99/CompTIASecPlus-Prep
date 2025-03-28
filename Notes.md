@@ -196,7 +196,7 @@ Digital certificate is enssentially an endorsed copy of a public key that is sig
 
 **Certificate stapling** is another method of verifying the validity of a certificate. This approach is an extension to OSCP that reduces the load on OCSP servers. In this solution, instead of a browser contacting the OCSP server, the web server of the site contacts the OCSP server and attaches the signed and timestamped response to the certificate. When a browser requests to access the site, the certificate is sent along with the stapled OCSP response to check validity. Stapled certificates commonly have a validity of 24 hours after which the web server must contact the OCSP server again. This helps reduce the load on the OCSP server as it is not contacted for each and every request to access the site.
 
-<span style="color:blue">Third-party</span>
+Third-party
 
 **Certificate signing request (CSR)** is the second step in the certification process that occurs after the CA has verified the identity of the subject as part of the enrollment process. The subject provides the CA with their public key in the form of a CSR. The CA uses this to create a certificate following the X.509 standard. There are two types of certificates depending on the level of identity verfiication performed by the CA. Domain Validation (DV) certificates are the most common certificates that indicates that the subject has control of the domain name. Extended Verification (EV) certificates involve further assurance that the certificate owner is a legitimate business.
 
@@ -301,16 +301,37 @@ Many services or products are manufactured with default credentials that should 
 * Suppliers
 
 #### Human vectors/social engineering
-* Phishing
-* Vishing
-* Smishing
-* Misinformation/disinformation
-* Impersonation
-* Business email compromise
-* Pretexting
-* Watering hole
-* Brand impersonation
-* Typosquatting
+Social engineering techniques involve taking advantage of human's weaknesses by utilizing one or more of the following principles: authority, intimidation, trust, urgency, familiarity, consensus- or social proof-based and scarcity. 
+
+* Authority is when the attacker impersonates someone at a higher level such as the target's manager or the CEO of a company or a government official. This creates a sense of fear in the target and the obligation to obey orders. 
+* Intimidation is used to scare or bully the target into performing an action. For instance, an attacker may create a scenario wherein the target's bank account has been locked and ask for their credentials claiming they can fix the problem. 
+* Trust and familiarity are similar concepts wherein an attacker impersonates someone closely related to the target individual. For instance, an attacker might pose as a close friend or family member to obtain sensitive information from the target. 
+* Consensus-bases social engineering exploits a human's tendency to "follow the herd" wherein attackers try to convince the target that the desired action (such as clicking a malicious link or signing up for a fake service) has already been performed by many of their colleagues or other people and they have gained something out of it. 
+* Urgency is used by many attackers by creating a sense of care or fear of losing something or someone if they don't act fast. For instance, a scammer might pose as someone who really needs help as their family friend is in a serious medical situation and thus try to extract funds from the target. 
+
+One of the most common defenses against social engineering attacks is awareness. It is utterly crucial for everyone to be known to the possibility of being scammed and to question any situation that seems suspicious or fake. Such attempts can also be caught by technological solutions that leverage pattern matching, machine or deep learning or filtering based on keywords. 
+
+Phishing attacks manipulate the target into revealing sensitive typically over email. In these attacks, the attacks uses a spoofed or compromised email address to contact the target. The email may include a malicious link, file attachment and/or simply just compeling text that forces the target to make a mistake. Phishing can also be conducted using other media such as SMS (smishing) or voice call (vishing). Phishing also differs based on the target of the attack. Spear phishing is when the attacker focuses on specific employees or groups in the organization. Whale phishing or whaling occurs when the target is someone of a higher authority in an organization such as an executive or governing official. 
+
+Vishing is performing a phishing attack using voice call. This typically involves creating a sense of urgency or intimidation while posing as a close friend or relative of the target. It may involve heathcare situation or bank related scenarios that attempt to convince the target to send funds or provide their bank details. Some attackers may also use AI tools to generate audio files that mimic the voice of someone known to the target.
+
+Smishing is phishing via SMS. It typically involves clicking a malicious link by creating a pretext (fake scenario) such as bank account lockout or too many funds being seen in the bank and a link to a fake login page. 
+
+Misinformation/disinformation are typically a result of influence campaigns that aim to turn people's opinions and spread false information. Misinformation refers to incorrect information that is implied from facts whereas disinformation is intentionally false information that is publicised with illicit objectives. Various methods can be used to conduct these campaigns with social media being the most common. It is necessary for organizations to monitor and deal with cases of misinformation or disinformation with high priority. 
+
+Impersonation is pretending to be someone else. This is a commonly used tool to gain trust and create a sense of urgency to convince the target to reveal sensitive information such as username and password or SIN number. Identity theft or identity fraud involves using someone else's idenity to perform actions. For instance, an attacker using their target's badge to gain access into a organization's facility. 
+
+Business email compromise occurs when an attacker typically uses a compromised email address to make a demand by impersonating someone else in the organization. For instance, an attacker might pose as the Dean of the university who is stuck in an important meeting and contact other professors to urgently send him a gift card.
+
+Pretexting is creating a fake scenario to convince the target to make a mistake. This concept is usually used along with impersonation to instill trust in the target and a sense of urgency or intimidation. A target should ask questions to verify the attacker's identity before considering revealing any confidential data. 
+
+Watering hole attacks involve compromising a website that is visited by a group of people. For instance, embedding malicious code into an internal website that is frequently accessed by the employees of an organization.
+
+Brand impersonation typically occurs through emails wherein the attacker uses various components like themes, logos or signatures to make the email look legitimate and convince the attacker to click on the provided link or download the attachment. Attackers usually use this technique to extract credentials by compeling targets to click on links that would take them to a fake bank login page. 
+
+Typosquatting exploits human tendency to make typos. When a user is searching for a website by directly entering the site name in the url box, they may make a tiny mistake that goes unnoticed. Attackers link such incorrect urls to fake sites where the user unknowningly enters their credentials and/or provides other sensitive information. Such attacks can be avoided by organizations by publishing even those domains that include minor errors. For example, amazon.com has also purchased the domain amaz0n.com that redirects the user to the legitimate amazon site. 
+
+Pharming is similar to typosquatting but relies on changes in the host files of DNS servers instead of URLs. Host files are those that are checked to resolve a domain name and direct a user to the site. In this case, even if the user enters the domain name correctly, they might be directed to a malicious site as modified in the DNS server. 
 
 ### Explain various types of vulnerabilities
 #### Application
