@@ -5,32 +5,32 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 
 | Acronym | Full form | Definition |
 | ------ | ------ | ------ |
-| AAA | Authentication, Authorization and Accounting |Authentication identifies the user typically using a username and password. Authorization provides access to the user based on their role and responsibilities. Accounting logs the user activities and system actions for future reference. |
-| ACL | Access Control List |  |
-| AES | Advanced Encryption Standard | secure symmetric block cipher |
+| AAA | Authentication, Authorization and Accounting | Authentication identifies the user typically using a username and password. <br> Authorization provides access to the user based on their role and responsibilities. <br> Accounting logs the user activities and system actions for future reference. |
+| ACL | Access Control List | Rules that permit or deny from/to a specific IP address, protocols, etc. |
+| AES | Advanced Encryption Standard | Secure symmetric block cipher/algorithm |
 | AES-256 | Advanced Encryption Standards 256-bit | AES with keysize of 256 bit |
-| AH | Authentication Header |  |
-| AI | Artificial Intelligence |  |
-| AIS | Automated Indicator Sharing |  |
-| ALE | Annualized Loss Expectancy |  |
-| AP | Access Point |  |
-| API | Application Programming Interface |  |
-| APT | Advanced Persistent Threat |  |
-| ARO | Annualized Rate of Occurence |  |
-| ARP | Address Resolution Protocol |  |
-| ASLR | Address Space Layout Randomization |  |
-| ATT&CK | Adversarial Tactics, Techniques, and Common Knowledge | |
-| AUP | Acceptable Use Policy | type of document stipulating rules of behavior to be followed by users of computers, networks, and associated resources |
-| AV | Antivirus | |
-| BASH | Bourne Again Shell | |
-| BCP | Business Continuity Planning | |
-| BGP | Border Gateway Protocol | |
-| BIA | Business Impact Analysis | |
-| BIOS | Basic Input/Output System | Type of firmware performs initial hardware checks after the computer is powered on | 
-| BPA | Business Partners Agreement | | 
-| BPDU | Bridge Protocol Data Unit | |
-| BYOD | Bring Your Own Device | |
-| CA | Certificate Authority | |
+| AH | Authentication Header | Basic authentication of HTTP to authenticate user, providing credentials to access requested resource; also used in IPSec for same purpose |
+| AI | Artificial Intelligence | Mimicking of human way of thinking, learning, reasoning, etc. by using computational systems |
+| AIS | Automated Indicator Sharing | Program by the Cybersecurity and Infrastructure Security Agency (CISA), facilitates the real-time exchange of machine-readable cyber threat indicators and defensive measures between public and private sector organizations to enhance cybersecurity resilience |
+| ALE | Annualized Loss Expectancy | Amount of loss in a company due to the compromise of an asset in a year; ALE = SLE * ARO |
+| AP | Access Point | Device that enables wireless connection to wired networks; For example, a router |
+| API | Application Programming Interface | Set of rules that facilitates communication between front-end and back-end of an application or between two different applications, allowing data and functionality sharing |
+| APT | Advanced Persistent Threat | Cyberattack that remains undetected for an extended period of time |
+| ARO | Annualized Rate of Occurence | Frequency of events or risks on an asset expected in one year |
+| ARP | Address Resolution Protocol | Network protocol used to resolve MAC address from corresponding IP address in a local network |
+| ASLR | Address Space Layout Randomization | Randomization of memory locations to make it harder to exploit memory injection vulnerabilities like buffer overflow; assigning random locations to heap, stack or libraries to make it unpredictable |
+| ATT&CK | Adversarial Tactics, Techniques, and Common Knowledge | Public repository developed and maintained by MITRE that describes various cyberattacks including techniques and methods that are used by an attacker |
+| AUP | Acceptable Use Policy | Type of document stipulating rules of behavior to be followed by users of computers, networks, and associated resources |
+| AV | Antivirus | Software to detect, block and remove viruses and other kinds of malicious softwares in a device |
+| BASH | Bourne Again Shell | Scripting language used in Linux, macOS and other UNIX-like operating systems |
+| BCP | Business Continuity Planning | Process of creating systems of prevention and recovery to deal with potential threats to a company ensuring no downtime during disruption such as cyberattack or natural disaster |
+| BGP | Border Gateway Protocol | Set of rules that facilitates data exchange and communication between autonomous systems over the Internet |
+| BIA | Business Impact Analysis | Process that identifies business critical functions and the impact of a disruption on them |
+| BIOS | Basic Input/Output System | Type of firmware that performs initial hardware checks after the computer is powered on | 
+| BPA | Business Partners Agreement | Formal contract between organizations that outlines responsibilities and expectations of each party in the relationship | 
+| BPDU | Bridge Protocol Data Unit | Message used by Spanning Tree Protocol(STP) to prevent network looks and ensure there is only a single active path to each device |
+| BYOD | Bring Your Own Device | Policy that allows employees to use their own device for work purposes |
+| CA | Certificate Authority | Entity that issues, manages and revokes digital certificates used in PKIs |
 | CAPTCHA | Completely Automated Public Turing Test to Tell Computers and Humans Apart | A type of user identification mechanism used as a countermeasure against automated software (such as network bots) |
 | CAR | Corrective Action Report | |
 | CASB | Cloud Access Security Broker | |
@@ -332,90 +332,3 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | XOR | Exclusive Or | |
 | XSRF | Cross-site Request Forgery | |
 | XSS | Cross-site Scripting | |
-
-### Private IP addresses
-Class A (10.0.0.0 to 10.255.255.255)
-Class B (172.16.0.0 to 172.31.255.255)
-Class C (192.168.0.0 to 192.168.255.255)
-
-### Common Protocols and Port Numbers
-Well-known ports (0-1023), registered ports (1024-49151), and dynamic ports (49152-65535) 
-| Protocol | Port Number | TCP/UDP |
-| ------ | ------ | ------ |
-| HTTPS | 443 | TCP |
-| FTP | 20 (data transfer) 21 (command control | TCP |
-| SSH/SFTP | 22 |  |
-| DNS | 53 |  |
-| DHCP | 67 | UDP |
-| TFTP | 69 | UDP |
-| HTTP | 80 | TCP |
-| Kerberos | 88 |  |
-| POP3 | 110 | TCP |
-| NNTP | 119 |  |
-| NTP | 123 | UDP |
-| IMAP | 143 |  |
-| SNMP | 161 |  |
-| IRC |  |  |
-| HTTPS | 443 |  |
-| RDP | 3389 |  |
-
-### Risk response process
-Establishment of risk apetite and tolerance
-Risk identification
-Risk analysis
-Risk response selection and documentation
-Risk response prioritization
-Development of risk action plan
-
-### HIPAA fines 
-Class 6 felony: fine <= 50000 or prison <= 1 year or both
-Class 5 felony: under false pretenses; fine <= 100000 or prison <= 5 years or both
-Class 4 felony: intent to sell, transfer, or use health info for gain or harm; fine <= 250000 or prison <= 10 years or both
-Class 3 felony: civil fines; fine max 100 for each violation <= 25000
-
-### Data Classifications
-Sensitive
-Confidential 
-Public 
-Restricted 
-Private
-Critical
-
-### Internal Compliance Reporting
-Employee training
-Risk assessment
-Policy adherance
-Regular auditing
-Incidence response evaluation
-
-### External Compliance Reporting
-Third-party audits
-Client and partner assurance
-Transparency and accountability
-Data and privacy protection
-Regulatory adherence
-
-### Hardening Techniques
-- Mobile devices: implement full-disk encryption and remote wipe; implement biometric authentication and/or MFA; apply regular OS, firware and/or app patches
-- Workstations:  implement biometric authentication and/or MFA; apply regular OS, firware and/or app patches; restrict user permissions
-- Switches and routers: apply regular OS, firware and/or app patches; restrict user permissions; change default passwords; apply ACLs to restrict traffic; disable unnecessary ports and services
-
-### Tools
-BitLocker - Windows - full volume encryption feature
-FileVault - MacOS - provides an extra layer of security by keeping someone from decrypting or getting access to your data without entering your login password
-System File Checker - Windows
-Tripwire - Linux 
-
-### EAP Variations
-PEAP doesn't require client certificates but does provide TLS support
-EAP-TTLS provides similar functionality but requires additional software to be installed on some devices
-EAP-FAST focuses on quick reauthentication
-EAP-TLS requires certificates to be deployed to the endpoint devices
-
-### Commands
-Might be required to solve performance based questions
-dig
-nslookup
-ifconfig
-ping
-arp
