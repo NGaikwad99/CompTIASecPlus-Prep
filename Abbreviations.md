@@ -23,7 +23,7 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | AUP | Acceptable Use Policy | Type of document stipulating rules of behavior to be followed by users of computers, networks, and associated resources |
 | AV | Antivirus | Software to detect, block and remove viruses and other kinds of malicious softwares in a device |
 | BASH | Bourne Again Shell | Scripting language used in Linux, macOS and other UNIX-like operating systems |
-| BCP | Business Continuity Planning | Process of creating systems of prevention and recovery to deal with potential threats to a company ensuring no downtime during disruption such as cyberattack or natural disaster |
+| BCP | Business Continuity Planning | Process of creating systems of prevention and recovery to deal with potential threats to a company ensuring no downtime during disruption such as cyberattack or natural disaster. Also known as Continuity of Operations Planning (COOP). |
 | BGP | Border Gateway Protocol | Set of rules that facilitates data exchange and communication between autonomous systems over the Internet |
 | BIA | Business Impact Analysis | Process that identifies business critical functions and the impact of a disruption on them |
 | BIOS | Basic Input/Output System | Type of firmware that performs initial hardware checks after the computer is powered on | 
@@ -32,33 +32,33 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | BYOD | Bring Your Own Device | Policy that allows employees to use their own device for work purposes |
 | CA | Certificate Authority | Entity that issues, manages and revokes digital certificates used in PKIs |
 | CAPTCHA | Completely Automated Public Turing Test to Tell Computers and Humans Apart | A type of user identification mechanism used as a countermeasure against automated software (such as network bots) |
-| CAR | Corrective Action Report | |
-| CASB | Cloud Access Security Broker | |
-| CBC | Cipher Block Chaining | |
-| CCMP | Counter Mode/CBC-MAC Protocol | |
-| CCTV | Closed-circuit Television | |
-| CERT | Computer Emergency Response Team | |
-| CFB | Cipher Feedback | |
-| CHAP | Challenge Handshake Authentication Protocol | |
-| CIA | Confidentiality, Integrity, Availability | |
-| CIO | Chief Information Officer | |
-| CIRT | Computer Incident Response Team | |
-| CMS | Content Management System | |
-| COOP | Continuity of Operation Planning | |
-| COPE | Corporate Owned, Personally Enabled | |
-| CP | Contingency Planning | |
-| CRC | Cyclical Redundancy Check | |
-| CRL | Certificate Revocation List | |
-| CSO | Chief Security Officer | |
-| CSP | Cloud Service Provider | |
-| CSR | Certificate Signing Request | |
-| CSRF | Cross-site Request Forgery | |
-| CSU | Channel Service Unit | |
-| CTM | Counter Mode | |
-| CTO | Chief Technology Officer | |
-| CVE | Common Vulnerability Enumeration | |
-| CVSS | Common Vulnerability Scoring System | |
-| CYOD | Choose Your Own Device | |
+| CAR | Corrective Action Report | An official document that outlines the steps to be followed when fixing an element such a control that hasn't been implemented correctly. For instance, retraining employees following a successful phishing attempt. |
+| CASB | Cloud Access Security Broker | Intermediary between an organization's infrastructure and cloud provider's infrastructure to ensure visibility, data security, compliance and threat protection |
+| CBC | Cipher Block Chaining | Cryptographic block encryption method wherein each plaintext block is XORed with the previous ciphertext block before it is encrypted. The first plaintext block is XORed with an arbitrary number called initialization vector (IV).  |
+| CCMP | Counter Mode/CBC-MAC Protocol | Encryption protocol used in wireless LANs (Wi-Fi) communication such as the WPA2 protocol to ensure confidentiality and integrity |
+| CCTV | Closed-circuit Television | Also known as video surveillance is a network of monitors and cameras to facilitate real-time monitoring of an area by displaying the phootage on a limited set of monitors instead of broadcasting it |
+| CERT | Computer Emergency Response Team | An incident response team dedicated to identifying, analyzing and countering cyberattacks such as data breachers or denial of service attacks |
+| CFB | Cipher Feedback | Similar to CBC but works as a stream cipher in the sense that the previous ciphertext block is encrypted and then XORed with the current plaintext block. It starts with encryption of the IV. |
+| CHAP | Challenge Handshake Authentication Protocol | Authentication protocol used by Point-to-Point Protocol to validate users using a challenge-response mechanism wherein the server sends a question that only the client would know the answer to. It is used to guard against replay attacks. Also, the answer is sent only as a hash value to ensure that the attacker cannot retreive the original text. |
+| CIA | Confidentiality, Integrity, Availability | Confidentiality ensures only authorized subjects can access and read sensitive information. Integrity is the authorized modification of that data. Availability ensures access to users when needed. |
+| CIO | Chief Information Officer | C-level executive responsible for the organization's information and computer systems ensuring they align with the organization's objectives and goals. |
+| CIRT | Computer Incident Response Team | Grop of individuals dedicated to containment, mitigation, eradication and recovery in response to a cybersecurity incident. |
+| CMS | Content Management System | Software such as WordPress, WooCommerce and Squarespace that allows users or companies to easily create, manage, modify and store digital content without requiring extensive technical knowledge |
+| COOP | Continuity of Operation Planning | Process of creating systems of prevention and recovery to deal with potential threats to a company ensuring no downtime during disruption such as cyberattack or natural disaster. Also known as  Business Continuity Planning (BCP). |
+| COPE | Corporate Owned, Personally Enabled | Policy that provides employees with devices to be used for work-related tasks as well as some personal purposed. These devices are owned and controled by the organization. |
+| CP | Contingency Planning | Process of preparing for potential incidents such as natural disasters or cyberattacks to ensure minimal impact and timely recovery. |
+| CRC | Cyclical Redundancy Check | Mathematical method to detect errors or modification to data transmitted over the network or stored on devices. It involves the use of a checksum that is calculated from the plaintext using polynomial division and appended to the original text. |
+| CRL | Certificate Revocation List | List of digital certificates that have been invalidated by a certificate authority (CA) before their scheduled expiry date due to compromise or misuse. |
+| CSO | Chief Security Officer | High-level executive who is responsible for the physical and digital security ensuring robust mechanisms are put in place for protecting people, assets and data of the organization. |
+| CSP | Cloud Service Provider | Company that provides other organizations with cloud computing resources such as storage, software and/or computing power to carry out day-to-day operations. Top three CSPs today are Google Cloud, Amazon Web Services and Microsoft Azure. |
+| CSR | Certificate Signing Request | One of the first steps for requesting a digital certificate from a trusted Certificate Authority. Following the identify verification, the organization sends their public key to the CA in the form of a CSR. |
+| CSRF | Cross-site Request Forgery | A web-based attack that assumes users tend to stay logged in into multiple sites at once. The attack occurs when a user clicks a link on one website that triggers an action on another open site such as a logged in online banking platform. |
+| CSU | Channel Service Unit | Hardware device about the same size as a modem, that is used to convert datafame for a Local area network to a frame for a Wide area network and vice versa. Also known as Data Service Unit (DSU). |
+| CTM | Counter Mode | Block ciper mode of operation that works as a stream cipher wherein a counter function is used to generate a nonce ("number once") that is encrypted and then XORed with the plaintext to get the ciphertext for the current block. |
+| CTO | Chief Technology Officer | C-level executive responsible for the technological operations and developments within an organization. |
+| CVE | Common Vulnerability Enumeration | Directory of known vulnerabilities and associated information such as description and mitigation technique(s). |
+| CVSS | Common Vulnerability Scoring System | Standardized method of providing a severity rating to identified vulnerabilities on a scale of 0 (less severe) to 10 (critical). Assigning a CVSS to each vulnerability helps organization prioritize their focus and rationally divide their resources when implementing security solutions. |
+| CYOD | Choose Your Own Device | Policy wherein comapnies allow employees to pick their device for performing work related tasks as well as for personal use. The organization owns and controls this device. |
 | DAC | Discretionary Access Control | |
 | DBA | Database Administrator | |
 | DDoS | Distributed Denial of Service | |
