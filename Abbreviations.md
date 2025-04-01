@@ -59,40 +59,40 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | CVE | Common Vulnerability Enumeration | Directory of known vulnerabilities and associated information such as description and mitigation technique(s). |
 | CVSS | Common Vulnerability Scoring System | Standardized method of providing a severity rating to identified vulnerabilities on a scale of 0 (less severe) to 10 (critical). Assigning a CVSS to each vulnerability helps organization prioritize their focus and rationally divide their resources when implementing security solutions. |
 | CYOD | Choose Your Own Device | Policy wherein comapnies allow employees to pick their device for performing work related tasks as well as for personal use. The organization owns and controls this device. |
-| DAC | Discretionary Access Control | |
-| DBA | Database Administrator | |
-| DDoS | Distributed Denial of Service | |
-| DEP | Data Execution Prevention | |
-| DES | Digital Encryption Standard | |
-| DHCP | Dynamic Host Configuration Protocol | |
-| DHE | Diffie-Hellman Ephemeral | |
-| DKIM | DomainKeys Identified Mail | |
-| DLL | Dynamic Link Library | |
+| DAC | Discretionary Access Control | Access control model where the owner has the possibility to give access to whomever they want. Permissions can be inherited and passed down. |
+| DBA | Database Administrator | A persincon responsible for managing and mainting databases, in which this ludes security, integrity, and performence of the database. |
+| DDoS | Distributed Denial of Service | An attack that uses multiple compromised systems to flood a target device, server etc. to the deny service to legitimate users and it could be a reason to shutdown a server. |
+| DEP | Data Execution Prevention | A security feature that prevents code from being executed in certain regions of memory, its mostly used to prevent having buffer overflow attacks. |
+| DES | Digital Encryption Standard | An outdated symmetric-key block cipher algorithm that encrypts data in 64-bit blocks using a key of 56-bit. Got replaced with AES. |
+| DHCP | Dynamic Host Configuration Protocol | A network management protocol which is used to automatically assign IP addresses to devices on a network. |
+| DHE | Diffie-Hellman Ephemeral | A variant of the Diffie-Hellman key exchange that uses temporary keys for each session and this results in improving security. |
+| DKIM | DomainKeys Identified Mail | An email authentication method that allows the receiver to check that an email claimed to come from a specific domain was indeed authorized by the owner of that domain, insuring integrity. |
+| DLL | Dynamic Link Library | A file that has got both code and data that can be used by multiple programs at the same time in Windows operating systems. |
 | DLP | Data Loss Prevention | software or hardware-based security solutions designed to detect and prevent unauthorized use and transmission of confidential information |
-| DMARC | Domain Message Authentication Reporting and Conformance | |
-| DNAT | Destination Network Address Translation | |
-| DNS | Domain Name System | |
-| DoS | Denial of Service | |
-| DPO | Data Privacy Officer | |
-| DRP | Disaster Recovery Plan | |
-| DSA | Digital Signature Algorithm | |
-| DSL | Digital Subscriber Line | |
-| EAP | Extensible Authentication Protocol | |
-| ECB | Electronic Code Book | |
-| ECC | Elliptic Curve Cryptography | |
-| ECDHE | Elliptic Curve Diffie-Hellman Ephemeral | |
-| ECDSA | Elliptic Curve Digital Signature Algorithm | |
+| DMARC | Domain Message Authentication Reporting and Conformance | An email validation system designed to detect and prevent email spoofing. |
+| DNAT | Destination Network Address Translation | A method for redirecting incoming network traffic to a different IP address or port than originally intended. |
+| DNS | Domain Name System | The system that translates domain names into IP address |
+| DoS | Denial of Service | An attack that shutdown's a machine, network, server, making it not possible to acces to legitimate users|
+| DPO | Data Privacy Officer | A role that is responsible to ensure that an organization processes personal data in compliance with applicable data protection laws. |
+| DRP | Disaster Recovery Plan | A documented process or set of procedures to recover and protect a business IT infrastructure in the event of a disaster. |
+| DSA | Digital Signature Algorithm | A Federal Information Processing Standard for digital signatures. It uses a private key for signing and a public key for verification. |
+| DSL | Digital Subscriber Line | Multiple types of technologies that provide internet access by transmitting digital data over the wires of a local telephone network. |
+| EAP | Extensible Authentication Protocol | A framework frequently used in wireless networks and point-to-point connections for providing various authentication mechanisms. |
+| ECB | Electronic Code Book | A mode of operation for a block cipher where each block is encrypted separately. It is not recommended to be used due to its pattern leakage. |
+| ECC | Elliptic Curve Cryptography | A public-key encryption technique based on elliptic curve theory that can create faster, smaller, and more efficient cryptographic keys. |
+| ECDHE | Elliptic Curve Diffie-Hellman Ephemeral | A form of Diffie-Hellman key exchange using elliptic curve cryptography with temporary keys to provide forward secrecy. |
+| ECDSA | Elliptic Curve Digital Signature Algorithm | A variant of the Digital Signature Algorithm (DSA) that uses elliptic curve cryptography. |
 | EDR | Endpoint Detection and Response | provides protection only on the endpoint |
-| EFS | Encrypted File System | |
-| ERP | Enterprise Resource Planning | |
-| ESN | Electronic Serial Number | |
-| ESP | Encapsulated Security Payload | |
-| FACL | File System Access Control List | |
-| FDE | Full Disk Encryption | |
-| FIM | File Integrity Management | |
-| FPGA | Field Programmable Gate Array | |
-| FRR | False Rejection Rate | |
-| FTP | File Transfer Protocol | |
+| EFS | Encrypted File System | A Windows feature that allows users to encrypt individual files or folders on an NTFS file system. |
+| ERP | Enterprise Resource Planning | Integrated management of main business processes, often in real-time and mediated by software and technology. |
+| ESN | Electronic Serial Number | A unique identifier embedded by the manufacturer on a mobile phone or wireless device that could be found in the software of the device. |
+| ESP | Encapsulated Security Payload | A component of IPsec used to provide confidentiality, authentication, and integrity to data packets. |
+| FACL | File System Access Control List | A list that specifies the permissions attached to files and directories in a file system. |
+| FDE | Full Disk Encryption | Encryption method that encrypts all data on a disk drive to protect the data at rest. |
+| FIM | File Integrity Management | A security technology that monitors and detects changes in files that may indicate of an attack. |
+| FPGA | Field Programmable Gate Array | An integrated circuit designed to be configured by the customer or designer after manufacturing. |
+| FRR | False Rejection Rate | A biometric system metric that measures the rate at which a legitimate user is incorrectly denied access. |
+| FTP | File Transfer Protocol | A standard network protocol used to transfer files from one host to another over a TCP-based network. |
 | FTPS | Secured File Transfer Protocol | builds on file transfer protocol (FTP) and adds on a security and encryption layer |
 | GCM | Galois Counter Mode | |
 | GDPR | General Data Protection Regulation | regulations protects the privacy and personal data of the EU citizens |
@@ -327,8 +327,8 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | WPA | Wi-Fi Protected Access | |
 | WPS | Wi-Fi Protected Setup | |
 | WTLS | Wireless TLS | |
-| XDR | Extended Detection and Response | |
-| XML | Extensible Markup Language | |
-| XOR | Exclusive Or | |
-| XSRF | Cross-site Request Forgery | |
-| XSS | Cross-site Scripting | |
+| XDR | Extended Detection and Response | A security solution that integrates multiple security products into a cohesive system for centralized detection, investigation, and response across endpoints, networks, servers, and email systems. It improves visibility and automates threat response. |
+| XML | Extensible Markup Language | A markup language is a set of codes, or tags, that describes the text in a digital document. The most famous XML language is HTML. |
+| XOR | Exclusive Or | A logical operation used in cryptographic algorithms where the result is true only if inputs are different. It is widely used in symmetric encryption for combining plaintext and key to produce ciphertext. |
+| XSRF | Cross-site Request Forgery | It is also abbreviated as CSRF, a web security vulnerability that allows an attacker to trick a user into performing unwanted actions on a website where they are authenticated, without their knowledge. |
+| XSS | Cross-site Scripting | A web security vulnerability that allows attackers to inject malicious scripts into websites, potentially compromising user interactions and data. |
