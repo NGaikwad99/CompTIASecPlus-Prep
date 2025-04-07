@@ -94,130 +94,126 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | FRR | False Rejection Rate | A biometric system metric that measures the rate at which a legitimate user is incorrectly denied access. |
 | FTP | File Transfer Protocol | A standard network protocol used to transfer files from one host to another over a TCP-based network. |
 | FTPS | Secured File Transfer Protocol | builds on file transfer protocol (FTP) and adds on a security and encryption layer |
-| GCM | Galois Counter Mode | |
+| GCM | Galois Counter Mode | A mode of operation for symmetric key cryptographic block ciphers. GCM combines Counter mode (for confidentiality) with Galois mode (for integrity and authentication). It is efficient and widely used in like TLS. |
 | GDPR | General Data Protection Regulation | regulations protects the privacy and personal data of the EU citizens |
-| GPG | Gnu Privacy Guard | |
-| GPO | Group Policy Object | |
-| GPS | Global Positioning System | |
-| GPU | Graphics Processing Unit | |
-| GRE | Generic Routing Encapsulation | |
-| HA | High Availability | |
+| GPG | Gnu Privacy Guard | A free and open-source implementation of the OpenPGP standard, used for encrypting, decrypting, and signing data and communications. It provides cryptographic privacy and authentication. |
+| GPO | Group Policy Object | A feature in Windows OS that provides centralized management and configuration of operating systems, applications, and user settings in Active Directory. |
+| GPS | Global Positioning System | A satellite-based navigation system that provides location, velocity, and time synchronization data to GPS receivers anywhere on or near the Earth. |
+| GPU | Graphics Processing Unit | A specialized processor designed to accelerate graphics rendering. GPUs are also widely used in parallel computing applications like AI, cryptography, and machine learning. |
+| GRE | Generic Routing Encapsulation | A tunneling protocol developed by Cisco that can encapsulate a variety of network layer protocols inside point-to-point connections it is commonly used in VPNs. |
+| HA | High Availability | A system design approach that ensures the system would be running at all time and less donwtime in case of a failover |
 | HDD | Hard Disk Drive | mechanical data storage medium type that relies on magnetic plates and moving parts for data storage and retrieval |
-| HIDS | Host-based Intrusion Detection System | |
-| HIPS | Host-based Intrusion Prevention System | |
-| HMAC | Hashed Message Authentication Code | |
-| HOTP | HMAC-based One-time Password | |
-| HSM | Hardware Security Module | |
-| HTML | Hypertext Markup Language | |
-| HTTP | Hypertext Transfer Protocol | network protocol enables retrieving contents of an Internet page from a web server |
-| HTTPS | Hypertext Transfer Protocol Secure | HTTP over SSL/TLS |
-| HVAC | Heating, Ventilation Air Conditioning | |
-| IaaS | Infrastructure as a Service | |
-| IaC | Infrastructure as Code | |
-| IAM | Identity and Access Management | |
-| ICMP | Internet Control Message Protocol | |
-| ICS | Industrial Control Systems | |
-| IDEA | International Data Encryption Algorithm | |
-| IDF | Intermediate Distribution Frame | |
-| IdP | Identity Provider | |
-| IDS | Intrusion Detection System | |
-| IEEE | Institute of Electrical and Electronics Engineers | |
-| IKE | Internet Key Exchange | |
-| IM | Instant Messaging | |
-| IMAP | Internet Message Access Protocol | |
-| IoC | Indicators of Compromise | |
-| IoT | Internet of Things | |
-| IP | Internet Protocol | |
-| IPS | Intrusion Prevention System | |
-| IPSec | Internet Protocol Security | |
-| IR | Incident Response | |
-| IRC | Internet Relay Chat | |
-| IRP | Incident Response Plan | |
-| ISO | International Standards Organization | |
-| ISP | Internet Service Provider | |
-| ISSO | Information Systems Security Officer | |
-| IV | Initialization Vector | |
-| KDC | Key Distribution Center | |
-| KEK | Key Encryption Key | |
-| L2TP | Layer 2 Tunneling Protocol | |
-| LAN | Local Area Network | |
-| LDAP | Lightweight Directory Access Protocol | |
-| LEAP | Lightweight Extensible Authentication Protocol | |
-| MaaS | Monitoring as a Service | |
-| MAC | Mandatory Access Control | |
-| MAC | Media Access Control | |
-| MAC | Message Authentication Code | |
-| MAN | Metropolitan Area Network | |
-| MBR | Master Boot Record | |
-| MD5 | Message Digest 5 | |
-| MDF | Main Distribution Frame | |
-| MDM | Mobile Device Management | |
-| MFA | Multifactor Authentication | |
-| MFD | Multifunction Device | |
-| MFP | Multifunction Printer | |
-| ML | Machine Learning | |
-| MMS | Multimedia Message Service | |
-| MOA | Memorandum of Agreement | |
-| MOU | Memorandum of Understanding | |
-| MPLS | Multi-protocol Label Switching | |
-| MSA | Master Service Agreement | |
-| MSCHAP | Microsoft Challenge Handshake Authentication Protocol | |
-| MSP | Managed Service Provider | |
-| MSSP | Managed Security Service Provider | |
-| MTBF | Mean Time Between Failures | |
-| MTTF | Mean Time to Failure | |
-| MTTR | Mean Time to Recover | |
-| MTU | Maximum Transmission Unit | |
-| NAC | Network Access Control | |
+| HIDS | Host-based Intrusion Detection System | A system that monitors a host's system activities and logs to detect malicious behavior. Focuses on internal threats and file integrity. |
+| HIPS | Host-based Intrusion Prevention System | A system that detects and prevents threats on individual hosts by blocking suspicious activity in real time. |
+| HMAC | Hashed Message Authentication Code | A cryptographic algorithm that combines a secret key with a hash function to ensure data integrity and authenticity. It is widely used in secure communication protocols like TLS and IPSec. |
+| HOTP | HMAC-based One-time Password | A one-time password algorithm based on HMAC that generates a password valid for only one authentication session. It is commonly used in two-factor authentication systems. |
+| HSM | Hardware Security Module | A physical device that provides secure generation, storage, and management of cryptographic keys, ensuring high levels of security for sensitive data and cryptographic operations. |
+| HTML | Hypertext Markup Language | The standard markup language used for creating and designing web pages and web applications. |
+| HTTP | Hypertext Transfer Protocol | A protocol used for transmitting hypertext over the web, enabling communication between web browsers and servers. |
+| HTTPS | Hypertext Transfer Protocol Secure | A secure version of HTTP that uses SSL/TLS to encrypt data transmitted between a web browser and a server, ensuring confidentiality and integrity. |
+| HVAC | Heating, Ventilation, and Air Conditioning | Systems used to regulate and maintain indoor environmental conditions such as temperature, humidity, and air quality and are a security concern because of their importance. |
+| IaaS | Infrastructure as a Service | A cloud computing service model that provides virtualized computing resources over the internet, such as servers, storage, and networking. |
+| IaC | Infrastructure as Code | The practice of managing and provisioning computing infrastructure through machine-readable configuration files, enabling automation and consistency. |
+| IAM | Identity and Access Management | A framework of policies and technologies for ensuring that the right individuals in an organization have access to the appropriate resources. |
+| ICMP | Internet Control Message Protocol | A network protocol used for error reporting and diagnostic functions, such as determining whether a host is reachable. |
+| ICS | Industrial Control Systems | Systems used to control industrial processes such as manufacturing, power generation, and water treatment. |
+| IDEA | International Data Encryption Algorithm | A symmetric-key block cipher used for encrypting data, known for its strength and efficiency. |
+| IDF | Intermediate Distribution Frame | A cable rack that houses and manages telecommunications and network connections between end-user devices and the main distribution frame. |
+| IdP | Identity Provider | A service that authenticates and verifies user identities, enabling single sign-on (SSO) and access to multiple applications. |
+| IDS | Intrusion Detection System | A security system that monitors network or system activities for malicious actions or policy violations and generates alerts. |
+| IEEE | Institute of Electrical and Electronics Engineers | A professional association dedicated to advancing innovation and technological excellence for the benefit of humanity. It is known for developing standards in various fields, including computing and telecommunications. |
+| IKE | Internet Key Exchange | A protocol used in the IPSec suite for establishing a secure and authenticated communication channel by negotiating and distributing cryptographic keys. |
+| IM | Instant Messaging | A form of real-time communication between two or more people based on text messages, often used in applications like WhatsApp, Slack, or Microsoft Teams. |
+| IMAP | Internet Message Access Protocol | A protocol used by email clients to retrieve messages from a mail server, allowing users to view and manage their emails without downloading them. |
+| IoC | Indicators of Compromise | Pieces of forensic data, such as file hashes, IP addresses, or domain names, that indicate a potential breach or malicious activity in a system or network. |
+| IoT | Internet of Things | A network of interconnected devices, such as smart home appliances, sensors, and wearables, that communicate and exchange data over the internet. |
+| IP | Internet Protocol | A set of rules governing the format of data sent over the internet or a local network, enabling devices to communicate with each other. |
+| IPS | Intrusion Prevention System | A security solution that monitors network traffic for malicious activity and takes proactive measures, such as blocking or quarantining, to prevent threats. |
+| IPSec | Internet Protocol Security | A suite of protocols used to secure Internet Protocol (IP) communications by authenticating and encrypting each IP packet in a communication session. |
+| IR | Incident Response | The process of identifying, managing, and mitigating the impact of cybersecurity incidents to minimize damage and restore normal operations. |
+| IRC | Internet Relay Chat | A protocol for real-time text communication over the internet, often used in group discussions or one-on-one messaging. |
+| IRP | Incident Response Plan | A documented strategy outlining the steps an organization should take to detect, respond to, and recover from cybersecurity incidents. |
+| ISO | International Standards Organization | An independent, non-governmental organization that develops and publishes international standards to ensure quality, safety, efficiency, and interoperability across various industries. |
+| ISP | Internet Service Provider | A company that provides individuals and organizations with access to the internet and related services, such as email and web hosting. |
+| ISSO | Information Systems Security Officer | A employee responsible for overseeing and ensuring the security of an organization's information systems, including compliance with security policies and regulations. |
+| IV | Initialization Vector | A random or pseudo-random value used in cryptographic algorithms to ensure that identical plaintexts encrypt to different ciphertexts, enhancing security. |
+| KDC | Key Distribution Center | A trusted third-party service in Kerberos authentication that issues and manages session keys and tickets for secure communication between clients and servers. |
+| KEK | Key Encryption Key | A cryptographic key used to encrypt other keys, ensuring their secure storage and transmission. |
+| L2TP | Layer 2 Tunneling Protocol | A tunneling protocol used to support virtual private networks (VPNs) or as part of the delivery of services by ISPs. |
+| LAN | Local Area Network | A network that connects computers and devices within a limited geographical area, such as a home, school, or office building. |
+| LDAP | Lightweight Directory Access Protocol | A protocol used to access and manage directory information services over an IP network, commonly used for authentication and authorization and it is a light protocol from its name. |
+| LEAP | Lightweight Extensible Authentication Protocol | A proprietary wireless LAN authentication protocol developed by Cisco, providing dynamic WEP key generation. |
+| MaaS | Monitoring as a Service | A cloud-based service model that provides monitoring and management of IT infrastructure, applications, and services. |
+| MAC | Mandatory Access Control | An access control model where access permissions are determined by a central authority based on predefined policies. |
+| MAC | Media Access Control | A unique identifier assigned to network interfaces for communication on a physical network segment. |
+| MAC | Message Authentication Code | A cryptographic checksum used to verify the integrity and authenticity of a message. |
+| MAN | Metropolitan Area Network | A network that spans a city or a large campus, connecting multiple local area networks (LANs). |
+| MBR | Master Boot Record | The first sector of a storage device that contains information about the disk partitions and a small program to load the operating system. |
+| MD5 | Message Digest 5 | A widely used cryptographic hash function that produces a 128-bit hash value, though it is now considered insecure for cryptographic purposes. |
+| MDF | Main Distribution Frame | A central point in a telecommunications network where cables from different locations are connected and managed. |
+| MDM | Mobile Device Management | A security solution that enables organizations to manage and secure mobile devices used by employees. |
+| MFA | Multifactor Authentication | A security mechanism that requires two or more verification factors, such as a password and a fingerprint, to authenticate a user. |
+| MFD | Multifunction Device | A device that combines multiple functions, such as printing, scanning, copying, and faxing, into a single unit. |
+| MFP | Multifunction Printer | A type of multifunction device specifically designed for printing, scanning, copying, and sometimes faxing. |
+| ML | Machine Learning | A subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. |
+| MMS | Multimedia Message Service | A standard for sending multimedia content, such as images, audio, and video, over mobile networks. |
+| MOA | Memorandum of Agreement | A formal agreement between two or more parties outlining their roles and responsibilities in a collaborative effort. |
+| MOU | Memorandum of Understanding | A non-binding agreement between two or more parties that outlines their intentions and expectations for a future relationship. |
+| MPLS | Multi-protocol Label Switching | A networking technology that directs data from one node to the next based on short path labels rather than long network addresses. |
+| MSA | Master Service Agreement | A contract that establishes the terms and conditions for future agreements or transactions between parties. |
+| MSCHAP | Microsoft Challenge Handshake Authentication Protocol | A Microsoft-proprietary authentication protocol that uses a challenge-response mechanism to authenticate users. |
+| MSP | Managed Service Provider | A third-party company that remotely manages a customer's IT infrastructure and end-user systems. |
+| MSSP | Managed Security Service Provider | A specialized MSP that focuses on providing cybersecurity services, such as threat monitoring, incident response, and vulnerability management. |
+| MTBF | Mean Time Between Failures | A reliability metric that estimates the average time between failures of a system or component. |
+| MTTF | Mean Time to Failure | The average time a system or component operates before experiencing a failure. |
+| MTTR | Mean Time to Recover | The average time it takes to repair a system or component and restore it to normal operation after a failure. |
+| MTU | Maximum Transmission Unit | The largest size of a data packet that can be transmitted over a network without fragmentation. |
+| NAC | Network Access Control | A security solution that enforces policies to control access to a network based on the identity and compliance status of devices. |
 | NAT | Network Address Translation | hides the internal IP addresses by modifying IP address information in IP packet headers while in transit across a traffic routing device |
 | NDA | Non-disclosure Agreement | A legal contract between the holder of confidential information and another person to whom that information is disclosed restricting that other person from disclosing the confidential information to any other party |
-| NFC | Near Field Communication | |
-| NGFW | Next-generation Firewall | |
-| NIDS | Network-based Intrusion Detection System | |
-| NIPS | Network-based Intrusion Prevention System | |
-| NIST | National Institute of Standards & Technology | |
-| NTFS | New Technology File System | |
-| NTLM | New Technology LAN Manager | |
-| NTP | Network Time Protocol | |
-| OAUTH | Open Authorization | |
-| OCSP | Online Certificate Status Protocol | |
-| OID | Object Identifier | |
-| OS | Operating System | |
-| OSINT | Open-source Intelligence | |
-| OSPF | Open Shortest Path First | |
-| OT | Operational Technology | |
-| OTA | Over the Air | |
-| OVAL | Open Vulnerability Assessment Language | |
-| P12 | PKCS #12 | |
-| P2P | Peer to Peer | |
-| PaaS | Platform as a Service | |
-| PAC | Proxy Auto Configuration | |
-| PAM | Privileged Access Management | |
-| PAM | Pluggable Authentication Modules | |
-| PAP | Password Authentication Protocol | |
-| PAT | Port Address Translation | |
-| PBKDF2 | Password-based Key Derivation Function 2 | |
-| PBX | Private Branch Exchange | |
-| PCAP | Packet Capture | |
-| PCI | DSS Payment Card Industry Data Security Standard | |
-| PDU | Power Distribution Unit | |
-| PEAP | Protected Extensible Authentication Protocol | |
-| PED | Personal Electronic Device | |
-| PEM | Privacy Enhanced Mail | |
-| PFS | Perfect Forward Secrecy | |
-| PGP | Pretty Good Privacy | |
-| PHI | Personal Health Information | |
+| NFC | Near Field Communication | A short-range wireless communication technology that enables devices to exchange data when they are in close proximity, commonly used in contactless payments and access control systems. |
+| NGFW | Next-generation Firewall | An advanced firewall that provides capabilities beyond traditional firewalls, such as application awareness, intrusion prevention, and deep packet inspection, to enhance network security. |
+| NIDS | Network-based Intrusion Detection System | A security solution that monitors network traffic for suspicious activities or policy violations and generates alerts for potential threats. |
+| NIPS | Network-based Intrusion Prevention System | A security solution that actively monitors and blocks malicious network traffic in real-time to prevent potential threats. |
+| NIST | National Institute of Standards & Technology | A U.S. government agency that develops and promotes standards, guidelines, and best practices for technology, including cybersecurity frameworks. |
+| NTFS | New Technology File System | A file system developed by Microsoft for Windows operating systems, offering features like file compression, encryption, and access control. |
+| NTLM | New Technology LAN Manager | A suite of Microsoft security protocols used for authentication, integrity, and confidentiality in Windows networks. |
+| NTP | Network Time Protocol | A protocol used to synchronize the clocks of computers over a network to a reference time source, ensuring accurate timekeeping. |
+| OAUTH | Open Authorization | An open standard for access delegation, commonly used to grant websites or applications limited access to user information without exposing passwords. |
+| OCSP | Online Certificate Status Protocol | A protocol used to check the revocation status of digital certificates in real-time, ensuring their validity. |
+| OID | Object Identifier | A globally unique identifier used to name objects in a hierarchical namespace, commonly used in certificates and SNMP. |
+| OS | Operating System | Software that manages hardware resources and provides services for computer programs, acting as an intermediary between users and hardware. |
+| OSINT | Open-source Intelligence | The collection and analysis of publicly available information to gather actionable intelligence, often used in cybersecurity and investigations. |
+| OSPF | Open Shortest Path First | A link-state routing protocol used in IP networks to determine the best path for data packets based on the shortest path first algorithm. |
+| OT | Operational Technology | Hardware and software systems used to monitor and control physical devices, processes, and infrastructure in industries like manufacturing and utilities. |
+| OTA | Over the Air | A method of wirelessly distributing software updates, configuration settings, or other data to devices like smartphones and IoT devices. |
+| P12 | PKCS #12 | A binary format for storing cryptographic keys and certificates, often used to bundle a private key with its corresponding certificate. |
+| P2P | Peer to Peer | A decentralized network model where each participant (peer) acts as both a client and a server, sharing resources directly without relying on a central server. |
+| PaaS | Platform as a Service | A cloud computing service model that provides a platform allowing developers to build, deploy, and manage applications without worrying about underlying infrastructure. |
+| PAC | Proxy Auto Configuration | A file or script used by web browsers to automatically determine the appropriate proxy server for fetching a URL. |
+| PAM | Privileged Access Management | A security solution that controls and monitors access to critical systems and sensitive data by privileged users. |
+| PAM | Pluggable Authentication Modules | A framework used in Unix-like operating systems to integrate multiple authentication methods, providing flexibility and modularity. |
+| PAP | Password Authentication Protocol | A simple authentication protocol that transmits passwords in plaintext, making it less secure compared to other methods like CHAP. |
+| PAT | Port Address Translation | A type of network address translation (NAT) that maps multiple private IP addresses to a single public IP address using different ports. |
+| PBKDF2 | Password-based Key Derivation Function 2 | A key derivation function that applies a pseudorandom function to the input password along with a salt value to produce a cryptographic key, enhancing security against brute-force attacks. |
+| PBX | Private Branch Exchange | A private telephone network used within an organization that allows internal communication and external calls via shared phone lines. |
+| PCAP | Packet Capture | A file format used to capture and store network traffic data for analysis, often used in network troubleshooting and security monitoring. |
+| PCI DSS | Payment Card Industry Data Security Standard | A set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment. |
+| PDU | Power Distribution Unit | A device used in data centers and server rooms to distribute electrical power to multiple devices, such as servers and networking equipment. |
+| PEAP | Protected Extensible Authentication Protocol | An authentication protocol that encapsulates EAP within a secure TLS tunnel, providing enhanced security for wireless networks. |
+| PED | Personal Electronic Device | A portable electronic device, such as a smartphone, tablet, or laptop, often used for personal or professional purposes. |
+| PEM | Privacy Enhanced Mail | A file format for storing and transmitting cryptographic keys, certificates, and other data, often encoded in Base64 with header and footer lines. |
+| PFS | Perfect Forward Secrecy | A cryptographic property that ensures session keys are not compromised even if the private key of the server is compromised, enhancing security in encrypted communications. |
+| PGP | Pretty Good Privacy | An encryption program that provides cryptographic privacy and authentication for data communication, often used for securing emails and files. |
+| PHI | Personal Health Information | Any information about an individual's health status, medical history, or healthcare services that can be linked to a specific person, protected under regulations like HIPAA. |
 | PII | Personally Identifiable Information | any type of information pertaining to an individual that can be used to uniquely identify that person |
-| PIV | Personal Identity Verification | |
-| PKCS | Public Key Cryptography Standards | |
-| PKI | Public Key Infrastructure | Hierarchical system for the creation, management, storage, distribution, and revocation of digital certificates |
-| POP | Post Office Protocol | client/server protocol for receiving emails |
-| POTS | Plain Old Telephone Service | |
-| PPP | Point-to-Point Protocol | |
-| PPTP | Point-to-Point Tunneling Protocol | |
-| PSK | Pre-shared Key | shared secret authentication method used in WPA, WPA2, and EAP |
-| PTZ | Pan-tilt-zoom | |
-| PUP | Potentially Unwanted Program | |
+| PIV | Personal Identity Verification | A standard for secure and reliable forms of identification issued by the federal government for access to federal facilities and information systems. |
+| PKCS | Public Key Cryptography Standards | A set of standards developed by RSA Laboratories for public key cryptography, including formats for digital certificates, cryptographic keys, and messages. |
+| POTS | Plain Old Telephone Service | The traditional analog voice transmission phone system that has been in use since the late 19th century. |
+| PPP | Point-to-Point Protocol | A data link layer communication protocol used to establish a direct connection between two nodes, often used for internet dial-up connections. |
+| PPTP | Point-to-Point Tunneling Protocol | A VPN protocol that uses a control channel over TCP and a GRE tunnel to encapsulate PPP packets, providing secure remote access. |
+| PTZ | Pan-tilt-zoom | A feature in surveillance cameras that allows remote control of the camera's movement (pan and tilt) and zoom functions for better monitoring. |
+| PUP | Potentially Unwanted Program | Software that may be unwanted by the user, often bundled with other applications, and can include adware, spyware, or other intrusive programs. |
 | RA | Recovery Agent | |
 | RA | Registration Authority | |
 | RACE | Research and Development in Advanced Communications Technologies in Europe | |
