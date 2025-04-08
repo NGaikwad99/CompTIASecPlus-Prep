@@ -214,10 +214,10 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | PPTP | Point-to-Point Tunneling Protocol | A VPN protocol that uses a control channel over TCP and a GRE tunnel to encapsulate PPP packets, providing secure remote access. |
 | PTZ | Pan-tilt-zoom | A feature in surveillance cameras that allows remote control of the camera's movement (pan and tilt) and zoom functions for better monitoring. |
 | PUP | Potentially Unwanted Program | Software that may be unwanted by the user, often bundled with other applications, and can include adware, spyware, or other intrusive programs. |
-| RA | Recovery Agent | |
-| RA | Registration Authority | |
-| RACE | Research and Development in Advanced Communications Technologies in Europe | |
-| RAD | Rapid Application Development | |
+| RA | Recovery Agent | A designated individual or entity responsible for recovering encrypted data in case the original encryption key is lost or unavailable. Often used in enterprise environments to ensure data accessibility. |
+| RA | Registration Authority | An entity in a public key infrastructure (PKI) that verifies the identity of entities requesting digital certificates before forwarding the request to a Certificate Authority (CA). |
+| RACE | Research and Development in Advanced Communications Technologies in Europe | A European Union initiative aimed at advancing telecommunications technologies and fostering innovation in communication systems. |
+| RAD | Rapid Application Development | A software development methodology that emphasizes quick prototyping and iterative delivery, enabling faster development cycles and user feedback integration. |
 | RADIUS | Remote Authentication Dial-in User Service | Client-server authentication protocol for remote connections to trusted networks providing accounting and IP management services. |
 | RAID | Redundant Array of Inexpensive Disks | Method for storing the same data in different places on multiple hard disks or solid-state drives (SSDs) to protect data in the case of a drive failure. RAID-0 (Stripping) - Combines the drives to appear as a single drive; great performace feature but single point of failure RAID-1 (Mirroring) - writing two drives simultaneously; RAID-5 (Block-Level Stripping with Distributed Parity) - 3 to 32 drives; portion of each drive is reserved and combined into a parity drive, which stores data and drive rebuilding information. In the event of drive failure, info is pulled from the parity drive to rebuild the failed drive while the system remains operational; high availability  |
 | RAS | Remote Access Server | Server that allows users to remotely connect to a network. |
@@ -248,8 +248,8 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | SD-WAN | Software-defined Wide Area Network | SDN-based wide area network allowing virtualization of the network design and easier scaling to meet business needs. |
 | SDK | Software Development Kit | Set of platform-specific tools that provide debuggers, compilers and libraries required to develop an application. |
 | SDLC | Software Development Lifecycle | Process of designing, developing, testing and maintaining a software product. Security should be part of each phase of the SDLC. |
-| SDLM | Software Development Lifecycle Methodology | |
-| SDN | Software-defined Networking | Networking design technique that uses software-based components for communication over the network. |
+| SDLM | Software Development Lifecycle Methodology | A structured approach to software development that includes phases such as planning, design, development, testing, deployment, and maintenance. It ensures quality and security throughout the software's lifecycle. |
+| SDN | Software-defined Networking | A networking architecture that decouples the control plane from the data plane, enabling centralized management, automation, and programmability of network resources. |
 | SE Linux | Security-enhanced Linux | Security module for Linux that leverages MAC model as opposed to the DAC model used in traditional Linux kernel. |
 | SED | Self-encrypting Drives | HDD or SSD that automatically encrypts the stored data using an electric circuit embedded in the device.  |
 | SEH | Structured Exception Handler | Extension for C\C++ developed by Microsoft that is used for handling specific exception code situations. |
