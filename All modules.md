@@ -38,64 +38,64 @@ This document is formatted based on the Exam Objectives provided by CompTIA. Thi
 Gap analysis is essentially assessing the different between the current security posture of an organization and its desired security objective. Gap analysis is done by assessing reviewing controls across the organization. A gap occurs when the implemented control does not meet the control objective. Gaps must be treated as risks and remediated when possible based on availability of resources and its severity. 
 
 #### Zero Trust
-* Control plane
-    * Adaptive identity, also known as Adaptive authentication, relies on identifying the user using context-based authentication that is based on various atteibutes such as location, device being used and whether it meets security requirements.
-    * Threat scope reduction, sometimes referred to as limiting blast radius, is used to manage the possibility of security mishaps by providing only the necessary access to users. This is done using principle of least privilege and identity-based network segmentation.
-    * Policy Engine facilitates policy-driven access control by allowing or denying access based on certain policies. 
-    * Policy Administrator executs the decisions made by the policy engine.
-    * Policy Decision Point comprises the Policy Engine and Policy Administrator.
-* Data plane
-    * Policy Enforcement Point delegates user information to the policy decision point to ensure policy-drive access control.
-    * Subject/system is the device or individual requesting access to a resource.
-    * Implicit trust zones are areas wherein a user can freely move after being athenticated by zzero trust policy engine.
+* **Control plane**
+    * *Adaptive identity*, also known as Adaptive authentication, relies on identifying the user using context-based authentication that is based on various atteibutes such as location, device being used and whether it meets security requirements.
+    * *Threat scope reduction*, sometimes referred to as limiting blast radius, is used to manage the possibility of security mishaps by providing only the necessary access to users. This is done using principle of least privilege and identity-based network segmentation.
+    * *Policy Engine* facilitates policy-driven access control by allowing or denying access based on certain policies. 
+    * *Policy Administrator* executs the decisions made by the policy engine.
+    * *Policy Decision Point* comprises the Policy Engine and Policy Administrator.
+* **Data plane**
+    * *Policy Enforcement Point* delegates user information to the policy decision point to ensure policy-drive access control.
+    * *Subject/system* is the device or individual requesting access to a resource.
+    * *Implicit trust zones* are areas wherein a user can freely move after being athenticated by zzero trust policy engine.
 
 #### Physical security
-* Bollards prevent vehicles from ramming into doors or buildings or entering restricted areas.
-* Fencing surrounds restricted areas to discorage trespassers from entering.
-* Lighting helps keep a building illuminate and hence visible from the outside which discourages attempts of breaching the property.
-* Sensors usually serve as detective measures to trigger an alarm if needed.
+* **Bollards** prevent vehicles from ramming into doors or buildings or entering restricted areas.
+* **Fencing** surrounds restricted areas to discorage trespassers from entering.
+* **Lighting** helps keep a building illuminate and hence visible from the outside which discourages attempts of breaching the property.
+* **Sensors** usually serve as detective measures to trigger an alarm if needed.
     * Infrared
     * Ultrasonic
     * Pressure
     * Microwave
-* Video surveillance records all events in the surrounding for investigation in the future in case an incident occurs. Generates a large amount of data which must be stored securely and easily accessible when needed.
-* Access control vestibule is a pair of doors that help prevent tailgating. Both doors can be opened one after the other only by authorized individuals. 
-* Access badges use magnetic strip and radio frequency ID (RFID) technology to secure access into restricted areas. These badges may also showcase information about the individual such as name and role, that allows others to identify whether the subject is an employee or guest. The badges are typically used with proximity readers that allow users to gain access by tapping the card instead of inserting or swiping it.
-* Security guards provide human intervention and are strategically placed in common areas such as near entrances to be able to make decisions and detect and respond to any incidents.
+* **Video surveillance** records all events in the surrounding for investigation in the future in case an incident occurs. Generates a large amount of data which must be stored securely and easily accessible when needed.
+* **Access control vestibule** is a pair of doors that help prevent tailgating. Both doors can be opened one after the other only by authorized individuals. 
+* **Access badges** use magnetic strip and radio frequency ID (RFID) technology to secure access into restricted areas. These badges may also showcase information about the individual such as name and role, that allows others to identify whether the subject is an employee or guest. The badges are typically used with proximity readers that allow users to gain access by tapping the card instead of inserting or swiping it.
+* **Security guards** provide human intervention and are strategically placed in common areas such as near entrances to be able to make decisions and detect and respond to any incidents.
 
 #### Deception and disruption technology
 These technologies are intentionally placed to attract attackers and observe their movement. They typically contain false sensitive information and are highly monitored to ensure that all the activities of an attacker in relation to these components is tracked and noted.
-* Honeypots are systems that are intentionally configured to appear vulnerable thereby tempting the attacker to attempt an intrusion. 
-* Honeynets are networks that encourage attackers to attempt network intrudsions. 
-* Honeyfiles contain false sensitive information such as credentials that will attract an attacker. The contents of these files are consitently searched for on the internet and when found, administrators know that someone fell for the trap.
-* Honeytokens are sensitive data intentionally included in a databse, file, directory or other data assets to provoke attackers. Intrusion detection and prevention system as well as data loss prevention systems are configured to look for this information and trigger an alarm when found in transit. 
+* **Honeypots** are systems that are intentionally configured to appear vulnerable thereby tempting the attacker to attempt an intrusion. 
+* **Honeynets** are networks that encourage attackers to attempt network intrudsions. 
+* **Honeyfiles** contain false sensitive information such as credentials that will attract an attacker. The contents of these files are consitently searched for on the internet and when found, administrators know that someone fell for the trap.
+* **Honeytokens** are sensitive data intentionally included in a databse, file, directory or other data assets to provoke attackers. Intrusion detection and prevention system as well as data loss prevention systems are configured to look for this information and trigger an alarm when found in transit. 
 
 ### Explain the importance of change management processes and the impact to security
 #### Business processes impacting security operation
-* Approval process ensures that every change is subject to addtional review and security impact analysis to assess the risks associated with the change. Peer review and review from stakeholders as well as in some cases, members of the board ensures that all changes are documented and everyone is aware of the modifications and/or advancements taking place in the oragnization. The approval process consists of 6 steps:
-    * Request the change: Once the requirements are identified, a change request is submitted using the internal systems available for this pupose. It might be through a website so as to be able to track the change throughout the process. 
-    * Review the change: The change is then subject to impact analysis with the owners and stakeholders. Stakeholders may take the decision some cases while in other cases, the change advisory board may be responsible for formal change review. Board members review the change requet.
-    * Accept/reject the change: The change is then subject to approval based on the review that is clearly documented and submitted. In some cases, the board may require the creation of a backout plan that will be followed in case the change does not go as planned and systems need to reverted to prior state.
-    * Test the change: Once approved, the change is then tested first on a non-production server to ensure it is working as expected and will not disrupt any of the current operations. 
-    * Schedule and implement the change: Provided the test is successful, the change is deployed to production servers typically during maintenance window or non-peak hours to minimize impact in case the change causes disruption or downtime. If the change results in problem, the backout plan formulated during prior stages of this process are adapted to restore operations.
-    * Document the change: Information about the change and its deployment is clearly documented for future reference. This involves editing the configuration management documentation that is used in case the system needs to be rebuilt. 
-* Ownership is essential for accountability and to provide a first point of contact in case a change results in unforseen situations or for additional information in the future.
-* Stakeholders include individuals that hold interest (mostly, financial) in the organization. They can be divided into five groups - employees, investors, suppliers and vendors, customers and communities.
-* Impact analysis helps assess the effect of the change on the ongoing operations in terms of security, customer satisfaction and working. This involves discussions with multiple individuals across the organization including owners, stakeholders and board members.
-* Test results are reviewed to ensure that the change is working as expected in non-production environments before being deployed. This helps reduce the risk of any unforseen errors or disruptions resulting from the change. 
-* Backout plan is essential for every change to ensure that there is a procedure that can be followed in case the system needs to be reverted to the state it was at before the change was deployed. The backout plan should allow smooth and timely restoration of business operations.
-* Maintenance window is the period of time during which most changes are deployed. This is set to non-peak hours to reduce impact on customers as well as the business in case the change results in downtime. There is typically an accouncement placed on websites or systems to inform customers of the ongoing deployments to ensure there are no surprises.
-* Standard operating procedure provides instructions for day-to-day functions serving as a reference document for employees across the organization.
-* Emergency change may be required in some cases. During this time, the deployment of change may occur prior to receiving all the approval. Review and documentation, however, must be conducted as needed to ensure that there is a set of information to be reference in case the change needs to be reverted in the future or systems need to be rebuilt. For instance, a system administrator may need to make changes to the firewall configurations in case of an attack or a critical vulnerability needs to be patched as soon as possible.
+* **Approval process** ensures that every change is subject to addtional review and security impact analysis to assess the risks associated with the change. Peer review and review from stakeholders as well as in some cases, members of the board ensures that all changes are documented and everyone is aware of the modifications and/or advancements taking place in the oragnization. The approval process consists of 6 steps:
+    * *Request the change*: Once the requirements are identified, a change request is submitted using the internal systems available for this pupose. It might be through a website so as to be able to track the change throughout the process. 
+    * *Review the change*: The change is then subject to impact analysis with the owners and stakeholders. Stakeholders may take the decision some cases while in other cases, the change advisory board may be responsible for formal change review. Board members review the change requet.
+    * *Accept/reject the change*: The change is then subject to approval based on the review that is clearly documented and submitted. In some cases, the board may require the creation of a backout plan that will be followed in case the change does not go as planned and systems need to reverted to prior state.
+    * *Test the change*: Once approved, the change is then tested first on a non-production server to ensure it is working as expected and will not disrupt any of the current operations. 
+    * *Schedule and implement the change*: Provided the test is successful, the change is deployed to production servers typically during maintenance window or non-peak hours to minimize impact in case the change causes disruption or downtime. If the change results in problem, the backout plan formulated during prior stages of this process are adapted to restore operations.
+    * *Document the change*: Information about the change and its deployment is clearly documented for future reference. This involves editing the configuration management documentation that is used in case the system needs to be rebuilt. 
+* **Ownership** is essential for accountability and to provide a first point of contact in case a change results in unforseen situations or for additional information in the future.
+* **Stakeholders** include individuals that hold interest (mostly, financial) in the organization. They can be divided into five groups - employees, investors, suppliers and vendors, customers and communities.
+* **Impact analysis** helps assess the effect of the change on the ongoing operations in terms of security, customer satisfaction and working. This involves discussions with multiple individuals across the organization including owners, stakeholders and board members.
+* **Test results* are reviewed to ensure that the change is working as expected in non-production environments before being deployed. This helps reduce the risk of any unforseen errors or disruptions resulting from the change. 
+* **Backout plan** is essential for every change to ensure that there is a procedure that can be followed in case the system needs to be reverted to the state it was at before the change was deployed. The backout plan should allow smooth and timely restoration of business operations.
+* **Maintenance window** is the period of time during which most changes are deployed. This is set to non-peak hours to reduce impact on customers as well as the business in case the change results in downtime. There is typically an accouncement placed on websites or systems to inform customers of the ongoing deployments to ensure there are no surprises.
+* **Standard operating procedure** provides instructions for day-to-day functions serving as a reference document for employees across the organization.
+* **Emergency change** may be required in some cases. During this time, the deployment of change may occur prior to receiving all the approval. Review and documentation, however, must be conducted as needed to ensure that there is a set of information to be reference in case the change needs to be reverted in the future or systems need to be rebuilt. For instance, a system administrator may need to make changes to the firewall configurations in case of an attack or a critical vulnerability needs to be patched as soon as possible.
 
 #### Technical implications
-* Allow lists specify the applications, software and other system components that users are permitted access to within the network.
-* Deny lists also known as block lists include the applications, software and other system components that cannot be run or installed within the network. An allow list will provide greater security than a block list as a block list will allow the access to any new applications until they are known and blocked if needed.
-* Restricted activities ensure the adherence to principle of least privelege. Employees may not be permitted to perform certain activities such as changing system settings, running scripts or sending senstive data outside the organization. 
-* Downtime occurs when the system operations are adversely impacted by a change, attack or natural disaster and users can no longer access the resources or a certain feature. It is essential to ensure minimal downtime by having tested procedures put in place to be followed in this case. 
-* Service or application restart may be required in case of a change to ensure successful deployment. 
-* Legacy applications include those that are outdated or obsolete and lack vendor support. It is essential to ensure that the change does not involve modifications to any such applications. 
-* Dependencies must be idenitified and documented to ensure all information is available for future reference. 
+* **Allow lists** specify the applications, software and other system components that users are permitted access to within the network.
+* **Deny lists** also known as block lists include the applications, software and other system components that cannot be run or installed within the network. An allow list will provide greater security than a block list as a block list will allow the access to any new applications until they are known and blocked if needed.
+* **Restricted activities** ensure the adherence to principle of least privelege. Employees may not be permitted to perform certain activities such as changing system settings, running scripts or sending senstive data outside the organization. 
+* **Downtime** occurs when the system operations are adversely impacted by a change, attack or natural disaster and users can no longer access the resources or a certain feature. It is essential to ensure minimal downtime by having tested procedures put in place to be followed in this case. 
+* **Service or application restart** may be required in case of a change to ensure successful deployment. 
+* **Legacy applications** include those that are outdated or obsolete and lack vendor support. It is essential to ensure that the change does not involve modifications to any such applications. 
+* **Dependencies** must be idenitified and documented to ensure all information is available for future reference. 
 
 #### Documentation
 Documentation is essential to collate information regarding all implemented changes for future reference. It includes the current configuration of systems and is essential when there is a need to revert a change or rebuild a system. Documentation provides details such as the purpose of the change, its owner and an explanation of the modifications applied. Traditionally, changes were documented on paper. This has now been replaced with a formal and digitized configuration management system. It is crucial to ensure that all documentation is timely updated including diagrams, guidelines, policies and procedures. 
@@ -106,27 +106,27 @@ Version control allows tracking of changes and makes rollback a quicker process.
 ### Explain the importance of using appropriate cryptographic solutions
 #### Public key infrastructure (PKI)
 Public key infrastructure facilitates communication between two arbitrary systems using asymmetric cryptography, symmetric cryptography, hashing and digital certificates. 
-* Public key is typically used for encryption of a message. In the case of digital signatures, it is used for decryption of the encrypted hashed message.
-* Private key is typically used for decryption of a message and thus, need to be stored in a secure location. In the case of digital signatures, it is used for encryption of the hashed message.
-* Key escrow systems serve as backup for private keys in case a private key is lost or an employee leaves the organization. These are accessed in the case of an emergency based on a formal key recovery policy that highlights situations in which users are permitted to retreived keys from the system without the owner's knowledge.
+* **Public key** is typically used for encryption of a message. In the case of digital signatures, it is used for decryption of the encrypted hashed message.
+* **Private key** is typically used for decryption of a message and thus, need to be stored in a secure location. In the case of digital signatures, it is used for encryption of the hashed message.
+* **Key escrow** systems serve as backup for private keys in case a private key is lost or an employee leaves the organization. These are accessed in the case of an emergency based on a formal key recovery policy that highlights situations in which users are permitted to retreived keys from the system without the owner's knowledge.
 
 #### Encryption
 * Level
-    * Full-disk encryption (FDE) involves encoding all the data on a hard drive. This only requires initial set up after which it is performed automatically when the system is powered off. If the drive is stolen, the data is unredable and hence confidentiality is maintained. However, the drive is vulnerbable to access when in use at at this time the data is in plaintext form. 
-    * Partition encryption focuses on encrypting certain parts of the drive as opposed to all the stored information. This allows flexibility based on data sensitivty and is useful for dual-boot systems.
-    * File encryption focuses on specific files. This may not be secure but provides great amount of flexibility.
-    * Volume encryption involves encryption of a certain set of files or folders within a disk or partition. 
-    * Database encryption focuses on the data contained in a database to pretect any sensitive information such as user credentials or healthcare data. Transparent data encryption and column-level encryption are two forms of database encryption that focus on the entire database and specific columns, respectively.
-    * Record-level encryption allows encoding of specific records or rows in a database.
-* Transport/communication of information in a secure manner ensures privacy and protection of sensitive data. Even in the case an attacker gets access to the information being transmitted, encryption ensures that the data is not readable unless they have the decryption key or can find the corresponding plaintext of a hash value. 
-* Ciphers are algorithms that are used to encode or decode message. 
+    * *Full-disk encryption (FDE)* involves encoding all the data on a hard drive. This only requires initial set up after which it is performed automatically when the system is powered off. If the drive is stolen, the data is unredable and hence confidentiality is maintained. However, the drive is vulnerbable to access when in use at at this time the data is in plaintext form. 
+    * *Partition encryption* focuses on encrypting certain parts of the drive as opposed to all the stored information. This allows flexibility based on data sensitivty and is useful for dual-boot systems.
+    * *File encryption* focuses on specific files. This may not be secure but provides great amount of flexibility.
+    * *Volume encryption* involves encryption of a certain set of files or folders within a disk or partition. 
+    * *Database encryption* focuses on the data contained in a database to pretect any sensitive information such as user credentials or healthcare data. Transparent data encryption and column-level encryption are two forms of database encryption that focus on the entire database and specific columns, respectively.
+    * *Record-level encryption* allows encoding of specific records or rows in a database.
+* **Transport/communication** of information in a secure manner ensures privacy and protection of sensitive data. Even in the case an attacker gets access to the information being transmitted, encryption ensures that the data is not readable unless they have the decryption key or can find the corresponding plaintext of a hash value. 
+* **Ciphers** are algorithms that are used to encode or decode message. 
 * Substitution, transposition and polyalphabetic ciphers are historical, non-mathematical ciphers that simply scrambled letters to make a secret message unreadable. 
-* Block ciphers and stream ciphers are two types based on the amount of data encrypted at a time. 
+* Based on the amount of data encrypted at a time:
     * Block ciphers such as blowfish, twofish, AES, IDEA and DES operate on chunks of data at a time. 
     * Stream ciphers like Rivest Cipher 4 (RC4) operate on a single character at a time. 
-* Symmetric encryption involves the use of a single shared key to encrypt messages. Examples include Data encryption standard (DES), Advanced encryption standard (AES), blowfish, twofish, 3DES, and International Data Encryption Algorithm (IDEA). While symmetric key encryption is fast, it can get difficult to implemented as every pair of users would require one shared key for communication using this method. 
-* Asymmetric encryption solves the primary drawback of symmetric encryption by using a pair of keys called public key and private key wherein the public key is used for encryption whereas the private key is used for decryption. In this case, a user only needs to share the public key with another user to facilitate secure communication. Examples of asymmetric encryption include RSA and Eliptic curve cryptography. However, while more secure in comparison to symmetric key encryption, asymmetric encryption involves a lot more overhead.
-* Key exchange when sharing secret keys must be done in a very secure manner especially in the case of symmetric key encryption in which encryption and decryption are both done using the same key. One solution given the drawbacks of asymmetric and symmetric encryption is to combine them by using asymmetric encryption for key sharing followed by symmetric encryption with the shared key. 
+* **Symmetric encryption** involves the use of a single shared key to encrypt messages. Examples include Data encryption standard (DES), Advanced encryption standard (AES), blowfish, twofish, 3DES, and International Data Encryption Algorithm (IDEA). While symmetric key encryption is fast, it can get difficult to implemented as every pair of users would require one shared key for communication using this method. 
+* **Asymmetric encryption** solves the primary drawback of symmetric encryption by using a pair of keys called public key and private key wherein the public key is used for encryption whereas the private key is used for decryption. In this case, a user only needs to share the public key with another user to facilitate secure communication. Examples of asymmetric encryption include RSA and Eliptic curve cryptography. However, while more secure in comparison to symmetric key encryption, asymmetric encryption involves a lot more overhead.
+* **Key exchange** when sharing secret keys must be done in a very secure manner especially in the case of symmetric key encryption in which encryption and decryption are both done using the same key. One solution given the drawbacks of asymmetric and symmetric encryption is to combine them by using asymmetric encryption for key sharing followed by symmetric encryption with the shared key. 
 
 | Algorithm  | Key length (in bits) | Block or Stream | Symmetric or Asymmetric |
 |-------------|-------------|-------------|-------------|
@@ -143,14 +143,17 @@ Public key infrastructure facilitates communication between two arbitrary system
 | ECC | 256 | n/a | Asymmetric |
 
 #### Tools
-* Trusted platform module (TPM) is a specialized chip that resides on a PC's motherboard. It is designed to store cryptographic keys used for volume encryption and for facilitating a secure boot process. TPM is primarily used for securing data on a specific computer or device
-* Hardware security module (HSM) is a removable hardware unit that much like TPMs is designed to create, store and manage digital keys for digital signatures, authentication and other cryptographic functions. HSM is used =for securing data on a network or system-level.
-* Key management systems offer centralized storage and managemnet of keys and certificates while enforcing policies. many cloud providers provide KMS as a service for their environments.
-* Secure enclave helps separate secret information such as cryptographic keys from the main CPU throughout their life cycle. Vendors include Apple, SGX, Google's Titan M and Samsung's TrustZone and Knox. 
+* **Trusted platform module (TPM)** is a specialized chip that resides on a PC's motherboard. It is designed to store cryptographic keys used for volume encryption and for facilitating a secure boot process. TPM is primarily used for securing data on a specific computer or device
+* **Hardware security module (HSM)** is a removable hardware unit that much like TPMs is designed to create, store and manage digital keys for digital signatures, authentication and other cryptographic functions. HSM is used for securing data on a network or system-level.
+* **Key management systems** offer centralized storage and managemnet of keys and certificates while enforcing policies. many cloud providers provide KMS as a service for their environments.
+* **Secure enclave** helps separate secret information such as cryptographic keys from the main CPU throughout their life cycle. Vendors include Apple, SGX, Google's Titan M and Samsung's TrustZone and Knox. 
 
 #### Obfuscation
-* **Steganography** is the process of embedding sensitive information or secret messages in other media such as images, videos, audio files, etc. It can be used to hide messages in plain sight as the embedding results in neglible changes to the files. While steganography is known to be used for illicit purposes, it has some legitimate uses as well. For instance, steganography can be used for adding digital watermarks to art work. This information will only be known to the creator and can be used to identify any duplicates. OpenStego is a popular free tool used for steganography. 
-* **Tokenization** is used to substitute sensitive information with a randomly picked unique identifier that is stored in a lookup table. The lookup table must be placed in a secure location. The token does not have any mathematical connection to the original text.
+* **Steganography** is the process of embedding sensitive information or secret messages in other media such as images, videos, audio files, etc. 
+    * Can be used to hide messages in plain sight as the embedding results in neglible changes to the files. 
+    * Has some legitimate uses as well. For instance, steganography can be used for adding digital watermarks to art work that help identify any duplicates. 
+    * OpenStego is a popular free tool used for steganography. 
+* **Tokenization** is used to substitute sensitive information with a randomly picked unique identifier that is stored in a lookup table. The lookup table must be placed in a secure location. 
 * **Data masking** replaces a part of sensitive information with symbols. For instance, the first 12 digits of credit card number are replaced with an * on a receipt. 
 
 #### Hashing
@@ -357,11 +360,11 @@ Code injection attacks typically exploit the absence of input validation, allowi
 ##### Structured Query Language Injection (SQLi)
 Structured Query Language Injection (SQLi) occurs when an attacker injects malicious SQL code into an input field to manipulate a program into executing unintended database queries. This can lead to unauthorized access to sensitive data, such as user credentials or personal records.  
 
-For example, consider a student portal where users enter their student ID to retrieve their report card. If the website is vulnerable to SQLi, a malicious user could enter an SQL statement that alters the query’s logic, such as appending a condition that is always true. This could force the application to return all student records instead of just the intended one.  
+For example, consider a student portal where users enter their student ID to retrieve their report card. If the website is vulnerable to SQLi, a malicious user could enter an SQL statement that alters the queryís logic, such as appending a condition that is always true. This could force the application to return all student records instead of just the intended one.  
 
 SQLi attacks can take different forms, including _classic SQLi_ and _blind SQLi_. In a blind SQLi attack, the application executes the malicious SQL query, but the results are not directly visible to the attacker due to the page's formatting or security measures. There are two main types of blind SQLi attacks: 
 
-* Content-based Blind SQLi: The attacker modifies the query to return no records and observes the website’s response. If the absence of results confirms an expected change in behavior, the attacker determines that the application is vulnerable.  
+* Content-based Blind SQLi: The attacker modifies the query to return no records and observes the websiteís response. If the absence of results confirms an expected change in behavior, the attacker determines that the application is vulnerable.  
 * Timing-based Blind SQLi: The attacker injects SQL code that introduces a delay in the database response. If the application takes noticeably longer to display results, it indicates that the injected SQL statement was executed, confirming the vulnerability.  
 
 To mitigate SQLi attacks, developers should implement prepared statements, input validation, and proper database access controls to prevent malicious queries from being executed.
@@ -522,13 +525,13 @@ Encryption ensures data confidentiality in the case of a successful security bre
 * Certification of destruction is an important part of the process to verify that the asset has been destroyed completely by the third-party vendor.
 
 #### Hardening techniques
-* Encryption
-* Installation of endpoint protection
-* Host-based firewall
-* Host-based intrusion prevention system (HIPS)
-* Disabling ports/protocols
-* Default password changes
-* Removal of unnecessary software
+* Encryption ensures confidentiality of the data in the case of a successful security incident as it renders the data unreadable to an attacker unless they have the decryption key.
+* Installation of endpoint protection to detect the presence of malware or alert in case of any potentially malicious behavior. 
+* Host-based firewall is a software works on a singular system to examine incoming and outgoing traffic. It alerts and/or blocks any suspicious communication such as malware or communications that may indicate an attack attempt.
+* Host-based intrusion prevention system (HIPS) is also a system-specific and is aimed at blocking intrusion attempts into the system. 
+* Disabling ports/protocols that are not in use also reduces the attack surface as well as monitoring requirements. It also ensure that no insecure services are enabled on the system allowing an attacker easy access.
+* Default password changes should be one of the first steps when configuring a new product as default passwords are published on the internet and can be easily accessed by attackers. Vulnerability scanners typically flag the use of default passwords.
+* Removal of unnecessary software reduces the attack surface by ensuring that only required products are kept on the systems. Organizations usually build their own system images that are installed on new systems to exclude all unneccessary software.
 
 ## Security Architecture
 

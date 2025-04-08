@@ -1,4 +1,4 @@
-# COMPTIA Security+ SY0-701 Acronyms
+# COMPTIA Security+ SY0-701 Acronyms 
 ### Full forms and definitions
 
 Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam Objectives Version 5.0. 
@@ -218,111 +218,112 @@ Terms are ordered as in the CompTIA Security+ SY0-701 Certification Exam: Exam O
 | RA | Registration Authority | |
 | RACE | Research and Development in Advanced Communications Technologies in Europe | |
 | RAD | Rapid Application Development | |
-| RADIUS | Remote Authentication Dial-in User Service | |
-| RAID | Redundant Array of Inexpensive Disks | way of storing the same data in different places on multiple hard disks or solid-state drives (SSDs) to protect data in the case of a drive failure. RAID-0 (Stripping) - Combines the drives to appear as a single drive; great performace feature but single point of failure RAID-1 (Mirroring) - writing two drives simultaneously; RAID-5 (Block-Level Stripping with Distributed Parity) - 3 to 32 drives; portion of each drive is reserved and combined into a parity drive, which stores data and drive rebuilding information. In the event of drive failure, info is pulled from the parity drive to rebuild the failed drive while the system remains operational; high availability  |
-| RAS | Remote Access Server | |
-| RAT | Remote Access Trojan | |
-| RBAC | Role-based Access Control | |
-| RBAC | Rule-based Access Control | |
-| RC4 | Rivest Cipher version 4 | stream cipher symmetric key algorithm |
-| RDP | Remote Desktop Protocol | |
-| RFID | Radio Frequency Identifier | |
-| RIPEMD | RACE Integrity Primitives Evaluation Message Digest | |
-| ROI | Return on Investment | |
-| RPO | Recovery Point Objective | |
-| RSA | Rivest, Shamir, & Adleman | asymmetric key algorithm |
-| RTBH | Remotely Triggered Black Hole | |
-| RTO | Recovery Time Objective | |
-| RTOS | Real-time Operating System | |
-| RTP | Real-time Transport Protocol | |
-| S/MIME | Secure/Multipurpose Internet Mail Extensions | |
-| SaaS | Software as a Service | |
-| SAE | Simultaneous Authentication of Equals | |
-| SAML | Security Assertions Markup Language | designed for authentication and authorization |
-| SAN | Storage Area Network | |
-| SAN | Subject Alternative Name | |
-| SASE | Secure Access Service Edge | cloud-native architecture that unifies SD-WAN with security functions like SWG, CASB, FWaaS, and ZTNA into one service |
-| SCADA | Supervisory Control and Data Acquisition | |
-| SCAP | Security Content Automation Protocol | |
-| SCEP | Simple Certificate Enrollment Protocol | |
-| SD-WAN | Software-defined Wide Area Network | |
-| SDK | Software Development Kit | |
-| SDLC | Software Development Lifecycle | |
+| RADIUS | Remote Authentication Dial-in User Service | Client-server authentication protocol for remote connections to trusted networks providing accounting and IP management services. |
+| RAID | Redundant Array of Inexpensive Disks | Method for storing the same data in different places on multiple hard disks or solid-state drives (SSDs) to protect data in the case of a drive failure. RAID-0 (Stripping) - Combines the drives to appear as a single drive; great performace feature but single point of failure RAID-1 (Mirroring) - writing two drives simultaneously; RAID-5 (Block-Level Stripping with Distributed Parity) - 3 to 32 drives; portion of each drive is reserved and combined into a parity drive, which stores data and drive rebuilding information. In the event of drive failure, info is pulled from the parity drive to rebuild the failed drive while the system remains operational; high availability  |
+| RAS | Remote Access Server | Server that allows users to remotely connect to a network. |
+| RAT | Remote Access Trojan | Software designed to gain unautorized administrator acess and remote control to a target system. The software disguises itself to escape identification and is typically indicated by unrecognized files or processes. |
+| RBAC | Role-based Access Control | Model used to authorize users/employees based on their pre-defined role such as guest, developer or security analyst. |
+| RBAC | Rule-based Access Control | Model wherein users are authorized based on a combination of two or more factors such as role, location, IP address, device, and time. |
+| RC4 | Rivest Cipher version 4 | Outdated symmetric key stream cipher. |
+| RDP | Remote Desktop Protocol | Proprietary protocol developed by Microsoft to connect to a systems graphical user interface remotely. Typically used by help or support desks for troubleshooting problems. |
+| RFID | Radio Frequency Identifier | Technology that uses electromagnetic/radio waves to identify a person or object. Comprises of a transponder (tag), recevier and transmitter. The tag is unique to each person or object and is identified when scanned by a reader. |
+| RIPEMD | RACE Integrity Primitives Evaluation Message Digest | Cryptographic hash function mainly used in cryptocurrencies like Bitcoin to generate addresses and enhance security and privacy. |
+| ROI | Return on Investment | Ratio that indicates the loss or profit from an asset in relation to its cost. |
+| RPO | Recovery Point Objective | Maximum amount of data that is tolerable by an organization after an unexpected incident. Expressed as an amount of time. |
+| RSA | Rivest, Shamir, & Adleman | Widely used asymmetric key algorithm. |
+| RTBH | Remotely Triggered Black Hole | Filtering technique designed to protect again denial of service attacks by dropping all unwanted or suspected packets before it enters a trusted network. |
+| RTO | Recovery Time Objective | Maximum amount of time to be taken to repair a failure and resume operations after which impact surpasses the acceptable level of risk. |
+| RTOS | Real-time Operating System | Operating system chaarcterized with predictability and determinism, desgined for time-critical events such as air traffic control systems, process control systems, and autonomous driving systems. |
+| RTP | Real-time Transport Protocol | IETF standard network protocol desgined to facilitate the exchange of live audio or visual data over IP networks. |
+| S/MIME | Secure/Multipurpose Internet Mail Extensions | Protocol for exchanging digitally signed and encrypted messages including images, videos, text, and sound file types. |
+| SaaS | Software as a Service | Cloud-based delivery model wherein a cloud service provider develops and maintains a software product being leveraged by their customer, providing regular patches and updates and charging their client on pay-as-you-go basis. |
+| SAE | Simultaneous Authentication of Equals | Password-based authentication and key establishment method in WPA3-Personal designed to replace PSK method in WPA2.|
+| SAML | Security Assertions Markup Language | Protocol that facilitates communication for authentication and authorization between businesses and application providers. |
+| SAN | Storage Area Network | Network dedicated to block data storage and automated data backup. |
+| SAN | Subject Alternative Name | Extension to the X.509 specification that allows a single certificate to cover multiple sub domains, domain names or IP addresses. |
+| SASE | Secure Access Service Edge | Cloud-native architecture that unifies SD-WAN with security functions like SWG, CASB, FWaaS, and ZTNA into one service. |
+| SCADA | Supervisory Control and Data Acquisition | Control system used to monitor and manage industrial control systems providing supervisors with real-time data and alerts. |
+| SCAP | Security Content Automation Protocol | Suite of protocols that provides for the organization of security information, vulnerability management and automated configuration in a standardized format |
+| SCEP | Simple Certificate Enrollment Protocol | Protocol that simplifies the process of issuing digital certificates while making it secure and scalable by using a one time password that is sent to the user out-of-band. |
+| SD-WAN | Software-defined Wide Area Network | SDN-based wide area network allowing virtualization of the network design and easier scaling to meet business needs. |
+| SDK | Software Development Kit | Set of platform-specific tools that provide debuggers, compilers and libraries required to develop an application. |
+| SDLC | Software Development Lifecycle | Process of designing, developing, testing and maintaining a software product. Security should be part of each phase of the SDLC. |
 | SDLM | Software Development Lifecycle Methodology | |
-| SDN | Software-defined Networking | |
-| SE | Linux Security-enhanced Linux | |
-| SED | Self-encrypting Drives | |
-| SEH | Structured Exception Handler | |
-| SFTP | Secured File Transfer Protocol | builds on SSH and adds on file transfer capabilities |
-| SHA | Secure Hashing Algorithm | |
-| SHTTP | Secure Hypertext Transfer Protocol | |
-| SIEM | Security Information and Event Management | |
-| SIM | Subscriber Identity Module | |
-| SLA | Service-level Agreement | |
-| SLE | Single Loss Expectancy | predicted loss of value to an asset based on a single security incident |
-| SMS | Short Message Service | |
-| SMTP | Simple Mail Transfer Protocol | |
-| SMTPS | Simple Mail Transfer Protocol Secure | |
-| SNMP | Simple Network Management Protocol | |
-| SOAP | Simple Object Access Protocol | |
-| SOAR | Security Orchestration, Automation, and Response | |
-| SoC | System on Chip | |
-| SOC | Security Operations Center | |
-| SOW | Statement of Work | |
-| SPF | Sender Policy Framework | |
-| SPIM | Spam over Internet Messaging | |
-| SQL | Structured Query Language | |
-| SQLi | SQL Injection | |
-| SRTP | Secure Real-Time Protocol | |
-| SSD | Solid State Drive | |
-| SSH | Secure Shell | |
-| SSL | Secure Sockets Layer | |
-| SSO | Single Sign-on | |
-| STIX | Structured Threat Information eXchange | |
-| SWG | Secure Web Gateway | |
-| TACACS+ | Terminal Access Controller Access Control | |
-| TAXII | Trusted Automated eXchange of Indicator Information | |
-| TCP/IP | Transmission Control Protocol/Internet Protocol | |
-| TGT | Ticket Granting Ticket | |
-| TKIP | Temporal Key Integrity Protocol | |
-| TLS | Transport Layer Security | |
-| TOC | Time-of-check | |
-| TOTP | Time-based One-time Password | |
-| TOU | Time-of-use | |
-| TPM | Trusted Platform Module | |
-| TTP | Tactics, Techniques, and Procedures | |
-| TSIG | Transaction Signature | |
-| UAT | User Acceptance Testing | |
-| UAV | Unmanned Aerial Vehicle | |
-| UDP | User Datagram Protocol | |
-| UEFI | Unified Extensible Firmware Interface | |
-| UEM | Unified Endpoint Management | |
-| UPS | Uninterruptable Power Supply | |
-| URI | Uniform Resource Identifier | |
-| URL | Universal Resource Locator | |
-| USB | Universal Serial Bus | |
-| USB | OTG USB On the Go | |
-| UTM | Unified Threat Management | network security solution providing a single point of protection against various types of threats |
-| UTP | Unshielded Twisted Pair | |
-| VBA | Visual Basic | |
-| VDE | Virtual Desktop Environment | |
-| VDI | Virtual Desktop Infrastructure | |
-| VLAN | Virtual Local Area Network | |
-| VLSM | Variable Length Subnet Masking | |
-| VM | Virtual Machine | |
-| VoIP | Voice over IP | |
-| VPC | Virtual Private Cloud | |
+| SDN | Software-defined Networking | Networking design technique that uses software-based components for communication over the network. |
+| SE Linux | Security-enhanced Linux | Security module for Linux that leverages MAC model as opposed to the DAC model used in traditional Linux kernel. |
+| SED | Self-encrypting Drives | HDD or SSD that automatically encrypts the stored data using an electric circuit embedded in the device.  |
+| SEH | Structured Exception Handler | Extension for C\C++ developed by Microsoft that is used for handling specific exception code situations. |
+| SFTP | Secured File Transfer Protocol | Secure FTP that leverages SSH protocol and adds on file transfer capabilities. |
+| SHA | Secure Hashing Algorithm | Mathematical used for one-way encryption of senstive data to ensure confidentiality and integrity. Has multiple variants with different output sizes. SHA-256 is the most secure and widely used algorithm that produces outputs that are 256 bits in length. |
+| SHTTP | Secure Hypertext Transfer Protocol | Outdated alternative to the HTTPS protocol for encrypting web communications carried over the Internet. |
+| SIEM | Security Information and Event Management | Security solution that aggregates and analyses event, threat and risk data to help identify incidents and remediate them.  |
+| SIM | Subscriber Identity Module | Small removable card that securely stores the international mobile subscriber identity (IMSI) for mobile cellular telephony devices such as mobile computers and mobile phones.  |
+| SLA | Service-level Agreement | Contract between a service provider and customers defining the nature, availability, quality, performance requirements, and scope of the service or product to be provided. |
+| SLE | Single Loss Expectancy | Predicted loss of value to an asset based on one occurence of a security incident. |
+| SMS | Short Message Service | Facilates exchange of short messages over a cellular network. |
+| SMTP | Simple Mail Transfer Protocol | Protocol that facilitates sending and receiving emails to and from the email server. |
+| SMTPS | Simple Mail Transfer Protocol Secure | SMTP with an added layer of security that provides authentication, integrity and confidentiality. |
+| SNMP | Simple Network Management Protocol | Protocol used for configuring, monitoring and managing network devices connected over IP. SNMP traps are alert messages generated when an error or network issue is detection. |
+| SOAP | Simple Object Access Protocol | XML based messaging response used for communication in decentralized, distributed application environments. It is slower than REST and is difficult to scale. |
+| SOAR | Security Orchestration, Automation, and Response | Set of tools or services that help security professionals with effective time management by providing solutions for automating tasks related incident prevention and response. |
+| SoC | System on Chip | Integrated circuit that combines required compoents of a computer into a single lightweight microchip. Examples include Raspberry Pi and Arduino Uno. |
+| SOC | Security Operations Center | Team of security professionals that focuses on monitoring systems and identifying, analysing and responding to security issues. |
+| SOW | Statement of Work | Legally binding agreement between a client and a vendor that describes the deliverables and project goals of a project. |
+| SPF | Sender Policy Framework | Protocol used to authenticate the sender of an email to ensure legitimacy of the email address. |
+| SPIM | Spam over Internet Messaging | Sending/receiving unwanted messages on instant messaging platforms, similar to email spam. |
+| SQL | Structured Query Language | Programming language for managing that is, creating, updating, retrieving and deleting data in a relational database. |
+| SQLi | SQL Injection | Cyberattack wherein an attacker exploits the absence of robust input validation to manipulate the site into display, update or delete sensitive information by using SQL queries. |
+| SRTP | Secure Real-Time Protocol | Extension for RTP providing security features such as encryption, message authentication, and replay protection to transmitted video and audio data. |
+| SSD | Solid State Drive | Device that uses integrated circuits for persistent data storage. Provides quick access to data and is used for the operating system and frequently accessed applications or games. |
+| SSH | Secure Shell | Cryptographic network protocol that facilitates secure remote access to systems over the Internet. |
+| SSL | Secure Sockets Layer | Transport layer protocol that ensures ecryption of data sent between a web server and client system or between two servers. |
+| SSO | Single Sign-on | Authentication method that enhances user experience by allowing users to access a number of related yet independent applications after signing into one of them. For instance, after logging into Gmail, a user is automatically logged into other services like YouTube, Google Drive, AdSense, Google Analytics, etc. |
+| STIX | Structured Threat Information eXchange | Provides a standard for formatting threat intelligence data by describing associated motivations, abilities, capabilities, and responses. |
+| SWG | Secure Web Gateway | Security device that is typically placed between users or employees and the internet to filter web traffic. Provides a wide range of features sure as URL filtering, content filtering, malware detection and blocking, and data loss prevention.  |
+| TACACS+ | Terminal Access Controller Access Control | Cisco proprietary protocol that provides user authentication, authorization and accounting for network devices, such as routers, switches, and firewalls. |
+| TAXII | Trusted Automated eXchange of Indicator Information | Transport protocol used for exchanging threat intelligence data. Designed to support communication of STIX insights over HTTPS. |
+| TCP/IP | Transmission Control Protocol/Internet Protocol | Connection-oriented transport layer protocol that facilitates reliable transfer of data over a network. Used by DNS, file transfer protocols, Secure Shell, and streaming media. |
+| TGT | Ticket Granting Ticket | File including session key and user's IP address that is sent to the user by the key distribution center (KDC) portion of the Kerberos authentication after the user is authenticated. Users use this file for getting a service ticket from the Ticket granting service (TGS) to get access to other resources. |
+| TKIP | Temporal Key Integrity Protocol | Security protocol for encryption of communication in WEP networks. It is now replaced by AES for WPA2 and WPA3. |
+| TLS | Transport Layer Security | Cryptographic protocol designed to protect communications over the Internet through secure authentication and robust encryption. Primarily known for its use in HTTPS. Also used in email, instant messaging, and voice over IP. More secure version of SSL. |
+| TOC | Time-of-check | Verfication of permissions associated with a subject. |
+| TOTP | Time-based One-time Password | Password or PIN that is generated for authentication and its uniqueness is guaranteed by the use of current time for computation. It may also be valid only for a specific period of time such as a minute or so. |
+| TOU | Time-of-use | Authorization of the subject. |
+| TPM | Trusted Platform Module |  Specialized chip residing on a PC's motherboard, designed to store biometric data or cryptographic keys used for authentication, disk encryption and/or ensuring a secure boot process. |
+| TTP | Tactics, Techniques, and Procedures | Tactic defines the "why". Technique defined the "how". Procedure defines the specific implemention used by an attacker to conduct an attack. |
+| TSIG | Transaction Signature | Computer networking protocol defined in RFC 2845 that allows authentication of updates to DNS database. |
+| UAT | User Acceptance Testing | Non-production environment used to perform rigourous testing on a developed product or feature before its official deployment into production for customer use. |
+| UAV | Unmanned Aerial Vehicle | Aircraft also known as a drone that has no humans in it and is controlled remotely or is autonomous. |
+| UDP | User Datagram Protocol | Communication transport layer protocol that facilitates data transmission over a network. UDP is connectionless and hence, unreliable but faster than TCP. Used for Voice over IP (VoIP), DNS lookups, online gaming, and media streaming. |
+| UEFI | Unified Extensible Firmware Interface | Software specification designed for modern devices that connects firware to the operating system and is responsible for starting a device ensuring compatibility, security, and advanced features. It will eventually relace BIOS. |
+| UEM | Unified Endpoint Management | All-in-one security solution for managing and monitoring end-user devices. It includes all MDM features along with additional security mechanisms such as custom scripts and custom configurations. |
+| UPS | Uninterruptible Power Supply | System that provides almost instant power backup ensuring business continuity in case of a power outage. However, they do not provide long term power like generators but since generators take a longer time to start, UPS systems can be used in the meantime. |
+| URI | Uniform Resource Identifier | Name or location of a specific resource online or offline. |
+| URL | Universal Resource Locator | Web address to a resource on the Internet. Every resource has a unique URL. Every URL is a URI but every URI is not necessarily a URL. |
+| USB | Universal Serial Bus | Industry standard used to connect peripheral devices to personal computers to transfer data between the components. |
+| USB OTG | USB On the Go | Provides USB ports to mobile devices such as phones and tablets thereby allowing connection of input devices or USB sticks. |
+| UTM | Unified Threat Management | Network security solution providing a single point of protection against various types of threats such as malware and web-based attacks. |
+| UTP | Unshielded Twisted Pair | Popular type of copper cabling that is used in telephone wiring and local area networks (LANs). These cables to do not have a metallic shield but the wires are twisted to reduce electronic  interference. |
+| VBA | Visual Basic | Beginner-friendly object-oriented programming language developed by Microsoft that provides a GUI and simple code syntax to design and develop .NET applications. BASIC stands for Beginners All-purpose Symbolic Instruction Code. |
+| VDE | Virtual Desktop Environment | Workstation that can be accessed remotely over the Internet. |
+| VDI | Virtual Desktop Infrastructure | IT infrastructure or software that allows access to enterprise computer systems from any device and excludes the need for organizations to provide their employees with a computer for work. |
+| VLAN | Virtual Local Area Network | Network design technique that groups together subnets of a physical LAN to create a overlay isolated network thereby reducing the broadcast domain. |
+| VLSM | Variable Length Subnet Masking | Network design technique that allows creation of subnets with different subnet masks thereby ensuring optimal use of the available IP addresses. |
+| VM | Virtual Machine | Emulation of a computer system in the form of a software that can be used to run an operating system (called guest) on another operating system (called host). It can also be used for other computing operations such as running an application or for storage/backup purposes. |
+| VoIP | Voice over IP | Technology that allows real-time voice communication over the Internet. |
+| VPC | Virtual Private Cloud | A secure logically isolated private cloud segment contained within a public cloud environment. |
 | VPN | Virtual Private Network | A system that uses public network (such as the Internet) as a means for creating private encrypted connections between remote locations |
-| VTC | Video Teleconferencing | |
-| WAF | Web Application Firewall | |
-| WAP | Wireless Access Point | |
-| WEP | Wired Equivalent Privacy | |
-| WIDS | Wireless Intrusion Detection System | |
-| WIPS | Wireless Intrusion Prevention System | |
-| WO | Work Order | |
-| WPA | Wi-Fi Protected Access | |
-| WPS | Wi-Fi Protected Setup | |
-| WTLS | Wireless TLS | |
+| VTC | Video Teleconferencing | Technology that facilitates real-time face-to-face meetings over the Internet. |
+| WAF | Web Application Firewall | Security control that can be network-, host- or cloud-based used to protect web systems by monitoring and filtering malicious traffic including zero-day attacks, malware and impresonation. |
+| WAP | Wireless Access Point | Network device that faciliates wireless connection between endpoint devices and a local area network or the Internet. |
+| WAP | Wireless Application Protocol | Outdated insecure set of communications protcols used to give mobile devices access to the Internet. Now largely replaced by modern technologies such as 3G, 4G and 5G. |
+| WEP | Wired Equivalent Privacy | Outdated and highly vulnerable security protocol for 802.11b wireless networks. WPA is designed to replace WEP with more robust security including stronger encryption and large key space. |
+| WIDS | Wireless Intrusion Detection System | Network device that continually monitors the network communications to identify and alert security admins of potential attack attemps such as denial of service, man in the middle attacks or rogue access points. |
+| WIPS | Wireless Intrusion Prevention System | Similar to WIDS but this device can also take action against suspected attempts such as blocking traffic or containing a rogue access point until investigated by admin. |
+| WO | Work Order | Formal digital or paper request to replace, restore or repair an asset, including project-specific details such as the problem and goals. |
+| WPA | Wi-Fi Protected Access | Security standard developed by Wi-Fi Alliance for devices connecting to wireless networks to faciliate secure authentication and encryption. Successor to the now obsolete WEP standard.  |
+| WPS | Wi-Fi Protected Setup | Built-in feature on routing devices that makes it easier to access the internet by not having to enter the password manually. Enabling this feature may downgrade the security of the network, however, and is not recommended. |
+| WTLS | Wireless TLS | Security layer for Wireless Application Procotol (WAP) that is designed to support mobile devices including limited memory capacity, lower processing power and low bandwidth. |
 | XDR | Extended Detection and Response | A security solution that integrates multiple security products into a cohesive system for centralized detection, investigation, and response across endpoints, networks, servers, and email systems. It improves visibility and automates threat response. |
 | XML | Extensible Markup Language | A markup language is a set of codes, or tags, that describes the text in a digital document. The most famous XML language is HTML. |
 | XOR | Exclusive Or | A logical operation used in cryptographic algorithms where the result is true only if inputs are different. It is widely used in symmetric encryption for combining plaintext and key to produce ciphertext. |
