@@ -1,8 +1,8 @@
 # CompTIA Security+ Exam Notes SY0-701
-This document is formatted based on the Exam Objectives provided by CompTIA. This should be used as a reference document. Please make sure to use additional resources for preparing for the Security+ exam.
+This document is formatted based on the Exam Objectives provided by CompTIA. The content is written by referring to CompTIA Security+ Study guide as well as various other sources. The document should be used as a reference for preparing for the Security+ exam. Please make sure to use additional sources.
 
 ## General Security Concepts
-### Compare and contrast various types of security controls
+### Security controls
 #### Categories 
 * **Technical** controls are those implemented by the system. Examples include Firewalls, intrusion prevention/detection systems, jump servers, multi-factor authentication, backups, encryption, and anti-virus software.
 * **Managerial** controls are policies and procedures used to manage the systems. Examples include risk assessments, security planning exercises, disaster recovery plans, incident response schemes, and contingency planning.
@@ -17,7 +17,7 @@ This document is formatted based on the Exam Objectives provided by CompTIA. Thi
 * **Corrective** controls aim to restore operations after a security event or disaster has occured. For instance, launching backup systems in case of a ransomware attack.
 * **Directive** controls provide information for employees and organizations to help achieve their security goals. Examples include policies and procedures, laws and regulations, guidelines and training seminars.
 
-### Summarize fundamental security concepts
+### Fundamental security concepts
 #### CIA Triad and Non-repudiation
 * **Confidentiality** focuses on ensuring only authorized access to sensitive information. Various controls such as encryption, hashing, data obfuscation can be used to implement confidentiality.
 * **Integrity** focuses on encuring authorized modifications to sensitive files, configurations, etc. Hashing is commonly used to check whether data is tampered or corrupted.
@@ -35,7 +35,9 @@ This document is formatted based on the Exam Objectives provided by CompTIA. Thi
 * **Accounting** keeps track of user activities such as logins and data modifications. These logs are monitored by automated systems and may be subject to further investigation in case of a flagged security incident. The logs may also be checked by administrators manually to ensure all is well.
 
 #### Gap analysis
-Gap analysis is essentially assessing the different between the current security posture of an organization and its desired security objective. Gap analysis is done by assessing reviewing controls across the organization. A gap occurs when the implemented control does not meet the control objective. Gaps must be treated as risks and remediated when possible based on availability of resources and its severity. 
+* Assessing difference between the current security posture of an organization and its desired security objective. 
+* Gap occurs when the implemented control does not meet the control objective. 
+* Gaps must be treated as risks and remediated when possible based on availability of resources and its severity. 
 
 #### Zero Trust
 * **Control plane**
@@ -64,13 +66,14 @@ Gap analysis is essentially assessing the different between the current security
 * **Security guards** provide human intervention and are strategically placed in common areas such as near entrances to be able to make decisions and detect and respond to any incidents.
 
 #### Deception and disruption technology
-These technologies are intentionally placed to attract attackers and observe their movement. They typically contain false sensitive information and are highly monitored to ensure that all the activities of an attacker in relation to these components is tracked and noted.
+* Intentionally placed to attract attackers and observe their movement.
+* Typically contain false sensitive information and are highly monitored to ensure that all the activities of an attacker in relation to these components is tracked and noted.
 * **Honeypots** are systems that are intentionally configured to appear vulnerable thereby tempting the attacker to attempt an intrusion. 
 * **Honeynets** are networks that encourage attackers to attempt network intrudsions. 
 * **Honeyfiles** contain false sensitive information such as credentials that will attract an attacker. The contents of these files are consitently searched for on the internet and when found, administrators know that someone fell for the trap.
 * **Honeytokens** are sensitive data intentionally included in a databse, file, directory or other data assets to provoke attackers. Intrusion detection and prevention system as well as data loss prevention systems are configured to look for this information and trigger an alarm when found in transit. 
 
-### Explain the importance of change management processes and the impact to security
+### Importance and impact of change management processes
 #### Business processes impacting security operation
 * **Approval process** ensures that every change is subject to addtional review and security impact analysis to assess the risks associated with the change. Peer review and review from stakeholders as well as in some cases, members of the board ensures that all changes are documented and everyone is aware of the modifications and/or advancements taking place in the oragnization. The approval process consists of 6 steps:
     * *Request the change*: Once the requirements are identified, a change request is submitted using the internal systems available for this pupose. It might be through a website so as to be able to track the change throughout the process. 
@@ -82,7 +85,7 @@ These technologies are intentionally placed to attract attackers and observe the
 * **Ownership** is essential for accountability and to provide a first point of contact in case a change results in unforseen situations or for additional information in the future.
 * **Stakeholders** include individuals that hold interest (mostly, financial) in the organization. They can be divided into five groups - employees, investors, suppliers and vendors, customers and communities.
 * **Impact analysis** helps assess the effect of the change on the ongoing operations in terms of security, customer satisfaction and working. This involves discussions with multiple individuals across the organization including owners, stakeholders and board members.
-* **Test results* are reviewed to ensure that the change is working as expected in non-production environments before being deployed. This helps reduce the risk of any unforseen errors or disruptions resulting from the change. 
+* **Test results** are reviewed to ensure that the change is working as expected in non-production environments before being deployed. This helps reduce the risk of any unforseen errors or disruptions resulting from the change. 
 * **Backout plan** is essential for every change to ensure that there is a procedure that can be followed in case the system needs to be reverted to the state it was at before the change was deployed. The backout plan should allow smooth and timely restoration of business operations.
 * **Maintenance window** is the period of time during which most changes are deployed. This is set to non-peak hours to reduce impact on customers as well as the business in case the change results in downtime. There is typically an accouncement placed on websites or systems to inform customers of the ongoing deployments to ensure there are no surprises.
 * **Standard operating procedure** provides instructions for day-to-day functions serving as a reference document for employees across the organization.
@@ -98,12 +101,18 @@ These technologies are intentionally placed to attract attackers and observe the
 * **Dependencies** must be idenitified and documented to ensure all information is available for future reference. 
 
 #### Documentation
-Documentation is essential to collate information regarding all implemented changes for future reference. It includes the current configuration of systems and is essential when there is a need to revert a change or rebuild a system. Documentation provides details such as the purpose of the change, its owner and an explanation of the modifications applied. Traditionally, changes were documented on paper. This has now been replaced with a formal and digitized configuration management system. It is crucial to ensure that all documentation is timely updated including diagrams, guidelines, policies and procedures. 
+* Essential to collate information regarding all implemented changes for future reference. 
+* Includes the current configuration of systems and is essential when there is a need to revert a change or rebuild a system. 
+* Provides details such as the purpose of the change, its owner and an explanation of the modifications applied. 
+* Paper documents now replaced with formal and digitized configuration management system. 
+* Ensure all documentation is timely updated including diagrams, guidelines, policies and procedures. 
 
 #### Version control
-Version control allows tracking of changes and makes rollback a quicker process. Developers and users leverage version control tools such as Git to access latest versions of software and manage changes throughout the release process. A labelling o numberign system helps differentiate software sets and configurations. For instance, a software applications starts at version 1. A set of minor changes result in version 1.1, 1.2 while a set of major changes provides version 2. 
+* Allows tracking of changes and makes rollback a quicker process. 
+* Developers and users can access latest versions of software and manage changes throughout the release process. 
+* A labelling or numbering system helps differentiate software sets, versions, and configurations. 
 
-### Explain the importance of using appropriate cryptographic solutions
+### Cryptographic solutions
 #### Public key infrastructure (PKI)
 Public key infrastructure facilitates communication between two arbitrary systems using asymmetric cryptography, symmetric cryptography, hashing and digital certificates. 
 * **Public key** is typically used for encryption of a message. In the case of digital signatures, it is used for decryption of the encrypted hashed message.
@@ -118,7 +127,8 @@ Public key infrastructure facilitates communication between two arbitrary system
     * *Volume encryption* involves encryption of a certain set of files or folders within a disk or partition. 
     * *Database encryption* focuses on the data contained in a database to pretect any sensitive information such as user credentials or healthcare data. Transparent data encryption and column-level encryption are two forms of database encryption that focus on the entire database and specific columns, respectively.
     * *Record-level encryption* allows encoding of specific records or rows in a database.
-* **Transport/communication** of information in a secure manner ensures privacy and protection of sensitive data. Even in the case an attacker gets access to the information being transmitted, encryption ensures that the data is not readable unless they have the decryption key or can find the corresponding plaintext of a hash value. 
+* **Transport/communication** of information in a secure manner ensures privacy and protection of sensitive data. 
+    * Even in the case an attacker gets access to the information being transmitted, encryption ensures that the data is not readable unless they have the decryption key. 
 * **Ciphers** are algorithms that are used to encode or decode message. 
 * Substitution, transposition and polyalphabetic ciphers are historical, non-mathematical ciphers that simply scrambled letters to make a secret message unreadable. 
 * Based on the amount of data encrypted at a time:
@@ -157,61 +167,109 @@ Public key infrastructure facilitates communication between two arbitrary system
 * **Data masking** replaces a part of sensitive information with symbols. For instance, the first 12 digits of credit card number are replaced with an * on a receipt. 
 
 #### Hashing
-Hashing is a one-way encoding process wherein a hash algorithm is used to convert a message into a fixed-size message digest using a set of mathematical operations. One-way encoding implies that once hashed, the plaintext cannot be retreived from its corresponding hash value. Hashing is commonly used for storing and validating passwords. It is essential to ensure that a hash algorithm is collision free that is, two different strings will not generate the same hash value. Examples of hash algorithms include Message Digest 5 (MD5) and Secure Hashing Algorithm (SHA) 1 and 2. MD5 is insecure as it is vulnerable to collision attacks and hence, not in use today.
+* One-way encoding process wherein a hash algorithm is used to convert a message into a fixed-size message digest using a set of mathematical operations. 
+* Once hashed, the plaintext cannot be retreived from its corresponding hash value. 
+* Commonly used for storing and validating passwords. 
+* Hash algorithm should be collision free that is, two different strings will not generate the same hash value. 
+* Examples: Message Digest 5 (MD5) and Secure Hashing Algorithm (SHA) 1 and 2. 
+* MD5 is vulnerable to collision attacks and hence, not in use today.
 
 #### Salting
-Hashed passwords may be susceptible to rainbow table attacks. In this attack, an attacker generates the message dirests for commonly used passwords and then tries to find a match in a (stolen) file of hashed passwords. Salting aims to prevent rainbow table attacks on user credentials. This process adds a randomly generated string to the password prior to hashing. 
+* Adds a randomly generated string to the password prior to hashing. 
+* Salting aims to prevent rainbow table attacks on user credentials. 
+* In rainbow table attacks, an attacker generates the message digests for commonly used passwords and then tries to find a match in a (stolen) file of hashed passwords. 
 
 #### Digital signatures
-Digital signatures leverage combination of hashing and public key cryptography to ensure authentication, integrity and non-repuduation. Suppose Alice wants to send a digitally signed message to Bob. The communication would occur as follows:
-1. Alice obtains the message digest of the message that she wants to send to Bob.
-2. Alice encrypts the message digest with her private key to obtain the digital signature.
-3. Alice attaches this signature to the message and sends it to Bob. At this stage, Alice can encrypt the message with Bob's public key to ensure confidentiality or privacy.
-4. On receiving the message, Bob decrypts the message with his private key to obtain the original message and Alice's digital signature.
-5. Bob decrypts the digital signature using Alice's public key to obtain the message digest.
-6. Bob generates the message digest of the plaintext message.
-7. Bob compares the hash values obtained in steps 5 and 6. If they are a match, Bob knows that the message was not tampered with in transit.
-
-Digital signatures are commonly used by software vendors to authenticate their products available for download on the internet such as applets and software patches.
+* Leverage combination of hashing and public key cryptography to ensure authentication, integrity and non-repuduation. 
+* Suppose Alice wants to send a digitally signed message to Bob. The communication would occur as follows:
+    1. Alice obtains the message digest of the message that she wants to send to Bob.
+    2. Alice encrypts the message digest with her private key to obtain the digital signature.
+    3. Alice attaches this signature to the message and sends it to Bob. At this stage, Alice can encrypt the message with Bob's public key to ensure confidentiality or privacy.
+    4. On receiving the message, Bob decrypts the message with his private key to obtain the original message and Alice's digital signature.
+    5. Bob decrypts the digital signature using Alice's public key to obtain the message digest.
+    6. Bob generates the message digest of the plaintext message.
+    7. Bob compares the hash values obtained in steps 5 and 6. If they are a match, Bob knows that the message was not tampered with in transit.
+* Ccommonly used by software vendors to authenticate their products available for download on the internet.
 
 #### Key stretching
-Key stretching algorithms such as Password bases key derivation function v2 (PBKDF2) are used to generate robust keys from passwords by using multiple iterations of salting and hashing. 
+* Generate robust keys from passwords by using multiple iterations of salting and hashing.
+* Example: Password bases key derivation function v2 (PBKDF2).
 
 #### Blockchain
-Blockchain is a distributed and immutable _open public ledger_ that serves as a resilient solution to tracking of records in a way that they cannot be tampered with or destroyed. Copies of the ledger are distributed among multiple systems to ensure that in case a record is tampered with on one system, an inconsistency will help detect this corruption. With each legitimate transaction, all the copies are updated. The most popular and foremost application of Blockchain is in cryptocurrency, to keep track of Bitcoin transactions among all participants. Blockchain also has other use cases such as propertry ownership records and to track supply chains. 
+* Distributed and immutable _open public ledger_ that serves as a resilient solution to tracking of records in a way that they cannot be tampered with or destroyed. 
+* Copies of the ledger are distributed among multiple systems to ensure that in case a record is tampered with on one system, an inconsistency will help detect this corruption. 
+* With each legitimate transaction, all the copies are updated. 
+* Popular application: Cryptocurrency to keep track of Bitcoin transactions among all participants. 
+* Also has other use cases such as propertry ownership records and to track supply chains. 
 
 #### Digital certificates
-Digital certificate is enssentially an endorsed copy of a public key that is signed by a trusted certificate authority (CA) to ensure authenticity of a server, device, email address, developer, or user. Digital certificates follow the X.509 standard containing the following attributes:
-* Version of the X.509 standard
-* Serial number
-* Signature algorithm identifier that is used by the CA to digitally sign the certificate
-* Issuer name that is the name of the CA that verified the certificate
-* Validity period 
-* Subject's common name (CN) that describes the certificate owner
-* Subject alternative names (SANs) [optional] that highlight additional items (domain names, IP addresses) protected by the certificate
-* Wildcard [optional] denoted by an * in the certificate name denotes that the certificate is valid for only one level of subdomains as well.
-
-**Certificate authority (CA)** is a neutral organization responsible for signing digital certificates after they have verified the identity of the subject. Major CAs include IdenTrust, Amazon Web Services, GoDaddy, DigiCert Group, GlobalSign, Sectigo/Comodo, and Let's Encrypt. CAs protect their private keys using an offline root CA that safeguards the root certificate. This certificate is the _root of trust_ and is used to create a number of intermediary CAs that are kept online to verify and sign digital certificates. This process is known as certificate chaining. Some organizations create internal CAs to create _self-signed certificates_ that are trusted only within the organization.
-
-**Certification revocation lists (CRLs)** contain all the invalid certificates. This list is used to ensure validity of a certificate by checking if the cetificate is included in the list. If not found, then the certificate is valid and hence, trusted. However, this is a time-consuming process as the list is long and must be downloaded periodically.  
-
-**Online certificate status protocol (OCSP)** is a more optimal solution for checking certificate validity. OCSP servers operated by CAs are contacted by the browser to verify the status of a certificate. The server responds with good, revoked or unknown and this information is used by the browser to determine if the certificate is valid.
-
-**Certificate stapling** is another method of verifying the validity of a certificate. This approach is an extension to OSCP that reduces the load on OCSP servers. In this solution, instead of a browser contacting the OCSP server, the web server of the site contacts the OCSP server and attaches the signed and timestamped response to the certificate. When a browser requests to access the site, the certificate is sent along with the stapled OCSP response to check validity. Stapled certificates commonly have a validity of 24 hours after which the web server must contact the OCSP server again. This helps reduce the load on the OCSP server as it is not contacted for each and every request to access the site.
-
-<span style="color:blue">Third-party</span>
-
-**Certificate signing request (CSR)** is the second step in the certification process that occurs after the CA has verified the identity of the subject as part of the enrollment process. The subject provides the CA with their public key in the form of a CSR. The CA uses this to create a certificate following the X.509 standard. There are two types of certificates depending on the level of identity verfiication performed by the CA. Domain Validation (DV) certificates are the most common certificates that indicates that the subject has control of the domain name. Extended Verification (EV) certificates involve further assurance that the certificate owner is a legitimate business.
+* Endorsed copy of a public key that is signed by a trusted certificate authority (CA) to ensure authenticity of a server, device, email address, developer, or user. 
+    * Version of the X.509 standard
+    * Serial number
+    * Signature algorithm identifier that is used by the CA to digitally sign the certificate
+    * Issuer name that is the name of the CA that verified the certificate
+    * Validity period 
+    * Subject's common name (CN) that describes the certificate owner
+    * Subject alternative names (SANs) [optional] that highlight additional items (domain names, IP addresses) protected by the certificate
+    * Wildcard [optional] denoted by an * in the certificate name denotes that the certificate is valid for only one level of subdomains as well.
+* **Certificate authority (CA)** 
+    * Neutral organization responsible for signing digital certificates after they have verified the identity of the subject. 
+    * Major CAs include IdenTrust, Amazon Web Services, GoDaddy, DigiCert Group, GlobalSign, Sectigo/Comodo, and Let's Encrypt. 
+    * Protect their private keys using an offline root CA that safeguards the root certificate called the _root of trust_ used to create a number of *intermediary CAs*. 
+    * Intermediary CAs are kept online to verify and sign digital certificates in a process called *certificate chaining*. 
+    * Some organizations create internal CAs to create _self-signed certificates_, trusted only within the organization.
+* **Certification revocation lists (CRLs)** 
+    * Contain all the invalid certificates. 
+    * Ensure validity of a certificate by checking if the cetificate is included in the list. 
+    * Time-consuming process as the list is long and must be downloaded periodically.  
+* **Online certificate status protocol (OCSP)**
+    * More optimal solution for checking certificate validity. 
+    * Servers operated by CAs are contacted by the browser to verify the status of a certificate. 
+    * The server responds with good, revoked or unknown which is used by the browser to determine if the certificate is valid.
+* **Certificate stapling** 
+    * Another method of verifying the validity of a certificate. 
+    * Extension to OSCP that reduces the load on OCSP servers. 
+    * Instead of a browser contacting the OCSP server, the web server of the site contacts the OCSP server and attaches the signed and timestamped response to the certificate. When a browser requests to access the site, the certificate is sent along with the stapled OCSP response to check validity. 
+    * Stapled certificates commonly have a validity of 24 hours after which the web server must contact the OCSP server again.
+* <span style="color:blue">Third-party</span>
+* **Certificate signing request (CSR)** 
+    * Occurs after the CA has verified the identity of the subject as part of the enrollment process. 
+    * The subject provides the CA with their public key in the form of a CSR. 
+    * The CA uses this to create a certificate following the X.509 standard. 
+    * Ttwo types of certificates depending on the level of identity verification performed by the CA. 
+        * *Domain Validation (DV)* certificates are the most common certificates that indicates that the subject has control of the domain name. 
+        * *Extended Verification (EV)* certificates involve further assurance that the certificate owner is a legitimate business.
 
 ## Threats, Vulnerabilities, and Mitigations
-### Compare and contrast common threat actors and motivations
+### Common threat actors and motivations
 #### Threat actors 
-* Nation-state attackers are highly-skilled advanced persistent threat (APT) actors with significant resources hired and sponsored by the nation for political or economic motives such as spying and gaethering information against targets or rivals. 
-* Unskilled attackers also known as script kiddies are amateurs who want to have some fun and/or prove their skill. They are typically school going students who leverage publicly available tools or scripts and have limited skills and low access to resources.
-* Hacktivists believe they are motivated by the greater good and have strong philosophical or political beliefs. They level of capabiity varies widely as well as the access to resources. Hacktivits might perform attacks like defacing a website or targetting a network due to a political issue. Anonymous is a widely known hacktivist group that has targeted various large sized companies like PayPal and Visa and Mastercard as well as government agencies.
-* Insider threats are internal attackers who are or used to be employed within the organization that they target. Sophistication of attacks waged by insider threats may vary but they certainly have an upper hand given their know-how of the organization. Internal attacks may also have limited financial resources and time. Insider threats are very challenging to detect as being part of the organization they are not easily suspected. Motives may include revenge or causing diruption by disclosing confidential information or targeting the day to day operations. Behavioral assessments are an effective tool for identifying insider threats.
-* Organized crime is typically motivated by financial gain. It includes cyber-dependent crime (ransomware, data compromise, DDoS, etc), child sexual abuse, online fraud, dark web activity, and cross-cutting crime factors. These attackers have very high resources including time and money and their skills range from moderate to high.
-* Shadow IT involves the purchase and use of devices that do not conform to the organization's policy and requirements. This may intentionally or unintentinally place sensitive information in the hands of the vendor. For instance, following the release of Dropbox, many employees began uploading sensitive files to sync their personal and work devices.  
+* **Nation-state attackers** 
+    * Highly-skilled advanced persistent threat (APT) actors with significant resources
+    * Hired and sponsored by the nation for political or economic motives such as spying on targets or rivals. 
+* **Unskilled attackers** 
+    * Also known as script kiddies.
+    * Amateurs who want to have some fun and/or prove their skill. 
+    * Leverage publicly available tools or scripts and have limited skills and low access to resources.
+* **Hacktivists** 
+    * Believe they are motivated by the greater good and have strong philosophical or political beliefs. 
+    * Level of capabiity varies widely as well as the access to resources. 
+    * Might perform attacks like defacing a website or targetting a network due to a political issue. 
+    * Anonymous is a hacktivist group that has targeted various large sized companies like PayPal and Visa and Mastercard as well as government agencies.
+* **Insider threats** 
+    * Are or used to be employed within the target organization. 
+    * Sophistication of attacks may vary but they have an upper hand given their know-how of the organization. 
+    * Limited financial resources and time. 
+    * Challenging to detect. 
+    * Motives may include revenge or causing diruption by disclosing confidential information or targeting the day to day operations. 
+    * Behavioral assessments are an effective tool for identifying insider threats.
+* **Organized crime** 
+    * Typically motivated by financial gain. 
+    * Includes cyber-dependent crime (ransomware, data compromise, DDoS, etc), child sexual abuse, online fraud, dark web activity, and cross-cutting crime factors. 
+    * Very high resources including time and money and their skills range from moderate to high.
+* **Shadow IT** 
+    * Purchase and use of devices that do not conform to the organization's policy and requirements. 
+    * May intentionally or unintentinally place sensitive information in the hands of the vendor. 
+    * For instance, following the release of Dropbox, many employees began uploading sensitive files to sync their personal and work devices.  
 
 |Threat actor | Location | Resources | Sophistication | Motivation |
 |-------------|-------------|-------------|-------------|-------------|
@@ -223,45 +281,54 @@ Digital certificate is enssentially an endorsed copy of a public key that is sig
 | Shadow IT | Internal | High | Low | Philosophical beliefs, Revenge |
 
 #### Attributes of actors
-* Internal/external: Internal actors are already part of the organization and thus have an advantage in achieveing their goals. External actors, on the other hand, operate from outside the organization and typically have no prior knowledge about the target.
-* Resources/funding: Hackers vary based on financial resources and time. While actors like nation-state and organized crime are provided with a lot of funding, unskilled attackers or insider threats may have limited time and finances to achieve their goal. 
-* Sophistication/capability: Hackers also greatly vary based on their knowledge and skill. Nation state and organized crime are amonst the very highly skilled attackers, hacktivists range from moderately to highly skilled and script kiddies are newbies who want to have some fun during their free time.
-* Intent/motivation: There are a diverse set of reasons that encourage hackers to target an entity or an individual. Some hackers do it for fun while some have other motives such as data exfiltration, espionage or revenge. 
+* **Internal/external**: Internal actors are already part of the organization and thus have an advantage in achieveing their goals. External actors, on the other hand, operate from outside the organization and typically have no prior knowledge about the target.
+* **Resources/funding**: Hackers vary based on financial resources and time. While actors like nation-state and organized crime are provided with a lot of funding, unskilled attackers or insider threats may have limited time and finances to achieve their goal. 
+* **Sophistication/capability**: Hackers also greatly vary based on their knowledge and skill. Nation state and organized crime are amonst the very highly skilled attackers, hacktivists range from moderately to highly skilled and script kiddies are newbies who want to have some fun during their free time.
+* **Intent/motivation**: There are a diverse set of reasons that encourage hackers to target an entity or an individual. Some hackers do it for fun while some have other motives such as data exfiltration, espionage or revenge. 
 
 #### Motivations
-* Data exfiltration involves stealing sensitive data or propretiray information such as intellectual property or customer data from computer systems or mobile phones. 
-* Espionage refers to spying on the target to gather sensitive information typically in nation-state or corporate rivalry.
-* Service disruption seeks to impact availability as it takes down or interrupts critical systems or networks such as those of healthcare, national security or banking.
-* Blackmail involves making a demand in exchange of protection of sensitive data. This is typically related to ransonware attacks wherein the attacker demands money to release all the encrypted files on the user's device. The attacker may also threaten to published the stolen information on the internet.
-* Financial gain attacks such as organized crime are motivated by the desire to make money from stolen data. 
-* Philosophical/political beliefs encourage attackers like hacktivists to use cybercrime to promote their ideologies.
-* Ethical attacks performed by white-hat hackers such as security researchers are aimed to identify vulnerabilites and warn organizations.
-* Revenge attacks are conducted to defame an entity or embarrase them in public. These may be waged by an insider threat who is not happy with their job or their workplace.
-* Disruption/chaos attacks are motivated by a desire to cause havoc and intefere with normal operations.
-* War may be motivation for nation-state attackers who seek to disrupt or gain more information on military operations especially during an ongoing conflict. 
+* **Data exfiltration** involves stealing sensitive data or propretiray information such as intellectual property or customer data from computer systems or mobile phones. 
+* **Espionage** refers to spying on the target to gather sensitive information typically in nation-state or corporate rivalry.
+* **Service disruption** seeks to impact availability as it takes down or interrupts critical systems or networks such as those of healthcare, national security or banking.
+* **Blackmail** involves making a demand in exchange of protection of sensitive data. This is typically related to ransonware attacks wherein the attacker demands money to release all the encrypted files on the user's device. The attacker may also threaten to published the stolen information on the internet.
+* **Financial gain** attacks such as organized crime are motivated by the desire to make money from stolen data. 
+* **Philosophical/political beliefs** encourage attackers like hacktivists to use cybercrime to promote their ideologies.
+* **Ethical** attacks performed by white-hat hackers such as security researchers are aimed to identify vulnerabilites and warn organizations.
+* **Revenge** attacks are conducted to defame an entity or embarrase them in public. These may be waged by an insider threat who is not happy with their job or their workplace.
+* **Disruption/chaos** attacks are motivated by a desire to cause havoc and intefere with normal operations.
+* **War** may be motivation for nation-state attackers who seek to disrupt or gain more information on military operations especially during an ongoing conflict. 
 
-### Explain common threat vectors and attack surfaces
+### Common threat vectors and attack surfaces
 #### Message-based
-_Email_ is the most commonly used medium to wage social engineering attacks. An attacker may send a malicious link and compel the user to click on it by creating a sense of fear or urgency. Once clicked, the attacker may get access to the device and/or the network or may be able to have a worm or virus injected into the target. Similarly, _Short Message Service (SMS)_ and _Instant Messaging (IM)_ can also be used as a threat vector.
+* Attacker may send a malicious link and compel the user to click on it by creating a sense of fear or urgency. Once clicked, the attacker may get access to the device and/or the network or may be able to have a worm or virus injected into the target. 
+* Media: _Email_ (most common), _Short Message Service (SMS)_ and _Instant Messaging (IM)_.
 
 #### Image-based
-Images can also be used to wage attacks by linking them to illicit sites. For instance, the image on a website can be linked to a fake login page for another site or accidentally clicking on it might trigger a malicious script to be run in the background. 
+* Linking images to illicit sites. 
+* For instance, the image on a website can be linked to a fake login page for another site or clicking on it might trigger a malicious script to be run in the background. 
 
 #### File-based
-File-based attacks involves the delivery of malicious scripts via remote logins or backdoors. An attacker having access to a system within an organization can load a file into the system and trigger it to run in the background. The attacker can also embed malicious code into another file on the system to make it more difficult to detect. For instance, an attacker can inject malicious code into a website's source code that is run every time a user visits the site.
+* Delivery of malicious scripts via remote logins or backdoors. 
+* Attacker with unauthorized access to load a file into the system and trigger it to run in the background. 
+* Malicious code can also be embedded into another file on the system to make it more difficult to detect.
 
 #### Voice call
-Social engineering attacks conducted using voice call are called vishing. These are discussed further in the document.
+Social engineering attacks conducted over a voice call are called vishing. These are discussed further in the document.
 
 #### Removable device
-Removal devices such as USB drives are commonly used as a medium to transport malicious scripts into target devices. An attacker might intentionally leave USB sticks lying around in parking lot, on a staircase, on a table in an airport or other public areas. When found, the USB ignites curiosity and the individual plugs in the USB into their device. The moment this happens, the USB runs a malicious script such as installing and starting spyware for example thereby infecting the device.
+* Removal devices such as USB drives are commonly used as a medium to transport malicious scripts into target devices. 
+* An attacker might intentionally leave USB sticks lying around in parking lot, on a staircase, on a table in an airport or other public areas. 
+* Out of curiosity, the finder plugs in the USB into their device and the USB runs a malicious script such as installing and starting spyware.
 
 #### Vulnerable software
-* Client-based vulnerable software needs to involve human intervention to be downloaded locally on the target device.
+* Client-based vulnerable software requires human intervention to be downloaded locally on the target device.
 * Agentless software, on the other hand, does not require any installation and runs via the browser or cloud. 
 
 #### Unsupported systems and applications
-Software vendors eventually discontinue support for their products including applications and/or devices. This includes any software or security updates as well as customer service for the product. As a result, an organization using these products should also stop using the outdated products and upgrade or find a replacement if needed, to ensure that the security of the product is always kept in check and they have a point of contact in case an issue arises with the product. The use of unsupported systems and applications poses as a significant security risk as security flaws are no longer being investigated and/or patched and as we all know it, no software or system is 100% secure. However, in some cases, organizations may need to continue using the product for business continuity until they find a suitable replacement. This results in the need for implementing a compensating control such as isolating the system or application to ensure it cannot access the rest of the internal network and so, if compromised, the impact is contained.
+* Software vendors eventually discontinue support (software or security updates and customer support) for their products including applications and/or devices.  
+* Organizations using these products should find a replacement. 
+* Uuse of unsupported systems and applications poses as a significant security risk as security flaws are no longer being investigated and/or patched. 
+* In some cases, organizations may need to continue using the product for business continuity. This results in the need for implementing a compensating control such as isolating the system or application to ensure that if compromised, the impact is contained.
 
 #### Unsecure networks
 * Wireless networks ae inherently vulnerable to a wide range of attacks given the mode of data transmission. An attacker can compromise these networks remotely by sitting in the organization's parking lot. 
@@ -269,10 +336,11 @@ Software vendors eventually discontinue support for their products including app
 * Bluetooth-enabled devices can be used to ensure that unauthorized individuals are not permitted into the network. 
 
 #### Open service ports
-It is essential to ensure that only necessary and secure ports are open at all times. Insecure ports may be able to provide attackers with the opportunity to remotely access the systems and/or load malicious files into them. Port is a 16-bit number ranging from 0 to 65535 that is used for communication at the Transport layer. The port number used for the communication depends on the associated application or protocol.
-* Well-known ports: 0-1023
-* Registered ports: 1024-49151 
-* Dynamic ports: 49152-65535
+* Ensure that only necessary and secure ports are open at all times. 
+* Insecure ports may provide attackers with the opportunity to remotely access the systems and/or load malicious files into them. Port is a 16-bit number ranging from 0 to 65535 that is used for communication at the Transport layer. The port number used for the communication depends on the associated application or protocol.
+* **Well-known ports**: 0-1023
+* **Registered ports**: 1024-49151 
+* **Dynamic ports**: 49152-65535
 
 | Protocol | Port Number | TCP/UDP | Description |
 | ------ | ------ | ------ | ------ |
@@ -299,58 +367,59 @@ It is essential to ensure that only necessary and secure ports are open at all t
 Many services or products are manufactured with default credentials that should be changed during set up. If not modified, these credentials can be of great risk to the security as they are easily available online and attackers simply need to check for negligence to compromise the device or service.
 
 #### Supply chain
-Supply chain is the network of individuals and entities involved in the company operations from the creation to the selling of a product. It begins with the sourcing of raw materials and includes the manufacturing, transportation, third-party vendors, suppliers and resellers that participate in delivering the product to the customer.
-
-* Managed service providers (MSPs) are organizations that provide information technology as a service. They either handle all the IT related needs of their customers or provide specific services such as network design and implementation. While MSPs are not necessarily cloud service providers, a service organization can be both an MSP and CSP. MSPs that also provide sercurity services such as vulnerability management, incident response and firewall management are called Managed security service providers (MSSPs). If an attacker gains access to the MSP, they essentially have the ability to compromise the entire technological infrastructure of the consumer organization.
-* Vendors are organizations that provide hardware or software products to another organization for certain purpose. For instance, a bank might adopt a software for banking created by a company X for their day to day operations including creating and managing account and performing money transfers. 
-* Suppliers are entities that provide products to the third-party vendors. 
-
-Vendors and suppliers are an indirect mechanism of compromising an organization's security. For instance, a flaw in a hardware device that is acquired from another entity can lead to compromise of the organization's operations. It is thus essential to ensure consideration and minimization of risks associated with third-party vendors and suppliers by assessing interdependencies, conducting periodic risk assessments of the vendors, setting clear terms and conditions and signing appropriate agreements. 
+* Network of individuals and entities involved in the company operations from the creation to the selling of a product. 
+* Begins with the sourcing of raw materials and includes the manufacturing, transportation, third-party vendors, suppliers and resellers that participate in delivering the product to the customer.
+* **Managed service providers (MSPs)** are organizations that provide information technology as a service. They either handle all the IT related needs of their customers or provide specific services such as network design and implementation. While MSPs are not necessarily cloud service providers, a service organization can be both an MSP and CSP. MSPs that also provide sercurity services such as vulnerability management, incident response and firewall management are called Managed security service providers (MSSPs). If an attacker gains access to the MSP, they essentially have the ability to compromise the entire technological infrastructure of the consumer organization.
+* **Vendors** are organizations that provide hardware or software products to another organization for certain purpose. For instance, a bank might adopt a software for banking created by a company X for their day to day operations including creating and managing account and performing money transfers. 
+* **Suppliers** are entities that provide products to the third-party vendors. 
+* Vendors and suppliers are an indirect mechanism of compromising an organization's security. For instance, a flaw in a hardware device that is acquired from another entity can lead to compromise of the organization's operations. It is thus essential to ensure consideration and minimization of risks associated with third-party vendors and suppliers by assessing interdependencies, conducting periodic risk assessments of the vendors, setting clear terms and conditions and signing appropriate agreements. 
 
 #### Human vectors/social engineering
-Social engineering attacks manipulate people into making a mistake. An attacker typically creates scenarios wherein targets are compeled to reveal sensitive information or fulfil the demands of the attacker. Social engineering techniques involve taking advantage of human's weaknesses by utilizing one or more of the following principles: authority, intimidation, trust, urgency, familiarity, consensus- or social proof-based and scarcity. 
+Manipulate people into making a mistake. 
+An attacker typically creates scenarios wherein targets are compeled to reveal sensitive information or fulfil the demands of the attacker. 
+Social engineering techniques involve taking advantage of human's weaknesses by utilizing one or more of the following principles:
 
-* Authority is when the attacker impersonates someone at a higher level such as the target's manager or the CEO of a company or a government official. This creates a sense of fear in the target and the obligation to obey orders. 
-* Intimidation is used to scare or bully the target into performing an action. For instance, an attacker may create a scenario wherein the target's bank account has been locked and ask for their credentials claiming they can fix the problem. 
-* Trust and familiarity are similar concepts wherein an attacker impersonates someone closely related to the target individual. For instance, an attacker might pose as a close friend or family member to obtain sensitive information from the target. 
-* Consensus-bases social engineering exploits a human's tendency to "follow the herd" wherein attackers try to convince the target that the desired action (such as clicking a malicious link or signing up for a fake service) has already been performed by many of their colleagues or other people and they have gained something out of it. 
-* Urgency is used by many attackers by creating a sense of care or fear of losing something or someone if they don't act fast. For instance, a scammer might pose as someone who really needs help as their family friend is in a serious medical situation and thus try to extract funds from the target. 
+* **Authority** is when the attacker impersonates someone at a higher level such as the target's manager or the CEO of a company or a government official. This creates a sense of fear in the target and the obligation to obey orders. 
+* **Intimidation** is used to scare or bully the target into performing an action. For instance, an attacker may create a scenario wherein the target's bank account has been locked and ask for their credentials claiming they can fix the problem. 
+* **Trust and familiarity** are similar concepts wherein an attacker impersonates someone closely related to the target individual. For instance, an attacker might pose as a close friend or family member to obtain sensitive information from the target. 
+* **Consensus-based** social engineering exploits a human's tendency to "follow the herd" wherein attackers try to convince the target that the desired action (such as clicking a malicious link or signing up for a fake service) has already been performed by many of their colleagues or other people and they have gained something out of it.
+* **Urgency** is used by many attackers by creating a sense of care or fear of losing something or someone if they don't act fast. For instance, a scammer might pose as someone who really needs help as their family friend is in a serious medical situation and thus try to extract funds from the target. 
 
-One of the most common defenses against social engineering attacks is awareness. It is utterly crucial for everyone to be known to the possibility of being scammed and to question any situation that seems suspicious or fake. Such attempts can also be caught by technological solutions that leverage pattern matching, machine or deep learning or filtering based on keywords. 
+One of the most common defenses against social engineering attacks is **awareness**. It is utterly crucial for everyone to be known to the possibility of being scammed and to question any situation that seems suspicious or fake. Such attempts can also be caught by technological solutions that leverage pattern matching, machine or deep learning or filtering based on keywords. 
 
-Phishing attacks manipulate the target into revealing sensitive typically over email. In these attacks, the attacks uses a spoofed or compromised email address to contact the target. The email may include a malicious link, file attachment and/or simply just compeling text that forces the target to make a mistake. Phishing can also be conducted using other media such as SMS (smishing) or voice call (vishing). Phishing also differs based on the target of the attack. Spear phishing is when the attacker focuses on specific employees or groups in the organization. Whale phishing or whaling occurs when the target is someone of a higher authority in an organization such as an executive or governing official. 
+* **Phishing** attacks manipulate the target into revealing sensitive typically over email. In these attacks, the attacks uses a spoofed or compromised email address to contact the target. The email may include a malicious link, file attachment and/or simply just compeling text that forces the target to make a mistake. Phishing can also be conducted using other media such as SMS (smishing) or voice call (vishing). Phishing also differs based on the target of the attack. Spear phishing is when the attacker focuses on specific employees or groups in the organization. Whale phishing or whaling occurs when the target is someone of a higher authority in an organization such as an executive or governing official. 
 
-Vishing is performing a phishing attack using voice call. This typically involves creating a sense of urgency or intimidation while posing as a close friend or relative of the target. It may involve heathcare situation or bank related scenarios that attempt to convince the target to send funds or provide their bank details. Some attackers may also use AI tools to generate audio files that mimic the voice of someone known to the target.
+* **Vishing** is performing a phishing attack using voice call. This typically involves creating a sense of urgency or intimidation while posing as a close friend or relative of the target. It may involve heathcare situation or bank related scenarios that attempt to convince the target to send funds or provide their bank details. Some attackers may also use AI tools to generate audio files that mimic the voice of someone known to the target.
 
-Smishing is phishing via SMS. It typically involves clicking a malicious link by creating a pretext (fake scenario) such as bank account lockout or too many funds being seen in the bank and a link to a fake login page. 
+* **Smishing** is phishing via SMS. It typically involves clicking a malicious link by creating a pretext (fake scenario) such as bank account lockout or too many funds being seen in the bank and a link to a fake login page. 
 
-Misinformation/disinformation are typically a result of influence campaigns that aim to turn people's opinions and spread false information. Misinformation refers to incorrect information that is implied from facts whereas disinformation is intentionally false information that is publicised with illicit objectives. Various methods can be used to conduct these campaigns with social media being the most common. It is necessary for organizations to monitor and deal with cases of misinformation or disinformation with high priority. 
+* **Misinformation/disinformation** are typically a result of influence campaigns that aim to turn people's opinions and spread false information. Misinformation refers to incorrect information that is implied from facts whereas disinformation is intentionally false information that is publicised with illicit objectives. Various methods can be used to conduct these campaigns with social media being the most common. It is necessary for organizations to monitor and deal with cases of misinformation or disinformation with high priority. 
 
-Impersonation is pretending to be someone else. This is a commonly used tool to gain trust and create a sense of urgency to convince the target to reveal sensitive information such as username and password or SIN number. Identity theft or identity fraud involves using someone else's idenity to perform actions. For instance, an attacker using their target's badge to gain access into a organization's facility. 
+* **Impersonation** is pretending to be someone else. This is a commonly used tool to gain trust and create a sense of urgency to convince the target to reveal sensitive information such as username and password or SIN number. Identity theft or identity fraud involves using someone else's idenity to perform actions. For instance, an attacker using their target's badge to gain access into a organization's facility. 
 
-Business email compromise occurs when an attacker typically uses a compromised email address to make a demand by impersonating someone else in the organization. For instance, an attacker might pose as the Dean of the university who is stuck in an important meeting and contact other professors to urgently send him a gift card.
+* **Business email compromise (BEC)** occurs when an attacker typically uses a compromised email address to make a demand by impersonating someone else in the organization. For instance, an attacker might pose as the Dean of the university who is stuck in an important meeting and contact other professors to urgently send him a gift card.
 
-Pretexting is creating a fake scenario to convince the target to make a mistake. This concept is usually used along with impersonation to instill trust in the target and a sense of urgency or intimidation. A target should ask questions to verify the attacker's identity before considering revealing any confidential data. 
+* **Pretexting** is creating a fake scenario to convince the target to make a mistake. This concept is usually used along with impersonation to instill trust in the target and a sense of urgency or intimidation. A target should ask questions to verify the attacker's identity before considering revealing any confidential data. 
 
-Watering hole attacks involve compromising a website that is visited by a group of people. For instance, embedding malicious code into an internal website that is frequently accessed by the employees of an organization.
+* **Watering hole attacks** involve compromising a website that is visited by a group of people. For instance, embedding malicious code into an internal website that is frequently accessed by the employees of an organization.
 
-Brand impersonation typically occurs through emails wherein the attacker uses various components like themes, logos or signatures to make the email look legitimate and convince the attacker to click on the provided link or download the attachment. Attackers usually use this technique to extract credentials by compeling targets to click on links that would take them to a fake bank login page. 
+* **Brand impersonation** typically occurs through emails wherein the attacker uses various components like themes, logos or signatures to make the email look legitimate and convince the attacker to click on the provided link or download the attachment. Attackers usually use this technique to extract credentials by compeling targets to click on links that would take them to a fake bank login page. 
 
-Typosquatting exploits human tendency to make typos. When a user is searching for a website by directly entering the site name in the url box, they may make a tiny mistake that goes unnoticed. Attackers link such incorrect urls to fake sites where the user unknowningly enters their credentials and/or provides other sensitive information. Such attacks can be avoided by organizations by publishing even those domains that include minor errors. For example, amazon.com has also purchased the domain amaz0n.com that redirects the user to the legitimate amazon site. 
+* **Typosquatting** exploits human tendency to make typos. When a user is searching for a website by directly entering the site name in the url box, they may make a tiny mistake that goes unnoticed. Attackers link such incorrect urls to fake sites where the user unknowningly enters their credentials and/or provides other sensitive information. Such attacks can be avoided by organizations by publishing even those domains that include minor errors. For example, amazon.com has also purchased the domain amaz0n.com that redirects the user to the legitimate amazon site. 
 
-Pharming is similar to typosquatting but relies on changes in the host files of DNS servers instead of URLs. Host files are those that are checked to resolve a domain name and direct a user to the site. In this case, even if the user enters the domain name correctly, they might be directed to a malicious site as modified in the DNS server. 
+* **Pharming** is similar to typosquatting but relies on changes in the host files of DNS servers instead of URLs. Host files are those that are checked to resolve a domain name and direct a user to the site. In this case, even if the user enters the domain name correctly, they might be directed to a malicious site as modified in the DNS server. 
 
-### Explain various types of vulnerabilities
+### Types of vulnerabilities
 #### Application
-* Memory injection occurs when an attackers corrupts the system memory by inserting malicious information.
-* Buffer overflow is a memory injection attack wherein an attacker overwrites system memory by making a program use more memory than allocated to it. This may be used to get access to the data stored in another memory location or embed malicious instructed that will be executed by another program.  
-* Race conditions occur when the security of a code segment depends on the order of execution of related intructions. These attacks are caused when multiple operations occur in a location at a time. 
-    * Time-of-check (TOC) is when the system verified the access to be granted to the subject.
-    * Time-of-use (TOU) refers to when the authorization is provided to the user based on assigned permissions.  
-    * Race window is the period of time between TOC and TOU
-    * Target of evaluation (TOE) is the subject that is requesting for access such as user or device.
-    * Time-of-check-to-time-of-use (TOCTOU) is a race condition attack wherein the permissions are checked significantly before the moment the subject uses the resource. For instance, if an operating system caches the user permissions to check them throughout the session, any changes such as revokation of access will not be applied until the next login and the user will have to do to maintain access is stay logged in. Another example of a race condition is limit overrrun wherein an attacker will try to use a voucher or coupon more than once by applying it multiple times within the period between the verification of the voucher and the moment it is marked as "used".
-* Malicious update may be an attacker's attempt to convince a user or system to install malicious code by mistaking it to be a leigitmate patch. Code signing that is the process of digitally signing code allows developers to confirm the authenticity of the code. As a result, devices are configured to install only trusted patches and updates that were not created or modified with ilicit intents. The updates that are not trusted by the system are rejected. 
+* **Memory injection** occurs when an attackers corrupts the system memory by inserting malicious information.
+* **Buffer overflow** is a memory injection attack wherein an attacker overwrites system memory by making a program use more memory than allocated to it. This may be used to get access to the data stored in another memory location or embed malicious instructed that will be executed by another program.  
+* **Race conditions** occur when the security of a code segment depends on the order of execution of related intructions. These attacks are caused when multiple operations occur in a location at a time. 
+    * *Time-of-check (TOC)* is when the system verified the access to be granted to the subject.
+    * *Time-of-use (TOU)* refers to when the authorization is provided to the user based on assigned permissions.
+    * *Race window* is the period of time between TOC and TOU
+    * *Target of evaluation (TOE)* is the subject that is requesting for access such as user or device.
+    * *Time-of-check-to-time-of-use (TOCTOU)* is a race condition attack wherein the permissions are checked significantly before the moment the subject uses the resource. For instance, if an operating system caches the user permissions to check them throughout the session, any changes such as revokation of access will not be applied until the next login and the user will have to do to maintain access is stay logged in. Another example of a race condition is limit overrrun wherein an attacker will try to use a voucher or coupon more than once by applying it multiple times within the period between the verification of the voucher and the moment it is marked as "used".
+* **Malicious update** may be an attacker's attempt to convince a user or system to install malicious code by mistaking it to be a leigitmate patch. Code signing that is the process of digitally signing code allows developers to confirm the authenticity of the code. As a result, devices are configured to install only trusted patches and updates that were not created or modified with ilicit intents. The updates that are not trusted by the system are rejected. 
 
 #### Operating system (OS)-based
 
@@ -358,40 +427,36 @@ Pharming is similar to typosquatting but relies on changes in the host files of 
 Code injection attacks typically exploit the absence of input validation, allowing an attacker to run code in the web servers from the browser via the component of a website such as a form field. Such attacks succeed due to absence of input validation and direct concatenation of the input within the code base that causes the server to run it as part of the search instruction. 
 
 ##### Structured Query Language Injection (SQLi)
-Structured Query Language Injection (SQLi) occurs when an attacker injects malicious SQL code into an input field to manipulate a program into executing unintended database queries. This can lead to unauthorized access to sensitive data, such as user credentials or personal records.  
-
-For example, consider a student portal where users enter their student ID to retrieve their report card. If the website is vulnerable to SQLi, a malicious user could enter an SQL statement that alters the queryís logic, such as appending a condition that is always true. This could force the application to return all student records instead of just the intended one.  
-
-SQLi attacks can take different forms, including _classic SQLi_ and _blind SQLi_. In a blind SQLi attack, the application executes the malicious SQL query, but the results are not directly visible to the attacker due to the page's formatting or security measures. There are two main types of blind SQLi attacks: 
-
-* Content-based Blind SQLi: The attacker modifies the query to return no records and observes the websiteís response. If the absence of results confirms an expected change in behavior, the attacker determines that the application is vulnerable.  
-* Timing-based Blind SQLi: The attacker injects SQL code that introduces a delay in the database response. If the application takes noticeably longer to display results, it indicates that the injected SQL statement was executed, confirming the vulnerability.  
-
-To mitigate SQLi attacks, developers should implement prepared statements, input validation, and proper database access controls to prevent malicious queries from being executed.
+* Attacker injects malicious SQL code into an input field to manipulate a program into executing unintended database queries. 
+* Unauthorized access to sensitive data, such as user credentials or personal records.  
+* **Classic SQLi**: application executes SQL query and expected results are dislayed on the screen.
+* **Blind SQLi**: application executes the malicious SQL query, but the results are not directly visible to the attacker due to the page's formatting or security measures.
+    * *Content-based Blind SQLi*: The attacker modifies the query to return no records and if the site behaves as expected then it is vulnerable to SQLi.  
+    * *Timing-based Blind SQLi*: The attacker injects SQL code that introduces a delay in the database response. If the application takes noticeably longer to display results, the site is vulnerable.  
+* Mitigation techniques include prepared statements, input validation, and proper database access controls.
 
 ##### Cross-site scripting (XSS)
-
-Cross-site scripting is the injection of HTML code using a form field. There are two types of XSS attacks:
-* Reflected XSS: The attacker can enter data into an input field along with a sophisciated script that is executed on the browser after clicking Submit. In this attack, the malicious script is executed only once after the user clicks submit.
-* Stored/Persistent XSS: In this attack, the malicious script is stored in the server to be executed even when the attacker is not waging the attack. For instance, say a social media web application allows users to use HTML code to create posts. In the absence of secure input validation, an attacker can include a script in the post that is executed on all the browsers where it is viewed. 
+* Cross-site scripting is the injection of HTML code using a form field. 
+* **Reflected XSS**: attacker can enter data into an input field along with a sophisciated script that is executed once in the browser after clicking Submit. 
+* **Stored/Persistent XSS**: malicious script is stored in the server to be executed even when the attacker is not waging the attack. For instance, say a social media web application allows users to use HTML code to create posts. In the absence of secure input validation, an attacker can include a script in the post that is executed in all the browsers where it is viewed. 
 
 #### Hardware
-* Firmware is embedded software code that facilitates operation of hardware devices, allowing them to smoothly communicate with other devices and software. Firmware attacks can occur through any path that provides access to the firmware such as using executable updates or via the network. Firware validation is the key to mitigating firmware attacks including various methods such as secure boot, measured boot and trusted boot. Secure boot verifies the components of the boot process to ensure all of them are trusted by the original equipment manufacturer. Measured boot on the other hand, records the measurement of each component and stores it into the trusted platform module (TPM) for remote validation. Windows uses the trusted boot process that ensures integrity of the components involved in the boot process.
-* End-of-life of a product occurs when the equipment or device is no longer sold but vendors still provide temporary support for the units in use until they are replaced by up-to-date products. After a certain period of time, the products reach end-of-support when the vendor stops providing support. 
-* Legacy hardware, software or devices are those that are no longer supported and should ideally be replaced within organizations.
+* **Firmware** is embedded software code that facilitates operation of hardware devices, allowing them to smoothly communicate with other devices and software. Firmware attacks can occur through any path that provides access to the firmware such as using executable updates or via the network. Firware validation is the key to mitigating firmware attacks including various methods such as secure boot, measured boot and trusted boot. Secure boot verifies the components of the boot process to ensure all of them are trusted by the original equipment manufacturer. Measured boot on the other hand, records the measurement of each component and stores it into the trusted platform module (TPM) for remote validation. Windows uses the trusted boot process that ensures integrity of the components involved in the boot process.
+* **End-of-life** of a product occurs when the equipment or device is no longer sold but vendors still provide temporary support for the units in use until they are replaced by up-to-date products. After a certain period of time, the products reach end-of-support when the vendor stops providing support. 
+* **Legacy hardware, software or devices** are those that are no longer supported and should ideally be replaced within organizations.
 
 #### Virtualization
-* Virtual machine (VM) escape attack occurs when an attack successfully forces the operating system within a virtual machine to start communicating directly with the hypervisor thereby allowing the attacker to access resources allocated to other VMs on the host. This usually occurs in infrastructure as a service environments.
-* Resource reuse occurs when attackers reassign a resource such as memory location reserved to be used by one customer to be used by another customer instead. 
+* **Virtual machine (VM) escape attack** occurs when an attack successfully forces the operating system within a virtual machine to start communicating directly with the hypervisor thereby allowing the attacker to access resources allocated to other VMs on the host. This usually occurs in infrastructure as a service environments.
+* **Resource reuse** occurs when attackers reassign a resource such as memory location reserved to be used by one customer to be used by another customer instead. 
 
 #### Cloud-specific
 Cloud applications heavily rely on the use of Application programming interfaces (APIs) to facilitate communication and interoperability. In addition to analysing code for potential vulnerabilities or insecure coding practices, web application firewalls are configured to ensure security of APIs through inspection mechanisms. Secure web gateways are also used as an additional layer of security to review web requests and block potentially malicious attempts.
 
 #### Supply chain
-Provider can be an individual, business or company that outsource products such as hardware devices or software applicatiosn or services like consulting, legal, marketing, or real estate. 
-* Service provider: Attacker may infiltrate a service providers' with a malicious intent againsts the organization. For instance, attackers may pose as a set of advocates hired to fight a lawsuit filed against the company and intentionally lose the case causing high rate of loss to the organization.
-* Hardware provider: An attacker may tamper with a hadrware device being outsourced to other companies. They may insert backdoors that give them control of the device the moment the customer configures the hardware. 
-* Software provider: An attacker may target the software being provisioned to organizations by external companies, inserting malicious code before it is released or manipulating it into downloading malicious scripts through fake patches or updates.
+* Provider can be an individual, business or company that outsource products such as hardware devices or software applicatiosn or services like consulting, legal, marketing, or real estate. 
+* **Service provider**: Attacker may infiltrate a service providers' with a malicious intent againsts the organization. For instance, attackers may pose as a set of advocates hired to fight a lawsuit filed against the company and intentionally lose the case causing high rate of loss to the organization.
+* **Hardware provider**: An attacker may tamper with a hadrware device being outsourced to other companies. They may insert backdoors that give them control of the device the moment the customer configures the hardware. 
+* **Software provider**: An attacker may target the software being provisioned to organizations by external companies, inserting malicious code before it is released or manipulating it into downloading malicious scripts through fake patches or updates.
 
 #### Cryptographic
 Cryptographic vulnerabilities refer to the weaknesses in the design and/or implementation of cryptographic algorithms or protocols. These may include low key sizes, use of outdated cryptographic protocols and insecure storage and/or communication of cryptographic keys.
@@ -400,46 +465,49 @@ Cryptographic vulnerabilities refer to the weaknesses in the design and/or imple
 A misconfiguration vulnerbility occurs when there is a security issue in the device that allows the attacker to gain access to the device and control it. This may occur intentionally or unintentionally that is due to huamn error. For instance, an employee might have forgotten to update a system with a security patch.
 
 #### Mobile device
-* Side loading involves the installation of applications or transferring of files into a mobile device that are not from the official source.
-* Jailbreaking occurs when an attacker conducts privilege escalation to gain adminitrator access and perform tasks such as installing applications that would otherwise be untrusted, changing settings or options or installing custom elements of the operating system.
+* **Side loading** involves the installation of applications or transferring of files into a mobile device that are not from the official source.
+* **Jailbreaking** occurs when an attacker conducts privilege escalation to gain adminitrator access and perform tasks such as installing applications that would otherwise be untrusted, changing settings or options or installing custom elements of the operating system.
 
 #### Zero-day
 Zero-day attacks are associated with vulnerabilities that are unknown to the vendors and hence, cannot be patched in time. The term "Zero-day" is derived from the fact that developers do not have any time to patch the vulnerability after it is known as it has already been exploited by an attacker.
 
-### Given a scenario, analyze indicators of malicious activity
+### Indicators of malicious activity
 #### Malware attacks
-* Ransomware is software that takes over a device and demands ransom. For instance, crypto malware encrypts all the data on a system and demands a ransom for the decryption key. Other ransomware methods involve threatening to report the target to law enforcement due to pirated software that was injected into their device or to publicise sensitive information on their system. Rasomware is typically delivered through phishing campaigns but can also use direct attack mechanisms like remote desktop protocol that if compromised, allows the attacker to themselves install the ransomware on to the target system. Indicators of compromise for ransomware include command and control traffic, use of legitimate tools in abnormal or suspicious ways, lateral movement processes, encryption of files, notices demading ransom and data exfiltration behaviors. Having a secure backup of all the data is an effective counter to ransomware attacks.
-* Trojan is a type of malware that disguises itself as legitimate software but actually is intended for malicious tasks running in the background. Indicators of compromise for trojans include signatures, command and control and folders or files created on target devices. Remote access trojans (RATs) provide attackers with remote control to target systems. These might be challenging to detect.
-* Worm is a program that self-installs, replicates itself and spreads across a network of systems. Stuxnet and Raspberry Robin are popular examples. Indicators of compromise include known malicious files, downloads of additional components from remote systems, command and control, malicious behaviors and hands-on-keyboard attacker activity. Firewalls, IPSs, network segmentation, patching and configuring services help prevent worm-based attacks. In the case of successful infection, tools such as EDR and antimalware help respond to the attacks. 
-* Spyware is software that is used to keep an eye on the target's actions. For instance, a uses one's laptop camera to stalk their actions and day-to-day activities for ilicit purposes. The use of spyware can be linked to various motivies such as credential stealing, identity theft and fraud and illicitly monitor a partner in a relationship. Antimalware tools and user awareness help prevent or mitigate these attacks. Indicators of compromise include remote-access and remote-control-related indicators, known software file fingerprints, malicious processes and injection attacks.
-* Bloatware refers to unnecassry and unwanted applications installed on a device. While bloatware is typically not intentionally malicious, it adds an attack surface to otherwise secure devices as it may contain vulnerabilities. It should thus be removed to prevent potential issues. 
-* Virus, in contrast to a worm, is a program that requires human intervention by copying to a USB or network share for example, to be installed and spread across a network. Viruses have two components: trigger and payload. Trigger refers to the conditions that cause the virus to execute and payload is the actions performed by the virus when triggered. Indicators of compromise for viruses are noted in threat feeds such as VirusTotal that are made public for reference. These threat feeds include information such as behaviors and analyses associated with known virusus.
-* Keyloggers are programs that keep track of a user's keyboard input to be analysed and used by an attacker. These tools can also capture user's mouse movements, touchscreen inputs, or credit card swipes. Many keyloggers are used to acquire user credentials or identity information that they can use to their advantage. Use of multifactor authentication can help mitigate the impact of a keylogger as passwords would not be enough to be able to log into your accounts. Indicators of compromise include file hashes and signatures, data exfiltration, process names and known reference URLs. 
-* Logic bomb is a function or piece of code that executes as soon as a condition is met. Logic bombs are rare and difficult to detect as they are embedded in code and can be located by analysing the source code or logic in the application.
-* Rootkits are programs that provide attackers with remote system access. These are challenging to detect and remove. Indicators of compromise used for detection include file hashes and signatures, command and control, behavior based identification and opening ports or reverse proxy tunnels. Once a system is infected with the rootkit, the best way to ensure removal is to rebuild the system or restore it from a reliable backup.  
+* **Ransomware** 
+    * Takes over a device and demands ransom. 
+    * For instance, crypto malware encrypts all the data on a system and demands a ransom for the decryption key. 
+    * Other ransomware methods involve threatening to report the target to law enforcement due to pirated software that was injected into their device or to publicise sensitive information on their system. Ransomware is typically delivered through phishing campaigns but can also use direct attack mechanisms like remote desktop protocol that if compromised, allows the attacker to themselves install the ransomware on to the target system. Indicators of compromise for ransomware include command and control traffic, use of legitimate tools in abnormal or suspicious ways, lateral movement processes, encryption of files, notices demading ransom and data exfiltration behaviors. Having a secure backup of all the data is an effective counter to ransomware attacks.
+* **Trojan** is a type of malware that disguises itself as legitimate software but actually is intended for malicious tasks running in the background. Indicators of compromise for trojans include signatures, command and control and folders or files created on target devices. Remote access trojans (RATs) provide attackers with remote control to target systems. These might be challenging to detect.
+* **Worm** is a program that self-installs, replicates itself and spreads across a network of systems. Stuxnet and Raspberry Robin are popular examples. Indicators of compromise include known malicious files, downloads of additional components from remote systems, command and control, malicious behaviors and hands-on-keyboard attacker activity. Firewalls, IPSs, network segmentation, patching and configuring services help prevent worm-based attacks. In the case of successful infection, tools such as EDR and antimalware help respond to the attacks. 
+* **Spyware** is software that is used to keep an eye on the target's actions. For instance, a uses one's laptop camera to stalk their actions and day-to-day activities for ilicit purposes. The use of spyware can be linked to various motivies such as credential stealing, identity theft and fraud and illicitly monitor a partner in a relationship. Antimalware tools and user awareness help prevent or mitigate these attacks. Indicators of compromise include remote-access and remote-control-related indicators, known software file fingerprints, malicious processes and injection attacks.
+* **Bloatware** refers to unnecassry and unwanted applications installed on a device. While bloatware is typically not intentionally malicious, it adds an attack surface to otherwise secure devices as it may contain vulnerabilities. It should thus be removed to prevent potential issues. 
+* **Virus**, in contrast to a worm, is a program that requires human intervention by copying to a USB or network share for example, to be installed and spread across a network. Viruses have two components: trigger and payload. Trigger refers to the conditions that cause the virus to execute and payload is the actions performed by the virus when triggered. Indicators of compromise for viruses are noted in threat feeds such as VirusTotal that are made public for reference. These threat feeds include information such as behaviors and analyses associated with known virusus.
+* **Keyloggers** are programs that keep track of a user's keyboard input to be analysed and used by an attacker. These tools can also capture user's mouse movements, touchscreen inputs, or credit card swipes. Many keyloggers are used to acquire user credentials or identity information that they can use to their advantage. Use of multifactor authentication can help mitigate the impact of a keylogger as passwords would not be enough to be able to log into your accounts. Indicators of compromise include file hashes and signatures, data exfiltration, process names and known reference URLs. 
+* **Logic bomb** is a function or piece of code that executes as soon as a condition is met. Logic bombs are rare and difficult to detect as they are embedded in code and can be located by analysing the source code or logic in the application.
+* **Rootkits** are programs that provide attackers with remote system access. These are challenging to detect and remove. Indicators of compromise used for detection include file hashes and signatures, command and control, behavior based identification and opening ports or reverse proxy tunnels. Once a system is infected with the rootkit, the best way to ensure removal is to rebuild the system or restore it from a reliable backup.  
 
 #### Physical attacks
-* Brute force attacks involve barging into an organizations facility such as by breaking down a door or cutting off a lock.
-* Radio frequency identification (RFID) cloning is commonly used to duplicate access cards and gain unauthorized access into an organization's premises. These attacks can be challenging to detect as they involve the creation of a legitimate looking access card providing the attacker with the ability to remain unsuspected. 
-* Environmental attacks include those wherein an attacker targets the heating or cooling system of an organization to cause overheating in a data center or intentionally activates the water sprinklers to cause harm to systems. 
+* **Brute force attacks** involve barging into an organizations facility such as by breaking down a door or cutting off a lock.
+* **Radio frequency identification (RFID) cloning** is commonly used to duplicate access cards and gain unauthorized access into an organization's premises. These attacks can be challenging to detect as they involve the creation of a legitimate looking access card providing the attacker with the ability to remain unsuspected. 
+* **Environmental attacks** include those wherein an attacker targets the heating or cooling system of an organization to cause overheating in a data center or intentionally activates the water sprinklers to cause harm to systems. 
 
 #### Network attacks
-* Distributed denial of service (DDoS) attacks occur when attackers uses multiple compromised devices or systems to overwhelm a target with large amounts of traffic that causes the target to crash thereby affecting their availability to legitimate users.
+* **Distributed denial of service (DDoS) attacks** occur when attackers uses multiple compromised devices or systems to overwhelm a target with large amounts of traffic that causes the target to crash thereby affecting availability to legitimate users.
     * Amplified DDoS takes advantage of a small request resulting in a large response. In this attack, the attacker's systems send multiple requests to a server such as a DNS server causing amplified reponses for each request to be directed to the target system. 
     * Reflected DDoS allows the attacker to spoof the victim's IP address thereby making the original source of the packets more challenging to detect and directing all traffic to the target system.
-* Domain name system (DNS) attacks
+* **Domain name system (DNS) attacks**
     * Domain hijacking occurs when an attacker gains access to the registration of a domain and can alter configurations in a way that gives them the ability to intercept communication or send/receive emails. This attack may be challenging to detect on the client-side but domain owners can leverage security tools to help prevent or identify such attacks.
     * DNS poisoning attacks involve corrupting the DNS cache system by adding a malicious DNS entry that directs the user to a fradulent site when they try to access a legitimate domain. This attack can also be carried out using on-path attacks wherein the attacker impersonates a DNS server replying to DNS requests sent by the target.
     * Domain Name System Security Extensions (DNSSEC) is a security feature that is used for authenticating messges sent by the DNS servers thereby preventing DNS poisoning attacks.
     * URL redirection is conducted altering the host file that is the file which is checked first when accessing a site via DNS. The attacker updates the file to associate a legitimate URL to a fradulent site that can be used to obtain credentials of the user or other malicious intents.
 * Wireless
-* On-path attacks also known as man-in-the-middle attacks occur when an attacker intercepts communication between two systems. The attacker may do this to just eavesdrop on the communication or modify the data in transit. 
+* **On-path attacks** also known as man-in-the-middle attacks occur when an attacker intercepts communication between two systems. The attacker may do this to just eavesdrop on the communication or modify the data in transit. 
     * SSL stripping attack occurs when the client sends an HTTP request to a site. The attacker intercepts this request and modifies the request to have all response traffic redirected to their system instead of sending it to the client. 
     * HTTP strict transport security (HSTS) helps prevent SSL stripping attacks by enforcing only HTTPS connections using TLS. However, this feature only works after the client has visited the site at least once.
     * Browser plug-ins also protect against such attacks.
     * Browser-based on-path attacks formerly known as Man in the browser attack is conducted using a Trojan installed into the client browser that allows the attacker to gain access to the information sent and recevied by the browser.
-* Credential replay is simply resuing the user credentials to gain access to their account. This attack can be conducted by resending authentication hashes. The use of session IDs and encryption help prevent such attacks.
-* Malicious code such as worms, viruses, trojans and ransomware can spread across a network to affect multiple systems until it is detected and removed. Indicators of compromise include signatures that IDS and IPS systems can detect.
+* **Credential replay** is resuing the user credentials to gain access to their account. This attack can be conducted by resending authentication hashes. The use of session IDs and encryption help prevent such attacks.
+* **Malicious code** such as worms, viruses, trojans and ransomware can spread across a network to affect multiple systems until it is detected and removed. Indicators of compromise include signatures that IDS and IPS systems can detect.
 
 #### Application attacks
 * Injection 
@@ -450,38 +518,35 @@ Zero-day attacks are associated with vulnerabilities that are unknown to the ven
 * Directory traversal attacks occur when attackers are able to navigate through the directory paths on web servers accessing sensitive files such as system configuration files or password files. 
 
 #### Cryptography attacks
-* Downgrade attack is an attempt to manipulate the target into using a less secure cryptographphic scheme that compromises the confidentiality and integrity of the data being transmitted or stored. 
-* Collision attack occurs when a hashing algorithm gives the same output for two different inputs. 
-* Birthday attack is based on the birthday theorem that asks for the probablity of two people among a group of people sharing the same birthday. This is related to the probability of a collision which need not be 100% but should be high enough to reduce the number of brute-force attempts needed.
+* **Downgrade attack** is an attempt to manipulate the target into using a less secure cryptographphic scheme that compromises the confidentiality and integrity of the data being transmitted or stored. 
+* **Collision attack** occurs when a hashing algorithm gives the same output for two different inputs. 
+* **Birthday attack** is based on the birthday theorem that asks for the probablity of two people among a group of people sharing the same birthday. This is related to the probability of a collision which need not be 100% but should be high enough to reduce the number of brute-force attempts needed.
 
 #### Password attacks
-* Spraying attack is a type of brute-force attack wherein an attacker tries a set of passwords on multiple accounts to find a match. This is to prevent account lockout that might notify the system adminitrators of potential attack attempts.
-* Brute force attacks occur when attackers try a diverse set of generated passwords to login to a user account. Once they find a match, they obtain the credentials of the target. 
+* **Spraying attack** is a type of brute-force attack wherein an attacker tries a set of passwords on multiple accounts to find a match. This is to prevent account lockout that might notify the system adminitrators of potential attack attempts.
+* **Brute force attacks** occur when attackers try a diverse set of generated passwords to login to a user account. Once they find a match, they obtain the credentials of the target. 
 
 #### Indicators
-Threat hunters are responsible for identifying and analysing cyberattacks. To achieve this objective, threat hunters use indicators of compromise (IoCs) that are behaviors which are associated with malicious attempts to compromise a system or user. 
-* Account lockout occurs after a certain number of unsuccessful login attempts to protect the user account from brute-force attacks.
-* Concurrent session usage when the user's account is logged in from multiple devices that are not in the same location or the application is not commonly used on two devices at once. 
-* Blocked content is that which is filtered out by an ID/PS or DLP system that indicates malicious attempts to insert malicious code or exfiltrate data.
-* Impossible travel based on the timestamps of login into an account from multiple locations that a user cannot travel to within the period between the connection attempts. 
-* Resource consumption exceeding the norm indicates filling of a disk or high use of backdwidth that needs to be further investigated to ensure it does not indicate an attack like DDoS.
-* Resource inaccessibility to legitimate users can hint to something unexpected such as a denial of service attack or another malicious attempt.
-* Out-of-cycle logging is when an event occurs at an unexpected or unusual time. For example, an employee logging in at 2am when they usually login between 9-5.
-* Published/documented content that is confidential to the organization but now available for public access. This indicates potential data exfiltration and insider threat or unauthorized access to sensitive information.
-* Missing logs indicate an attacker trying to cover up their tracks by erasing any hints. These should be investigated further to make a conclusion. 
+* Threat hunters are responsible for identifying and analysing cyberattacks. 
+* To achieve this objective, threat hunters use behaviors called indicators of compromise which are associated with malicious attempts to compromise a system or user. 
+* **Account lockout** occurs after a certain number of unsuccessful login attempts to protect the user account from brute-force attacks.
+* **Concurrent session usage** when the user's account is logged in from multiple devices that are not in the same location or the application is not commonly used on two devices at once. 
+* **Blocked content** is that which is filtered out by an ID/PS or DLP system that indicates malicious attempts to insert malicious code or exfiltrate data.
+* **Impossible travel** based on the timestamps of login into an account from multiple locations that a user cannot travel to within the period between the connection attempts. 
+* **Resource consumption** exceeding the norm indicates filling of a disk or high use of backdwidth that needs to be further investigated to ensure it does not indicate an attack like DDoS.
+* **Resource inaccessibility** to legitimate users can hint to something unexpected such as a denial of service attack or another malicious attempt.
+* **Out-of-cycle logging** is when an event occurs at an unexpected or unusual time. For example, an employee logging in at 2am when they usually login between 9-5.
+* **Published/documented content** that is confidential to the organization but now available for public access. Indicates potential data exfiltration and insider threat or unauthorized access to sensitive information.
+* **Missing logs** indicate an attacker trying to cover up their tracks by erasing any hints. These should be investigated further to make a conclusion. 
 
-### Explain the purpose of mitigation techniques used to secure the enterprise
+### Mitigation techniques used to secure the enterprise
 #### Segmentation
 Segemntation is essentially using security, network and physical boundaries to separate critical or infected systems into different zones or segments to reduce impact of a security incident. This can also be done in cloud or virtual environments.
 
 #### Access control
-* Access control list (ACL) is a set of rules that denies or allows actions based on the source IP address, service, time, etc. For network devices, ACL rules are similar to firewall rules. ACL syntax differs depending on the vendor but the basic idea and concept remains the same. 
-* Permissions are assigned to each user based on various attributes such as their role and current location. This is to reduce possiblity of attack by ensuring principle of least privilege providing employees and users access to only those resources that they need. Access control schemes are as follows:
-    * Mandatory access control (MAC) is configured by a security policy administrator and then automatically enforced by the operating system. MAC is a highly secure access control scheme as it is managed centrally and does not allow any user to make changes to the settings configured centrally. MAC used to be implemented in only government and military but is now also found in SELinux and Windows. 
-    * Discretionary access control (DAC) is managed solely by the owner of the resource who determines which users have access to the resources and the actions that they can perform. Linux file permissions is an example of this.
-    * Role-based access control (RBAC) grants/denies permissions based on the role of the subject. RBAC uses role assignment (subject's role should match the role having the requested permissions), role authorization (subject's current role should be verified) and permission authorization (access to resources based on only current role).
-    * Rule-based access control (RuBAC) helps differentiate from RBAC as it is based on access control lists. Firewall rules is an example of RuBAC.
-    * Attribute-based access control (ABAC) grant/deny permissions based on comparatively complex rulesets that are created using a combination of attributes that may vary depending on the way and the role that users interact with the system.
+* Access control list (ACL) is a set of rules that denies or allows actions based on the source IP address, service, time, etc. 
+* For network devices, ACL rules are similar to firewall rules. 
+* Permissions are assigned to each user based on various attributes such as their role and current location. 
 
 #### Application allow list
 Also referred to as whitelisting specifies the applications, software and other system components that can be installed on a system.
@@ -496,46 +561,41 @@ Patches, in the context of security, refer to fixes that are deployed when a vul
 Encryption ensures data confidentiality in the case of a successful security breach. If the attacker gains access to sensitive data, encryption ensures that they are not able to read the data and hence, misuse it. Encryption should be implemented in all three states: data at rest (stored data), data in motion (data being transmitted) and data in use (data being processed). 
 
 #### Monitoring
-* System monitoring is done using system logs and central management systems to keep track of system health and performance.
-* Application monitoring includes application logs, application management interfaces and performance monitoring tools. It varies for each application depending on its purpose.
-* Infrastructure monitoring uses Simple network management protocol (SNMP) and syslog to keep track of infrastructure components like communication networks and data centers.
+* **System monitoring** is done using system logs and central management systems to keep track of system health and performance.
+* **Application monitoring** includes application logs, application management interfaces and performance monitoring tools. It varies for each application depending on its purpose.
+* **Infrastructure monitoring** uses Simple network management protocol (SNMP) and syslog to keep track of infrastructure components like communication networks and data centers.
 
 #### Least privilege
 * Ensures that subjects are given access to only those resources that they need to perform their activities or job functions. 
-* Privilege creep occurs when an employees moves from one position to another and is granted new permissions accordingly but the access granted based on the previous role are not revoked.
+* *Privilege creep* occurs when an employees moves from one position to another and is granted new permissions accordingly but the access granted based on the previous role are not revoked.
 
 #### Configuration enforcement
 * Process of monitoring and modifying the security settings on systems across the organization to prevent security breaches or cyberattacks.
 * Done by security professionals and system administators 
 * Using configuration management tools such as JamfPro for macOS, Configuration Manager for Windows or CFEngine
 * Consists of three phases 
-    * Establishing a baseline using existing industry standards like CIS benchmarks that are modified based on organization specific goals and requirements.
-    * Deploying the baseline using central management tools.
-    * Maintaining the baseline using central management tools and performing regular assessments to ensure configuration enforcement as well as making adjustments where needed.
+    * *Establishing a baseline* using existing industry standards like CIS benchmarks that are modified based on organization specific goals and requirements.
+    * *Deploying the baseline* using central management tools.
+    * *Maintaining the baseline* using central management tools and performing regular assessments to ensure configuration enforcement as well as making adjustments where needed.
 
 #### Decommissioning
 * Process followed when a product reaches its end of useful life cycle.
 * Involves removing a device or system from service, removing it from inventory and ensuring that no sensitive data remains on the device before it is discarded.
-* Sanitizing drives includes either wiping the data or destroying the device
-    * Degaussing exposes magnetic media such as tapes to very strong electromagnetic fields. This cannot be applied to SSDs, optical media and drives or flash drives.
-    * Data can be wiped from hard drives or other magnetic media by performing a series of writes to every storage location of the device.. However, this may leave data remnanats as it may skip some sections of the drive such as in SSD. 
-    * Tools using built-in secure Erase command ensure that no data is left behind.
-    * Using FDE on the drive and then discarding the decryption key.
-    * Shredding, pulverizing or incinerating drives will ensure that data cannot be retreived from them.
-* Certification of destruction is an important part of the process to verify that the asset has been destroyed completely by the third-party vendor.
+* Protects the data from dumpster diving attempts wherein attackers seek sensitive information from discarded physical or digital materials.
+* Explained in further detail in the next chapter.
 
 #### Hardening techniques
-* Encryption ensures confidentiality of the data in the case of a successful security incident as it renders the data unreadable to an attacker unless they have the decryption key.
-* Installation of endpoint protection to detect the presence of malware or alert in case of any potentially malicious behavior. 
-* Host-based firewall is a software works on a singular system to examine incoming and outgoing traffic. It alerts and/or blocks any suspicious communication such as malware or communications that may indicate an attack attempt.
-* Host-based intrusion prevention system (HIPS) is also a system-specific and is aimed at blocking intrusion attempts into the system. 
-* Disabling ports/protocols that are not in use also reduces the attack surface as well as monitoring requirements. It also ensure that no insecure services are enabled on the system allowing an attacker easy access.
-* Default password changes should be one of the first steps when configuring a new product as default passwords are published on the internet and can be easily accessed by attackers. Vulnerability scanners typically flag the use of default passwords.
-* Removal of unnecessary software reduces the attack surface by ensuring that only required products are kept on the systems. Organizations usually build their own system images that are installed on new systems to exclude all unneccessary software.
+* **Encryption** ensures confidentiality of the data in the case of a successful security incident as it renders the data unreadable to an attacker unless they have the decryption key.
+* **Installation of endpoint protection** to detect the presence of malware or alert in case of any potentially malicious behavior. 
+* **Host-based firewall** is a software works on a singular system to examine incoming and outgoing traffic. It alerts and/or blocks any suspicious communication such as malware or communications that may indicate an attack attempt.
+* **Host-based intrusion prevention system (HIPS)** is also a system-specific solution and is aimed at blocking intrusion attempts. 
+* **Disabling ports/protocols** that are not in use also reduces the attack surface as well as monitoring requirements. It also ensure that no insecure services are enabled on the system allowing an attacker easy access.
+* **Default password changes** should be one of the first steps when configuring a new product as default passwords are published on the internet and can be easily accessed by attackers. Vulnerability scanners typically flag the use of default passwords.
+* **Removal of unnecessary software** reduces the attack surface by ensuring that only required products are kept on the systems. Organizations usually build their own system images that are installed on new systems to exclude all unneccessary software.
 
 ## Security Architecture
 
-### Explain the security implications and differences of different architure models 
+### Explain the security implications and differences of different architecture models 
 
 #### Monolithic Architecture
 * A single-tiered application.
@@ -592,7 +652,6 @@ Encryption ensures data confidentiality in the case of a successful security bre
 * Important for post-quantum transition.
 * Use abstraction layers in cryptographic design.
 
-
 ### Embedded and Specialized Systems
 
 #### Embedded Systems
@@ -634,198 +693,473 @@ Encryption ensures data confidentiality in the case of a successful security bre
 * Firmware updates must be validated and protected from tampering.
 
 ## Security Operations
-### Given a scenario, apply common security techniques to computing resources
+### Common security techniques to computing resources
 
 #### Secure baselines
-* Establish 
-* Deploy
-* Maintain
+Covered in [Configuration enforcement](#configuration-enforcement).
 
 #### Hardening targets 
-* Mobile devices
-* Workstations
-* Switches
-* Routers
-* Cloud infrastructure
-* Servers
-* ICS/SCADA
-* Embedded systems
-* RTOS
-* IoT devices
+* **Mobile devices**
+    * Benchmarks available via Center for Internet Security (CIS).
+    * Update and patch the operating system.
+    * Enable remote wipe functionality.
+    * Set passcodes and automated screen locks.
+    * Configure the device to automatically wipe after a set number of unsuccessful logins.
+    * Turn off unsused connectivity options such as Bluetooth.
+* **Workstations and servers**
+    * Close unused or unnecessary ports and services.
+    * Remove unnecessary software.
+    * Set strong passwords.
+    * Disable storage of passwords.
+    * Place all servers in a secure data center.
+    * Ensure implementation of principle of least privilege especially in the case of servers.
+    * Ensure the OS is up to date with latest patches.
+* **Switches and Routers**
+    * Benchmarks available via Center for Internet Security (CIS).
+    * Protect the management console by putting the management ports onto an isolated VLAN that can only be accessed through a jump server or VPN.
+    * Restrict phyical access to the devices by placing them in network closets that are secure and in some cases, monitored to ensure tracking of who accesses the area.
+    * Disable unused interfaces, ports and services.
+    * Ensure the devices contain latest updates and patches.
+    * Enable port security
+    * Change SSID and configure username and strong passwords.
+* **Cloud infrastructure**
+    * Cloud access security brokers (CASBs) are software tools that serve as intermediaries between cloud service users and cloud service providers. Inline CASBs are placed in the connection while API-based CASBs interact with the cloud provider through the provider's API.
+    * Resource policies can be used by customers to retrict the actions that users can take.
+    * Hardware security modules (HSMs) can be used to securely store and manage sensitive information such as encryption keys.
+* **ICS/SCADA**
+    * Ensure latest patches and updates are installed.
+    * Secure connections using firewalls and intrusion detection/prevention systems.
+    * Implement customized industrial communication protocols and proprietary interfaces.
+    * In some cases, isolate the systems from trusted networks.
+* **Embedded systems and RTOS**
+    * Encrypt command and control channels for drones and autonomous vehicles.
+    * Protect VoIP systems using segmentation and regular updates as well as applying baseline security standards.
+    * Protect access to printers including multifunction printers as they are a significant data leakage risk.
+    * Install surveillance systems to secure physical access to the systems.
+    * Change default configurations.
+* **IoT devices**
+    * Change default settings.
+    * Encrypt communication.
+    * Ensure thourough and reliable vetting of the vendor.
 
 #### Wireless devices
-* Installation considerations
-    * Site surveys
-    * Heat maps
+* **Site surveys**
+    * Moving throughout a facility to gather information about existing networks.
+    * Helps set up a network.
+    * Find options for placing access points.
+* **Heat maps**
+    * Moving around a bulding to map the strength of the network.
+    * Also provides information on which channel(s) each access point is on.
+    * Helps improve network strength after it is setup.
 
 #### Mobile solutions
-* Mobile device management (MDM)
-* Deployment models 
+* **Mobile device management (MDM)**
+    * Centralized solution for monitoring and managing a wide range of mobile devices such as company owned mobile phones.
+    * Application management features provide remote access to install/uninstall applications and ensure no unnecessary or insecure apps are present on the device.
+    * Content management protects the data on mobile devices by locking it within a controlled space and managing access.
+    * Remote wiping capabilities that in case of compromise of the device ensure confidentiality of data stored on the device. Either full device wipe or removing only organizational data. Will not work if device is placed airplane mode or using an RF-blocking bag.
+    * Geolocation and geofencing capabilities enabling access control based on location or being able to find the device if lost.
+    * Screen locks, passwords and PINs can be set remotely.
+    * Biometrics such as fingerprints and facial recognition enabled remotely allowing ease of use.
+    * Context-aware authentication provides access based on behavioral elements such as location and hours of use.
+    * Containerization and storage segmentation separates professional and personal use contexts by storing and running organizational data and processes in a secure container.
+    * Full-device encryption protects confidentiality of data in case device is lost or stolen.
+    * Push notifications allow sending alerts or warnings to users or a thief from a central location.
+* **Deployment models** 
     * Bring your own device (BYOD)
+        * Employees use their personal devices for work purposes.
+        * More freedom for users and lower cost for organization.
+        * Higher risk to the organization.
     * Choose your own device (CYOD)
+        * Employees pick the device they'd use for work. 
+        * Device is owned and controlled by the organization.
     * Corporate-owned personally enabled (COPE)
-* Connection methods 
+        * Organization provides the employee with a device.
+        * Employee can use this device for reasonable personal uses.
+        * Device is owned and controlled by the organization. 
+* **Wireless connection methods** 
     * Cellular
+        * Subscriber identity module (SIM) uniquely identifies deveices on a cellular network.
+        * Geographic areas are divided into cells with tower coverage.
+        * Cellular network technologies include LTE, 4G and 5G.
+        * Provided by cellular carriers so traffic goes through third-party network (external network).
     * Bluetooth
+        * Operates in 2.4 GHz range.
+        * Low-power, short-range connnections.
+        * Point-to-point model.
+        * Relatively easy to attack.
     * Wi-Fi
+        * Wirelss protocols for wireless networking.
+        * Primarily relies on 2.4 GHz and 5 GHz radio bands.
+        * Signals cannot be contained or controlled when traveling.
+        * Service set identifiers (SSIDs) uniquely identify wi-fi networks.
+        * Secured by WPA2 or WPA3 protocols.
+        * Devices can be deployed in either ad-hoc (direct communication) or infrastructure mode (traffic sent via base station).
 
 #### Wireless security settings
-* Wi-Fi Protected Access 3 (WPA3)
-* AAA/Remote Authentication Dial-In User Service (RADIUS)
-* Cryptographic protocols
-* Authentication protocols
+* **Wi-Fi Protected Access 2 (WPA2)**   
+    * *WPA2-Personal* uses pre-shared key (PSK) for authentication.
+    * *WPA2-Enterprise* leverages RADIUS authentication server.
+    * Counter mode cipher block chaining message authentication code protocol (CCMP) uses AES for confidentiality.
+* **Wi-Fi Protected Access 3 (WPA3)**
+    * Replacement for WPA2.
+    * *WPA3-Personal*
+        * Uses Simultaneous Authentication of Equals (SAE) for authentication.
+        * Both client and servers must interact for validation thereby protecting from brute-force attacks.
+        * Implements perfect forward secrecy (regularly changing encryption key) to ensure confidentiality of data in transit.
+    * *WPA3-Enterprise*
+        * Continues to use RADIUS but with improved encryption and key management features.
+        * Optional 192-bit security mode.
+        * Additional controls for stronger security.
+* **Remote Authentication Dial-In User Service (RADIUS)**
+    * One of the most common AAA systems.
+    * Operates in client-server model via TCP or UDP.
+    * Transmitted passwords are obfuscated by shared secret and MD5 hash.
+    * Traffic is usually encrypted using IPSec tunnels.
+* **Cryptographic protocols**
+    * *Secure Sockets Layer/Transport Layer Security (SSL/TLS)* is used for securing web communications. TLS is an updated and more secure version of SSL.
+    * *Secure Shell (SSH)* is used for secure remote access and file transfers.
+    * *Internet Protocol Security (IPsec)* provides security at the IP layer for virtual private networks (VPNs)
+* **Authentication protocols**
+    * *Extensible authentication protocol (EAP)*
+        * Protected EAP (PEAP)
+            * Uses certificate.
+            * Wraps EAP using TLS.
+            * Does not require installation of any additional software.
+            * Devices use encryption keys that are replaced using Temporal Key Integrity Protocol (TKIP).
+        * EAP-Flexible Authentication via Secure Tunneling (EAP-FAST)
+            * Secure version of LEAP
+            * Provides faster reauthentication using shared secret (symmetric) key while devices are roaming.
+            * Uses either PSK or dynamic keys established using asymmetric cryptography.
+        * EAP-Transport Layer Security (EAP-TLS)
+            * Certificate-based authentication and mutual authentication.
+            * Used less frequently due to certification management challenges.
+        * EAP-Tunneled Transport Layer Security (EAP-TTLS)
+            * Extends EAP-TLS.
+            * May require additional software to be installed.
+            * Provides similar functionality to PEAP.
 
 #### Application security
-* Input validation
-* Secure cookies
-* Static code analysis
-* Code signing
+* **Input validation**
+    * Allow or deny listing to control user input.
+    * Prevent code injection attacks such as SQLi or XSS.
+    * Parameter pollution may be used to bypass this control as an attacker gives two values to one variable wherein the first value is subject to input validation but the second is not.
+* **Secure cookies**
+    * Cookies marked with the SECURE attribute to protect against session replay attacks.
+    * Cookies are files or small pieces of data stored on the user's browser.
+    * Sent to and from the server with each request.
+    * Contain information about the user making it easier to maintain state.
+* **Static code analysis**
+    * Reviewing the code for an application either using automated tools or manually.
+    * If done manually, best practice is the reviewer should be someone apart from the original developer(s) of the code.
+    * Type of known-enviroment testing as reviewers have all the related background.
+* **Dynamic code analysis**
+    * Analysing code through execution.
+    * Provides input for testing.
+    * Fuzzing sends random data to test the application and identify simple problems such as input validation issues, logic issues, memory leaks and error handling.
+* **Code signing**
+    * Developers confirm the authenticity of their code.
+    * Developers sign their code using their private key and then browsers use their public key for verification to ensure that the code is legitimate and was not subject to unauthorized changes.
+    * Ensures authentication and integrity, and protects from malicious updates.
 
 #### Sandboxing 
+* Running an application in a controlled or isolated environment.
+* Application has limited access to other networks and resources.
+* Useful when testing new untrusted software or software updates before deployment in production.
 
 #### Monitoring
+* Keeping track of the activities performed in relation to systems, applications and networks.
+* Logs are essential for future reference in the case of a security issue.
+* Typically results in a lot of data that needs to be securely stored to avoid unauthorized modification.
 
-### Explain the security implications of proper hardware, software, and data asset management
+### Security implications of proper hardware, software, and data asset management
 #### Acquisition/procurement process
+* Obtaining an asset.
+* Perform due diligence to ensure the vendor of the asset have appropriate controls and practices.
+* Each asset is assigned an owner and subject to classification based on sensitivity.
 
 #### Assignment/accounting
-* Ownership
-* Classification
+* Ownership provides each asset with a point of contact responsible for management and monitoring.
+* Classification of an asset is done based on its sensitivity and significance to the organization.
+    * Public
+    * Private
+    * Sensitive
+    * Confidential
+    * Secret
+    * Top secret
+    * Critical
+    * Restricted
+    * Each organization that their own classification policy.
 
 #### Monitoring/asset tracking
-* Inventory
-* Enumeration
+* **Inventory**
+    * List of all assets (devices, systems, software and data) belonging to the organization.
+    * Mentions the owners or managers for each asset.
+    * Allows tracking of all assets.
+    * Helps identify any lost or stolen assets or flag unauthorized assets.
+* **Enumeration**
+    * Scanning the inventory to identify assets.
+    * Some organizations use port and vulnerability scans to find systems that have not been added to their invententory.
 
 #### Disposal/decommissioning
-* Sanitization
-* Destruction
-* Certification
-* Data retention
+* Process followed when a product reaches its end of useful life cycle.
+* Involves removing a device or system from service, removing it from inventory and ensuring that no sensitive data remains on the device before it is discarded.
+* **Sanitization** includes either wiping the data or destroying the device
+    * Degaussing exposes magnetic media such as tapes to very strong electromagnetic fields. This cannot be applied to SSDs, optical media and drives or flash drives.
+    * Data can be wiped from hard drives or other magnetic media by performing a series of writes to every storage location of the device. However, this may leave data remnants as it may skip some sections of the drive such as in SSD. 
+    * Tools using built-in secure Erase command ensure that no data is left behind.
+    * Using FDE on the drive and then discarding the decryption key.
+    * Shredding, pulverizing or incinerating drives will ensure that data cannot be retreived from them.
+* **Certification of destruction** is an important part of the process to verify that the asset has been destroyed completely by the third-party vendor.
+* **Data retention** may be essential for legal purposes as determined by law. 
+* Organizations should be aware of retention policies, procedures and categorization.
 
-### Explain various activities associated with vulnerability management
+### Vulnerability management
 #### Identification methods
-* Vulnerability scan
-* Application security
-    * Static analysis 
-    * Dynamic analysis
-    * Package monitoring
-* Threat feed
-    * Open-source intelligence (OSINT)
-    * Proprietary/third-party
-    * Information sharing organization
-    * Dark web
-* Penetration testing
-* Responsible disclosure program
-    * Bug bounty program
-* System/process audit
+* **Vulnerability scans**
+    * Detect weaknesses in a system or device and then implement remediations based on priority scores.
+    * Determine scan coverage based on the following factors:
+        * Classification level of the data stored, transmitted or processes by the system.
+        * Whether the system has access to untrusted networks.
+        * Services offered by the system.
+        * Environment in which the system is placed such as production, test or development.
+    * Determine scan frequency based on the following factors:
+        * *Risk appetite* is the organization's willingness to tolerate risk within the environment.
+        * Regulatory requirements included in rules and guidelines such as PCI DCSS or FISMA.
+        * Technical constraints may limit the number of scans that can be performed. 
+        * Business constraints refer to peak hours of operation when scans should not be conducted.
+        * Licensing limitations may restrict the bandwidth that can be consumed by the scans.
+* **Application security**
+    * *Static analysis*: covered in previous section.
+    * *Dynamic analysis*: covered in previous section.
+    * *Package monitoring*
+        * Keeping track of all third-party libraries or packages used in an organization.
+        * Regularly updating dependencies.
+        * Automated tools to notify users when an update is pending.
+        * Understand trustworthiness and reputation of the source/vendor.
+* **Threat feed**
+    * *Threat inteligence* refers to information related to known threats or process of gathering, processing and analysing that data to better understand threats. It keep security professionals aware of the changes in the threat environment.
+    * Threat intelligence can be used for predictive analysis to identify potential risks in the organization.
+    * *Open-source intelligence (OSINT)* refers to publicly available threat data.
+    * *Proprietary/third-party sources* perform their own research to gather, curate and maintain their threat feeds.
+    * *Information sharing organizations* exchange threat data to help protect each other.
+    * *Dark web* is used as a communication platform by hackers to share gather information or stolen data. Organization can seacrh for sensitive data on marketplaces of the dark web and if found, they identified a breach.
+* **Penetration testing** uses offensive security to help identify weaknesses in the organization.
+* **Responsible disclosure program** 
+    * Allows security researchers to securely share vulnerabilities found in a product with the vendor. This ensures timely identification, reporting and rememdiation of the vulnerabilities.
+    * Bug bounty program incentivizes responsible disclosure submissions by offering monetary awards to testers or researchers who discover vulnerabilities.
+* **Security assessments** 
+    * Informal and thorough reviews of the security of a system, application or other environments.
+    * Performed regularly by teams within the organization.
+* **System/process audits**
+    * Formal examinations performed by independent auditors to showcase the effectiveness of controls to a third party. 
+    * Includes an *attestation* (formal statement) by the auditor verifying that the organization has met its objectives and controls are working as expected.
+    * *Internal audits* meant for internal use and performed by internal audit staff, for reassurance.
+    * *External audits* performed by outside auditing firm who serves as an independent third party.
+    * *Third-party audits* are conducted by or on behalf od another organization. The organization initiating the audit usually selected the auditors and designs the scope.
 
 #### Analysis
-* Confirmation
-* False positive
-* False negative
-* Prioritize
-* Common vulnerability scoring system (CVSS)
-* Common vulnerability enumeration (CVE)
-* Vulnerability classification
-* Exposure factor
-* Environmental variables
-* Industry/organizational impact
-* Risk tolerance
+* **Confirmation** that the vulnerability exists.
+* **False positive** is when the flagged vulnerability does not exist. 
+* **False negative** is when an existing vulnerability is not flagged.
+* **Prioritize** identified vulnerabilities using CVSS and CVE to determine the order of rememdiation.
+* **Common vulnerability scoring system (CVSS)** provides a vulnerability with a score from 0 to 10 that indicates its severity. 
+* **Common vulnerability enumeration (CVE)** is a database of known vulnerabilities in software and hardware, including CVEID, description and references for each vulnerability.
+* **Vulnerability classification** is done based on the calcluated CVSS.
+* Vulnerability analysis reports also include organization-specific information such as exposure factor, environmental variables, impact and risk tolerance.
+* **Exposure factor** is the percentage of loss in case of the compromise of an asset.
+* **Environmental variables** are those that contribute to or are associated with the vulnerability.
+* **Industry/organizational impact** is the effect of the vulnerability being exploited.
+* **Risk tolerance** is the ability of an organization to withstand risks and continue operations without any significant impact.
 
 #### Vulnerability response and remediation
-* Patching
-* Insurance
-* Segmentation
-* Compensating controls
-* Exceptions and exemptions
+* **Patching** to correct the vulnerability.
+* **Insurance** to transfer the financial risk of the vulnerability being exploited. 
+* **Segmentation** to isolate the affected system thereby reducing the impact of the breach.
+* **Compensating controls** to temporarily deal with the vulnerability until it can be fixed completely.
+* **Exceptions and exemptions** given to the system as part of formal risk acceptance strategy.
 
 #### Validation of remediation
-* Rescanning
-* Audit
-* Verification
+* **Rescanning** to ensure that the vulnerability is no longer present.
+* **Audit** is performed in case of more serious vulnerabilities to obtain assurance/attestation that the weakness is remediated.
+* **Verification** that the vulnerability has been removed and there is no additional impact of this change.
 
 #### Reporting
 
-### Explain security alerting and monitoring concepts and tools
+### Security alerting and monitoring concepts and tools
 #### Monitoring computing resources
-<span style="color:blue">explained in another section</span>
+<span style="color:blue">explained in 'Mitigation techniques used to secure the enterprise'</span>
 * Systems
 * Applications
 * Infrastructure
 
 #### Activities
-* Log aggregation
-* Alerting
-* Scanning
-* Reporting
-* Archiving
-* Alert response and remediation/validation
-    * Quarantine
-    * Alert tuning
+* **Log aggregation** 
+    * Gathering all data points into a centralized software tool for correlation and analsysis.
+    * Done using tools such as SIEM, syslog-ng and rsyslog.
+* **Alerting**
+    * Generate alarms or alerts based on a defined rule. 
+    * Poorly constructed rules may cause issues leading to false positives or false negatives.
+    * Rules need to be carefully built and tested.
+    * Most SIEM devices have pre-defined set of rules that can be adjusted based on organization-specific needs.
+* **Scanning** is done as regularly as possible to ensure all assets are in check.
+* **Reporting** of identified vulnerabilities or issues from logs must be done immediately and in a secure fasion to ensure the organization has enough time to patch the impacted asset(s).
+* **Archiving logs** is part of the full lifespan of log data wherein the logs are retained but not in active use. Typically done to maintain logs in case needed for future investigation. 
+* **Alert response and remediation/validation**
+    * *Quarantine* or isolation of suspected files places them in a restricted location with no access to or from trusted networks.
+    * *Alert tuning* is adjusting the sensitivity of the analysis tool to reduce the number of false positives while ensuring minimal or no impact in the false negative rate.
 
 #### Tools
-* Security content automation protocol
-* Benchmarks
-* Agents/agentless
-* Security information and event management (SIEM)
-* Antivirus
-* Data loss prevention (DLP)
-* Simple network management (SNMP) traps
-* NetFlow
-* Vulnerability scanners
+* **Security content automation protocol** is a standardized set of roles use for the exchange of imofrmation regarding security. This includes Common Configuration Enumeration (CCE), Common Platform Enumeration (CPE), Common Vulnerabilities and Exposures (CVE), Common Vulnerability Scoring System (CVSS), Extensible Configuration Checklist Description Format (XCCDF) and Open Vulnerability and Assessment Language (OVAL).
+* **Benchmarks** typically specify required logging sources. A well-constructed benchmack might require central logging, configuring log and alerting levels, and that endpoints or servers log critical and important events.
+* **Agents/agentless sources for logging**
+    * Agents involve the special-purpose software deployed to systems and devices that send logs to a cetralized system.
+    * Agentless sources do not require any installments and send the logs via standardized log interfaces like syslog.
+* **Security information and event management (SIEM)**
+    * Central security monitoring tool.
+    * Input includes log data and packet capture.
+    * Collect and aggregate log data from a wide range of sources and perform correlation and analysis.
+    * May include ability to review and alert on user behavior or to perform sentiment analysis.
+    * Alerting, reporting and response.
+    * Dashboards provide a high-level visual view of the gathered data and findings.
+* **Antivirus**
+    * Tool to detect malicious software and applications.
+    * Signature-based detection: Uses hash or pattern to identify known malware in files or components.
+    * Heuristic- or behavior-based detection: Compares current state or behaviors to a normal baseline to identify any unusual activity. Can identify new malware based on what it is doing.
+    * Artificial intelligence and machine learning systems can be trained to identify known and unknown malware based on seen patterns or signatures.
+    * Sandboxing allows antivirus vendors to run sample malicious code within a protected environment. The experiment and results are then documented and reported.
+    * Typically installed on endpoints such as desktops, laptops and mobile devices.
+* **Data loss prevention (DLP)**
+    * Deployed to endpoints or can have network and server-resident components.
+    * Ability to classify data.
+    * Data labeling or tagging.
+    * Policy management and enforcement.
+    * Monitoring and reporting.
+    * Data encryption or obfuscation during transmission.
+* **Simple network management (SNMP) traps**
+    * SNMP is a protocol used for network monitoring and management.
+    * SNMP is an alert generated when a device configured to use SNMP encounters and error.
+    * Sent to SNMP manager from SNMP agents.
+* **NetFlow** is Cisco's proprietary protocol for monitoring network flow and volume, and gathering IP traffic information.
+* **Vulnerability scanners**
+    * *Network vulnerability scanners* 
+        * Tenable's Nessus: one of the earliest scannes launched.
+        * Qualys: offers software-as-a-service (SaaS) management console.
+        * Rapid7's Nexpose: offers features similar to those of Nessus and Qualys.
+        * OpenVAS: free alternative to the commercial scanners mentioned above.
+    * *Web application scanners*
+        * Nikto: open-source scanner, uses a command-line interface and is difficult to use.
+        * Arachni: open-source tool, package scanner.
+        * Acunetix: another dedictated web app scanning tool.
+        * However, many organizations use traditional network scanners such as Nessus, Qualys and Nexpose.
 
-### Given a scenario, modify enterprise capabilities to enhance security
+### Enterprise capabilities to enhance security
 #### Firewall
-* Rules
-* Access lists
-* Ports/protocols
-* Screened subnets
+* Deployed as network appliances or on individual devices.
+* **Stateless firewalls**
+    * 1st generation firewalls and also called packet filters.
+    * Most basic type of firewall filtering every packet based on source and destination IP, port, protocol, etc.
+* **Stateful firewalls**
+    * Also known as dynamic packet filters.
+    * Connection information is tracked in a state table thereby reducing the number of packets that need to be reviewed.
+* **Next-generation firewalls (NGFWs)**
+    * All in one security devices.
+    * Range of features including deep packet inspection, ID/PS functionality, and antivirus and antimalware.
+    * Usually faster than UTMs as they are more focused.
+    * Require more configuration and expertise than UTMs.
+* **Unified threat management devices (UTMs)**
+    * Combine the capabilities of firewalls, IDS/IPS, antimalware, DLP, VPN, URL and email filtering, and security monitoring and analytics.
+    * Easier and quicker to configure and use. 
+    * Usually deployed at network boundaries.
+* **Web application firewalls (WAFs)**
+    * Intercept, analyse and apply rules to web traffic.
+    * Block or modify traffic in real-time.
+    * Works like a firewall combined with an IPS.
+* **Rules** define the action to be taken on the current packet based on certain attributes such as port, protocol, and IP address.
+* **Access lists** are rules that permit or deny actions based on source and destination IP address, protocol, port, time, etc. 
+* **Ports/protocols** help identify insecure packets that should be dropped or further investigated. 
+* **Screened subnets** use three interfaces on a firewall to connect to the Internet or an untrusted network, trusted network or secure area and public area or DMZ.
 
 #### IDS/IPS
-* Trends
-* Signatures
+* Tools used to detect threats and in the case of IPS, blocking them as well.
+* Signatures or hashes are used to detect known attacks.
+* Anamoly-based detection identifies threats based on unusual behavior by comparing the activities to a baseline.
+* IPS should be deployed inline to be able to block potentially malicious traffic.
+* IDS can be deployed in passive or tap mode such that it receives copies of the traffic entering or exiting the network.
 
 #### Web filter
-* Agent-based
-* Centralized proxy
-* Universal resource locator (URL) scanning
-* Content categorization
-* Block rules
-* Reputation
+* Centralized proxy devices or agent-based tools that allow or block traffic based on content rules.
+    * Sometimes called content filters.
+    * Agent-based tools are installed on the devices.
+    * Traffic is routed through the device.
+* Universal resource locator (URL) scanning enables blocking specific URLs based on configured access/deny lists.
+* Content categorization is used for URL filtering with common categories including adult material, business and child-friendly material.
+* Block rules stop systems from visiting sites that are in an undesired category or that have been blocked due to reputation or threat.
+* Reputation of a site determines the trust one has on that site and those resources with poor reputation or known mishaps are typically added to deny lists.
 
 #### Operating system security
-* Group policy
-* SELinux
+* **Group policy** 
+    * Feature in Windows that enables controlling the settings and access using Group policy objects (GPOs).
+    * GPOs are rules such as password requirements or software restrictions that can be applied locally or via Active Directory for centralized management.
+* **SELinux**
+    * Linux kernel-based security module built on top of existing Linux distributions.
+    * SELinux implements various security measures such as Mandatory access control (MAC).
+    * Also implemented in Android.
 
 #### Implementation of secure protocols
-* Protocol selection
-* Port selection
-* Transport method
+* Ensure communication and services are secure.
+* **Protocol selection** typically defaults to using the secure protocol if it exists and is supported. 
+* Insecure protocols being used are noted as a risk and compensating controls are implemented until a replacement is found.
+* **Port selection** goes hand in hand with protocol selection. Many protocols have default ports that are preselected.
+* **Transport method** including protocol versions is important when selecting secure protocols to avoid downgrade attacks or using vulnerable versions.
 
 #### DNS filtering
+* Block malicious domains using a list of prohibited domains, subdomains and hosts that, when accessed, redirect the user to an internal website that displays a message accordingly.
+* Prompt response to phishing campaigns.
+* Sites are added to block lists based on threat, reputation and block list feeds.
 
 #### Email security
-* Domain-based message authentication reporting and conformance
-* Domain keys identified mail (DKIM)
-* Sender policy framework (SPF)
-* Gateway
+* **Domain keys identified mail (DKIM)** signs both the body of the message and elements of the header to verify the sender organization by checking the DKIM-Signature header against the organization's public key. 
+* **Sender policy framework (SPF)** is an email authentication technique that allows organizations to publish a list of their authorized email servers. SPF records limited to 255 characters. 
+* **Domain-based message authentication reporting and conformance (DMARC)** uses SPF and DKIM to determine whether an email message is authentic.
+* **Email security gateways** are used for additional security to filter both inbound and outbound emails.
 
-#### File integrity monitoring
+#### File integrity monitoring (FIM)
+* Detect unauthorized file changes and either reporting them or correcting them.
+* Tripwire is a popular file intergrity monitor that monitors files and filesystems using their signature or fingerprint.
+* Can be noisy and require time and effort to set up and maintain.
 
 #### DLP
+Already covered.
 
 #### Network access control (NAC)
+* Determines whether a device or system should be allowed to join a network based on their security status.
+* Can be agent-based (requiring installation) or agentless (runs from browser and provides lesser detail).
+* Check can occur before a device is allowed on the network (preadmission) or after it has connected (postadmission).
+* 802.1X is commonly used for port-based authentication or port security so if devices want to connect to a LAN, they need to have an 802.1X supplicant to complete the authentication process.
 
 #### Endpoint detection and response (EDR) and Extended detection and response (XDR)
+* EDR tools are focused on monitoring endpoint devices and systems using client or software agents.
+* EDR systems look for anomalies and indicators of compromise in the collected data using automated rules and detection engines.
+* XDR has a broder perspective considering the organization's whole technology stack and use artificial intelligence and machine learning for detection.
 
 #### User behavior analytics
+* Tracking, collecting and assessing user activities using tools such as artificial intelligence and machine learning.
+* Help detect insider threats.
+* Analyse authentication logs, actions performed and other historical data to identify any suspicious behavior.
 
-### Given a scenario, implement and maintain identity and access management
+### Identity and access management
 #### Provisioning/de-provisioning user accounts
-
-#### Permission assignments and implications
-
-#### Identity proofing
+* Provisioning refers to creation.
+    * May include *identity proofing* (using goverment issued IDs and personal information) to verify the user the account is being created for.
+    * Includes *permission assignment* based on the user role and following principle of least privilege.
+    * Commonly done during employee onboarding.
+    * *Permission creep* occurs when the permissions of an employee from previous roles have not been revoked.
+* Deprovisioning refers to deletion, disabling or termination.
+    * Helps ensure that dormant accounts cannot be compromised.
+    * Removes all related files, permissions and data associated with the user.
+    * Limited in the case of role change within the same organization.
+    * Deletion is preferred over disabling.
 
 #### Federation
 
@@ -838,47 +1172,140 @@ Encryption ensures data confidentiality in the case of a successful security bre
 
 #### Attestation
 
-#### Access controls
-*All done except Time-of-day restrictions*
-* Mandatory 
-* Discretionary
-* Role-based
-* Rule-based
-* Attribute-based
-* Time-of-day restrictions
-* Least privilege
+#### Access control schemes
+* **Mandatory access control (MAC)** is configured by a security policy administrator and then automatically enforced by the operating system. MAC is a highly secure access control scheme as it is managed centrally and does not allow any user to make changes to the settings configured centrally. MAC used to be implemented in only government and military but is now also found in SELinux and Windows. 
+* **Discretionary access control (DAC)** is managed solely by the owner of the resource who determines which users have access to the resources and the actions that they can perform. Linux file permissions is an example of this.
+* **Role-based access control (RBAC)** grants/denies permissions based on the role of the subject. RBAC uses role assignment (subject's role should match the role having the requested permissions), role authorization (subject's current role should be verified) and permission authorization (access to resources based on only current role).
+* **Rule-based access control (RuBAC)** helps differentiate from RBAC as it is based on access control lists. Firewall rules is an example of RuBAC.
+* **Attribute-based access control (ABAC)** grants/denies permissions based on comparatively complex rulesets that are created using a combination of attributes that may vary depending on the way and the role that users interact with the system.
+* **Time-of-day restrictions** limit when the activities such as system login can occur.
+* **Principle of least privilege** provides employees and users access to only those resources that they need. 
 
 #### Multifactor authentication
-* Implementations 
-    * Biometrics
-    * Hard/soft authentication tokens
-    * Security keys
-* Factors
-    * Something you have
-    * Something you know
-    * Something you are
-    * Somewhere you are
+* **Implementations** 
+    * *Biometrics*: patterns that are unique to each individual such as facial structure or fingerprint
+    * *Hard/soft authentication tokens*
+        * Typically used for multi-factor authentication
+        * Hard tokens include hardware devices such as USB sticks, key fobs, smart cards and security keys that generate a one-time passcode or use a unique radio signal for identification. 
+        * Soft tokens are one-time passwords sent via SMS or email as a part of multi-factor authentication.
+    * *Security keys*: hardware devices such as USB sticks that are plugged into the system for authentication. User will need to enter a PIN or show their fingerprint for unlocking the key for login.
+* **Factors**
+    * *Something you have*: keys, smart cards, magnetic strip card, USB drives, one-time password applications, and token devices.
+    * *Something you know*: personal identification number (PIN), password, and answer to security question.
+    * *Something you are*: biometric identification including fingerprints, facial recognition, retina scan, voice, and iris pattern.
+    * *Somewhere you are*: location determined using GPS, IP address, etc.
 
 #### Password concepts
-* Password best practices 
-    * Length
-    * Complexity
-    * Reuse
-    * Expiration
-    * Age
-* Password managers
-* Passwordless
+* **Best practices** 
+    * Length: set minimum number of characters for password.
+    * Complexity: enforce use of multiple character classes including lower case and upper case letters, numbers and special characters.
+    * Reuse: password history should be maintained to ensure user is not setting passwords that have already been used recently.
+    * Expiration: maximum number of days after which a password should be changed.
+    * Age: minimum number of days after which a password can be changed.
+* **Password managers**: software used to securely store passwords as well as generate strong passwords encouraging users to set fairly complex passwords as they just need to remember the password for the password manager. 
+* **Passwordless**: relies on something you have or something that you are; a security key provides high level of protection; reduce risk associated with passwords.
 
 #### Privileged access management tools
-* Just-in-time permissions
-* Password vaulting
-* Ephemeral credentials
+* **Just-in-time permissions** are granted only when needed and then revoked when the task is complete. Helps prevent pivilege creep.
+* **Password vaulting** allows users to access privileged accounts during emergencies or outages without needing to know the password.
+* **Ephemeral credentials** are temporarily accounts created for guests or for specific purposes. The account should be deprovisioned in a timely manner.
 
-### Explain the importance of automation and orchestration related to secure operations
+### Automation and orchestration related to secure operations
 
+#### Use cases of automation and scripting
+* **User provisioning**: Create, modify or revoke user access.
+* **Resource provisioning**: Allocating and deallocating system resources.
+* **Guard rails**: Enforce policy controls and prevent violations of security protocols.
+* **Security groups**: Manage user permissions using security group memberships.
+* **Ticket creation**: Immediate creation and routing of issues to the corresponding teams.
+* **Escalation**: Alerting key personnel quickly.
+* **Enabling/disabling services and access**: Turn services on or off based on conditions or triggers.
+* **Continuous integration and testing**: Speeding up the build and test process.
+* **Integrations and Application programming interfaces (APIs)**: Data exchange between different software applications to enhance interoperability.
 
-### Explain appropriate incident response activities
+#### Benefits
+* **Efficient time saving**: Reduces manual tasks allowing users to focus on higher-level tasks.
+* **Enforcing baselines**: Maintain consistent security baselines across the organization.
+* **Standard infrastructure configurations**: Ensuring uniformity and reducing errors in system configuration.
+* **Scaling in a secure manner**: Rapid scaling of infrastructure while maintaining security controls.
+* **Employee retention**: Increase job satisfaction by assisting with mundane tasks.
+* **Reaction time**: Reduce time to react by generating quick alerts and trigerring alarms when needed.
+* **Workforce multiplier**: Increases capacity and productivity by helping with repetitive tasks.
 
-### Given a scenario, use data sources to support an investigation
+#### Other considerations
+* **Complexity**: Development and management of scripts can require high level of skill.
+* **Cost**: Additional expenses as automation might require tools, training and domain experts.
+* **Single point of failure**: Over-realiance can lead to a single point of failure where one malfunctioning script can disrupt business operations.
+* **Technical debt**: Outdated or inefficient scripts pile up over time.
+* **Ongoing supportability**: Scripts should be maintained consistently and timely updated.
+
+### Incident response 
+#### Process
+* **Preparation**: Putting together a team, training the team, conducting exercises, documenting the procedure to be followed, and acquiring, configuring and operating security tools and incident response capabilities.
+* **Detection**: Reviewing events or logs to identify incidents by paying attention to indicators of compromise and having a comprehensive awareness and reporting program for employees.
+* **Analysis**: Identifying any other related events and their target or impact.
+* **Containment**: Isolating or removing affected systems or network zones to prevent further issuses or damage.
+* **Eradication**: Removing artifacts associated with the incident that may involve rebuilding the systems from backups as it is essential to ensure complete eradication.
+* **Recovery**: Restoration to normal operations that involves bringing systems back online and implementing necessary fixes to ensure the event does not happen again.
+* **Lessons learned**: Taking actions such as patching systems or mandating additional employee training modules based on the realizations derived from to the incident.
+
+#### Training
+IR teams typically include the following:
+* *Member of management and organizational leadership* who makes decisions and acts as a liaison between the team and senior management.
+* *Information security staff* members make up the core, specializing in IR and analysis.
+* *Technical experts* such as systems administators and developers, decided depending on the nature of the incident.
+* *Communications and public relations staff* to help handle internal and external communications.
+* *Legal and human resources staff* might be needed in some cases if legal advice is needed or the incident involves an insider.
+* *Law enforcement* might also be added if needed.
+
+#### Testing
+* **Tabletop exercises** are used to talk through processes. Team members think through a scenario and document improvements.
+* **Simulations** include rehearsals of individual functions or elements of the plan ensuring that all participants are aware. Can also be done at full scale.
+
+#### Root cause analysis
+* Process conducted after mitigating issues to identify the underlying cause for an issue or compromise.
+* Common techniques used include five whys, event analysis and diagramming cause and effect.
+* Fishbone diagrams are commonly used.
+* Part of the recovery phase and feeds the preparation phase of the incident response process.
+
+#### Threat hunting
+Covered in Indicators subsection.
+
+#### Digital forensics
+* Digital forensics investigate and reconstructs cybersecurity incidents by collecting, analyzing and preserving digital evidence.
+* **Legal hold or litigation hold**
+    * Notice that obligates an organization to preserve data and records including backups, paper documents and electronic files.
+    * Often the first part of e-discovery process.
+* **Chain of custody** documentation should be maintained to show the tranfer, access permisions and ownership of evidence.
+* **Acquisition** is gathering the data in the form of drives, files, copies of live memory, etc, for further analysis.
+* **Reporting** all related evidence and any potential tampering is essential.
+* **Preservation** of the information or evidence covered by a legal hold ensures that it is not modified or deleted.
+* **E-discovery** allows each side of a legal case to obtain electronic or digital evidence from each other and other parties.
+* **Electronic Discovery Reference Model (EDRM)** is useful framework that includes nine stages to describe the discovery process.
+* **Order of volatility** documents data from most to least likely to be lost. 
+    * CPU cache and registers
+    * Routing table, ARP cache, process table, kernel statistics
+    * System memory - RAM
+    * Temporary files and swap space
+    * Data on the hard disk
+    * Remote logs
+    * Backups
+* **Admissibility** requires that data be relevant, reliable, intact and unaltered and have provably remained unaltered before and during forensic process.
+
+### Data sources to support an investigation
+#### Log data
+* **Firewall logs** provide information about blocked/allowed traffic. More advanced protocols like NGFW and UTM, users can also obtain application layer details.
+* **Application logs** include installer information, errors generated, license checks and requests to web servers. Help identify web app attacks like SQLi.
+* **Endpoint logs** include application installation details, system and service logs.
+* **OS-specific security logs** comprise of endpoint specific information such failed and successful logins.
+* **IPS/IDS logs** include information about all the traffic that travelled in the network.
+* **Network logs** store events related to routers and switches such as configuration changes, traffic information, network flows and data captured by packet analysers.
+* **Metadata** is data or information about other data. For instance, file metadata includes file size.
+
+#### Data sources
+* **Vulnerability scans** help identify weaknesses in the system that should be fixed.
+* **Automated reports** allow efficient generation of information derived from gathered data for further analysis and investigation.
+* **Dashboards** provide a high-level, visual representation of the information they contain including statistics and findings.
+* **Packet captures** allow analysing raw packet data from network traffic. This data can be correlated with IDS and IPS events, firewall and WAF logs.
 
 ## Security Program Management and Oversight
