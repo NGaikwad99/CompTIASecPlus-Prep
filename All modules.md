@@ -12,7 +12,7 @@ This document is formatted based on the Exam Objectives provided by CompTIA. The
 #### Control Types
 * **Preventive** controls reduce the possibility of a security issue or attack. Examples include firewalls, intrusion prevention systems and anti virus software.
 * **Deterrent** controls discourage attackers from attempting a security breach. Examples include warning signs, barbed wire fences and video surveillance.
-* **Compensating** controls serve as an alternative in case a primary control cannot be implemented typically in the case of an execption from a security policy. For instance, isolating a system that contains an outdated application or operating system that is required to run the business. This system should soon be replaced but compensating controls serves as a temporary workaround.
+* **Compensating** controls serve as an alternative in case a primary control cannot be implemented typically in the case of an exception from a security policy. For instance, isolating a system that contains an outdated application or operating system that is required to run the business. This system should soon be replaced but compensating controls serves as a temporary workaround.
 * **Detective** controls seek to identify evidence of potential security breaches or issues. Examples include intrusion detection systems and reviewing log files.
 * **Corrective** controls aim to restore operations after a security event or disaster has occured. For instance, launching backup systems in case of a ransomware attack.
 * **Directive** controls provide information for employees and organizations to help achieve their security goals. Examples include policies and procedures, laws and regulations, guidelines and training seminars.
@@ -20,14 +20,14 @@ This document is formatted based on the Exam Objectives provided by CompTIA. The
 ### Fundamental security concepts
 #### CIA Triad and Non-repudiation
 * **Confidentiality** focuses on ensuring only authorized access to sensitive information. Various controls such as encryption, hashing, data obfuscation can be used to implement confidentiality.
-* **Integrity** focuses on encuring authorized modifications to sensitive files, configurations, etc. Hashing is commonly used to check whether data is tampered or corrupted.
-* **Availability** focuses on ensuring that systems are accessible to users and employees when needed. Fault tolerance mechanisms, ddos protection, backups, business continuity plans, etc. are examples of controls used to enhance availability of systems.
+* **Integrity** focuses on ensuring authorized modifications to sensitive files, configurations, etc. Hashing is commonly used to check whether data is tampered or corrupted.
+* **Availability** focuses on ensuring that systems are accessible to users and employees when needed. Fault tolerance mechanisms, DDoS protection, backups, business continuity plans, etc. are examples of controls used to enhance availability of systems.
 * **Non-repudiation** ensures that a certain action cannot be denied. Digital signatures (hashing + public key cryptography) are used to achieve non-repudiation. Although this is not part of the CIA Triad, it is one of the fundamental security principles that should be taken into consideration when implementing controls.
 
 #### DAD Triad
 * **Denial** is the violation of availability wherein legitimate users cannot access an application or system. For instance, employees cannot access their systems due to a denial of service attack.
 * **Alteration** is the violation of integrity wherein data is subject to unauthorized changes.
-* **Discolure** is the violation of confidentiality as a result of which an unauthorized user gains access to sensitive information such as user credentials. 
+* **Disclosure** is the violation of confidentiality as a result of which an unauthorized user gains access to sensitive information such as user credentials. 
 
 #### AAA framework
 * **Authentication** identifies the user based on their credentials typically username and password. Might also include other factors such as biometrics or OTPs that are used to implement multi-factor authentication (MFA).
@@ -36,25 +36,25 @@ This document is formatted based on the Exam Objectives provided by CompTIA. The
 
 #### Gap analysis
 * Assessing difference between the current security posture of an organization and its desired security objective. 
-* Gap occurs when the implemented control does not meet the control objective. 
+* Gap occurs when the implemented control does not meet the control objectives. 
 * Gaps must be treated as risks and remediated when possible based on availability of resources and its severity. 
 
 #### Zero Trust
 * **Control plane**
-    * *Adaptive identity*, also known as Adaptive authentication, relies on identifying the user using context-based authentication that is based on various atteibutes such as location, device being used and whether it meets security requirements.
+    * *Adaptive identity*, also known as Adaptive authentication, relies on identifying the user using context-based authentication that is based on various attributes such as location, device being used and whether it meets security requirements.
     * *Threat scope reduction*, sometimes referred to as limiting blast radius, is used to manage the possibility of security mishaps by providing only the necessary access to users. This is done using principle of least privilege and identity-based network segmentation.
     * *Policy Engine* facilitates policy-driven access control by allowing or denying access based on certain policies. 
-    * *Policy Administrator* executs the decisions made by the policy engine.
+    * *Policy Administrator* executes the decisions made by the policy engine.
     * *Policy Decision Point* comprises the Policy Engine and Policy Administrator.
 * **Data plane**
     * *Policy Enforcement Point* delegates user information to the policy decision point to ensure policy-drive access control.
     * *Subject/system* is the device or individual requesting access to a resource.
-    * *Implicit trust zones* are areas wherein a user can freely move after being athenticated by zzero trust policy engine.
+    * *Implicit trust zones* are areas wherein a user can freely move after being athenticated by zero trust policy engine.
 
 #### Physical security
 * **Bollards** prevent vehicles from ramming into doors or buildings or entering restricted areas.
-* **Fencing** surrounds restricted areas to discorage trespassers from entering.
-* **Lighting** helps keep a building illuminate and hence visible from the outside which discourages attempts of breaching the property.
+* **Fencing** surrounds restricted areas to discourage trespassers from entering.
+* **Lighting** helps keep a building illuminated and hence visible from the outside which discourages attempts of breaching the property.
 * **Sensors** usually serve as detective measures to trigger an alarm if needed.
     * Infrared
     * Ultrasonic
@@ -69,32 +69,32 @@ This document is formatted based on the Exam Objectives provided by CompTIA. The
 * Intentionally placed to attract attackers and observe their movement.
 * Typically contain false sensitive information and are highly monitored to ensure that all the activities of an attacker in relation to these components is tracked and noted.
 * **Honeypots** are systems that are intentionally configured to appear vulnerable thereby tempting the attacker to attempt an intrusion. 
-* **Honeynets** are networks that encourage attackers to attempt network intrudsions. 
+* **Honeynets** are networks that encourage attackers to attempt network intrusions. 
 * **Honeyfiles** contain false sensitive information such as credentials that will attract an attacker. The contents of these files are consitently searched for on the internet and when found, administrators know that someone fell for the trap.
 * **Honeytokens** are sensitive data intentionally included in a databse, file, directory or other data assets to provoke attackers. Intrusion detection and prevention system as well as data loss prevention systems are configured to look for this information and trigger an alarm when found in transit. 
 
 ### Importance and impact of change management processes
 #### Business processes impacting security operation
-* **Approval process** ensures that every change is subject to addtional review and security impact analysis to assess the risks associated with the change. Peer review and review from stakeholders as well as in some cases, members of the board ensures that all changes are documented and everyone is aware of the modifications and/or advancements taking place in the oragnization. The approval process consists of 6 steps:
+* **Approval process** ensures that every change is subject to additional review and security impact analysis to assess the risks associated with the change. Peer review and review from stakeholders as well as in some cases, members of the board ensures that all changes are documented and everyone is aware of the modifications and/or advancements taking place in the organization. The approval process consists of 6 steps:
     * *Request the change*: Once the requirements are identified, a change request is submitted using the internal systems available for this pupose. It might be through a website so as to be able to track the change throughout the process. 
     * *Review the change*: The change is then subject to impact analysis with the owners and stakeholders. Stakeholders may take the decision some cases while in other cases, the change advisory board may be responsible for formal change review. Board members review the change requet.
     * *Accept/reject the change*: The change is then subject to approval based on the review that is clearly documented and submitted. In some cases, the board may require the creation of a backout plan that will be followed in case the change does not go as planned and systems need to reverted to prior state.
     * *Test the change*: Once approved, the change is then tested first on a non-production server to ensure it is working as expected and will not disrupt any of the current operations. 
     * *Schedule and implement the change*: Provided the test is successful, the change is deployed to production servers typically during maintenance window or non-peak hours to minimize impact in case the change causes disruption or downtime. If the change results in problem, the backout plan formulated during prior stages of this process are adapted to restore operations.
     * *Document the change*: Information about the change and its deployment is clearly documented for future reference. This involves editing the configuration management documentation that is used in case the system needs to be rebuilt. 
-* **Ownership** is essential for accountability and to provide a first point of contact in case a change results in unforseen situations or for additional information in the future.
+* **Ownership** is essential for accountability and to provide a first point of contact in case a change results in unforeseen situations or for additional information in the future.
 * **Stakeholders** include individuals that hold interest (mostly, financial) in the organization. They can be divided into five groups - employees, investors, suppliers and vendors, customers and communities.
 * **Impact analysis** helps assess the effect of the change on the ongoing operations in terms of security, customer satisfaction and working. This involves discussions with multiple individuals across the organization including owners, stakeholders and board members.
 * **Test results** are reviewed to ensure that the change is working as expected in non-production environments before being deployed. This helps reduce the risk of any unforseen errors or disruptions resulting from the change. 
 * **Backout plan** is essential for every change to ensure that there is a procedure that can be followed in case the system needs to be reverted to the state it was at before the change was deployed. The backout plan should allow smooth and timely restoration of business operations.
-* **Maintenance window** is the period of time during which most changes are deployed. This is set to non-peak hours to reduce impact on customers as well as the business in case the change results in downtime. There is typically an accouncement placed on websites or systems to inform customers of the ongoing deployments to ensure there are no surprises.
+* **Maintenance window** is the period of time during which most changes are deployed. This is set to non-peak hours to reduce impact on customers as well as the business in case the change results in downtime. There is typically an announcement placed on websites or systems to inform customers of the ongoing deployments to ensure there are no surprises.
 * **Standard operating procedure** provides instructions for day-to-day functions serving as a reference document for employees across the organization.
 * **Emergency change** may be required in some cases. During this time, the deployment of change may occur prior to receiving all the approval. Review and documentation, however, must be conducted as needed to ensure that there is a set of information to be reference in case the change needs to be reverted in the future or systems need to be rebuilt. For instance, a system administrator may need to make changes to the firewall configurations in case of an attack or a critical vulnerability needs to be patched as soon as possible.
 
 #### Technical implications
 * **Allow lists** specify the applications, software and other system components that users are permitted access to within the network.
 * **Deny lists** also known as block lists include the applications, software and other system components that cannot be run or installed within the network. An allow list will provide greater security than a block list as a block list will allow the access to any new applications until they are known and blocked if needed.
-* **Restricted activities** ensure the adherence to principle of least privelege. Employees may not be permitted to perform certain activities such as changing system settings, running scripts or sending senstive data outside the organization. 
+* **Restricted activities** ensure the adherence to principle of least privilege. Employees may not be permitted to perform certain activities such as changing system settings, running scripts or sending senstive data outside the organization. 
 * **Downtime** occurs when the system operations are adversely impacted by a change, attack or natural disaster and users can no longer access the resources or a certain feature. It is essential to ensure minimal downtime by having tested procedures put in place to be followed in this case. 
 * **Service or application restart** may be required in case of a change to ensure successful deployment. 
 * **Legacy applications** include those that are outdated or obsolete and lack vendor support. It is essential to ensure that the change does not involve modifications to any such applications. 
@@ -121,8 +121,8 @@ Public key infrastructure facilitates communication between two arbitrary system
 
 #### Encryption
 * Level
-    * *Full-disk encryption (FDE)* involves encoding all the data on a hard drive. This only requires initial set up after which it is performed automatically when the system is powered off. If the drive is stolen, the data is unredable and hence confidentiality is maintained. However, the drive is vulnerbable to access when in use at at this time the data is in plaintext form. 
-    * *Partition encryption* focuses on encrypting certain parts of the drive as opposed to all the stored information. This allows flexibility based on data sensitivty and is useful for dual-boot systems.
+    * *Full-disk encryption (FDE)* involves encoding all the data on a hard drive. This only requires initial set up after which it is performed automatically when the system is powered off. If the drive is stolen, the data is unreadable and hence confidentiality is maintained. However, the drive is vulnerable to access when in use at at this time the data is in plaintext form. 
+    * *Partition encryption* focuses on encrypting certain parts of the drive as opposed to all the stored information. This allows flexibility based on data sensitivity and is useful for dual-boot systems.
     * *File encryption* focuses on specific files. This may not be secure but provides great amount of flexibility.
     * *Volume encryption* involves encryption of a certain set of files or folders within a disk or partition. 
     * *Database encryption* focuses on the data contained in a database to pretect any sensitive information such as user credentials or healthcare data. Transparent data encryption and column-level encryption are two forms of database encryption that focus on the entire database and specific columns, respectively.
@@ -155,7 +155,7 @@ Public key infrastructure facilitates communication between two arbitrary system
 #### Tools
 * **Trusted platform module (TPM)** is a specialized chip that resides on a PC's motherboard. It is designed to store cryptographic keys used for volume encryption and for facilitating a secure boot process. TPM is primarily used for securing data on a specific computer or device
 * **Hardware security module (HSM)** is a removable hardware unit that much like TPMs is designed to create, store and manage digital keys for digital signatures, authentication and other cryptographic functions. HSM is used for securing data on a network or system-level.
-* **Key management systems** offer centralized storage and managemnet of keys and certificates while enforcing policies. many cloud providers provide KMS as a service for their environments.
+* **Key management systems** offer centralized storage and management of keys and certificates while enforcing policies. many cloud providers provide KMS as a service for their environments.
 * **Secure enclave** helps separate secret information such as cryptographic keys from the main CPU throughout their life cycle. Vendors include Apple, SGX, Google's Titan M and Samsung's TrustZone and Knox. 
 
 #### Obfuscation
@@ -189,7 +189,7 @@ Public key infrastructure facilitates communication between two arbitrary system
     5. Bob decrypts the digital signature using Alice's public key to obtain the message digest.
     6. Bob generates the message digest of the plaintext message.
     7. Bob compares the hash values obtained in steps 5 and 6. If they are a match, Bob knows that the message was not tampered with in transit.
-* Ccommonly used by software vendors to authenticate their products available for download on the internet.
+* Commonly used by software vendors to authenticate their products available for download on the internet.
 
 #### Key stretching
 * Generate robust keys from passwords by using multiple iterations of salting and hashing.
@@ -419,7 +419,7 @@ One of the most common defenses against social engineering attacks is **awarenes
     * *Race window* is the period of time between TOC and TOU
     * *Target of evaluation (TOE)* is the subject that is requesting for access such as user or device.
     * *Time-of-check-to-time-of-use (TOCTOU)* is a race condition attack wherein the permissions are checked significantly before the moment the subject uses the resource. For instance, if an operating system caches the user permissions to check them throughout the session, any changes such as revokation of access will not be applied until the next login and the user will have to do to maintain access is stay logged in. Another example of a race condition is limit overrrun wherein an attacker will try to use a voucher or coupon more than once by applying it multiple times within the period between the verification of the voucher and the moment it is marked as "used".
-* **Malicious update** may be an attacker's attempt to convince a user or system to install malicious code by mistaking it to be a leigitmate patch. Code signing that is the process of digitally signing code allows developers to confirm the authenticity of the code. As a result, devices are configured to install only trusted patches and updates that were not created or modified with ilicit intents. The updates that are not trusted by the system are rejected. 
+* **Malicious update** may be an attacker's attempt to convince a user or system to install malicious code by mistaking it to be a legitimate patch. Code signing that is the process of digitally signing code allows developers to confirm the authenticity of the code. As a result, devices are configured to install only trusted patches and updates that were not created or modified with ilicit intents. The updates that are not trusted by the system are rejected. 
 
 #### Operating system (OS)-based
 
@@ -429,7 +429,7 @@ Code injection attacks typically exploit the absence of input validation, allowi
 ##### Structured Query Language Injection (SQLi)
 * Attacker injects malicious SQL code into an input field to manipulate a program into executing unintended database queries. 
 * Unauthorized access to sensitive data, such as user credentials or personal records.  
-* **Classic SQLi**: application executes SQL query and expected results are dislayed on the screen.
+* **Classic SQLi**: application executes SQL query and expected results are displayed on the screen.
 * **Blind SQLi**: application executes the malicious SQL query, but the results are not directly visible to the attacker due to the page's formatting or security measures.
     * *Content-based Blind SQLi*: The attacker modifies the query to return no records and if the site behaves as expected then it is vulnerable to SQLi.  
     * *Timing-based Blind SQLi*: The attacker injects SQL code that introduces a delay in the database response. If the application takes noticeably longer to display results, the site is vulnerable.  
@@ -441,7 +441,7 @@ Code injection attacks typically exploit the absence of input validation, allowi
 * **Stored/Persistent XSS**: malicious script is stored in the server to be executed even when the attacker is not waging the attack. For instance, say a social media web application allows users to use HTML code to create posts. In the absence of secure input validation, an attacker can include a script in the post that is executed in all the browsers where it is viewed. 
 
 #### Hardware
-* **Firmware** is embedded software code that facilitates operation of hardware devices, allowing them to smoothly communicate with other devices and software. Firmware attacks can occur through any path that provides access to the firmware such as using executable updates or via the network. Firware validation is the key to mitigating firmware attacks including various methods such as secure boot, measured boot and trusted boot. Secure boot verifies the components of the boot process to ensure all of them are trusted by the original equipment manufacturer. Measured boot on the other hand, records the measurement of each component and stores it into the trusted platform module (TPM) for remote validation. Windows uses the trusted boot process that ensures integrity of the components involved in the boot process.
+* **Firmware** is embedded software code that facilitates operation of hardware devices, allowing them to smoothly communicate with other devices and software. Firmware attacks can occur through any path that provides access to the firmware such as using executable updates or via the network. Firmware validation is the key to mitigating firmware attacks including various methods such as secure boot, measured boot and trusted boot. Secure boot verifies the components of the boot process to ensure all of them are trusted by the original equipment manufacturer. Measured boot on the other hand, records the measurement of each component and stores it into the trusted platform module (TPM) for remote validation. Windows uses the trusted boot process that ensures integrity of the components involved in the boot process.
 * **End-of-life** of a product occurs when the equipment or device is no longer sold but vendors still provide temporary support for the units in use until they are replaced by up-to-date products. After a certain period of time, the products reach end-of-support when the vendor stops providing support. 
 * **Legacy hardware, software or devices** are those that are no longer supported and should ideally be replaced within organizations.
 
@@ -456,7 +456,7 @@ Cloud applications heavily rely on the use of Application programming interfaces
 * Provider can be an individual, business or company that outsource products such as hardware devices or software applicatiosn or services like consulting, legal, marketing, or real estate. 
 * **Service provider**: Attacker may infiltrate a service providers' with a malicious intent againsts the organization. For instance, attackers may pose as a set of advocates hired to fight a lawsuit filed against the company and intentionally lose the case causing high rate of loss to the organization.
 * **Hardware provider**: An attacker may tamper with a hadrware device being outsourced to other companies. They may insert backdoors that give them control of the device the moment the customer configures the hardware. 
-* **Software provider**: An attacker may target the software being provisioned to organizations by external companies, inserting malicious code before it is released or manipulating it into downloading malicious scripts through fake patches or updates.
+* **Software provider**: An attacker may target the software being provisioned to organizations by external companies, and inserting malicious code before it is released or manipulating it into downloading malicious scripts through fake patches or updates.
 
 #### Cryptographic
 Cryptographic vulnerabilities refer to the weaknesses in the design and/or implementation of cryptographic algorithms or protocols. These may include low key sizes, use of outdated cryptographic protocols and insecure storage and/or communication of cryptographic keys.
@@ -497,8 +497,8 @@ Zero-day attacks are associated with vulnerabilities that are unknown to the ven
     * Reflected DDoS allows the attacker to spoof the victim's IP address thereby making the original source of the packets more challenging to detect and directing all traffic to the target system.
 * **Domain name system (DNS) attacks**
     * Domain hijacking occurs when an attacker gains access to the registration of a domain and can alter configurations in a way that gives them the ability to intercept communication or send/receive emails. This attack may be challenging to detect on the client-side but domain owners can leverage security tools to help prevent or identify such attacks.
-    * DNS poisoning attacks involve corrupting the DNS cache system by adding a malicious DNS entry that directs the user to a fradulent site when they try to access a legitimate domain. This attack can also be carried out using on-path attacks wherein the attacker impersonates a DNS server replying to DNS requests sent by the target.
-    * Domain Name System Security Extensions (DNSSEC) is a security feature that is used for authenticating messges sent by the DNS servers thereby preventing DNS poisoning attacks.
+    * DNS poisoning attacks involve corrupting the DNS cache system by adding a malicious DNS entry that directs the user to a fraudulent site when they try to access a legitimate domain. This attack can also be carried out using on-path attacks wherein the attacker impersonates a DNS server replying to DNS requests sent by the target.
+    * Domain Name System Security Extensions (DNSSEC) is a security feature that is used for authenticating messages sent by the DNS servers thereby preventing DNS poisoning attacks.
     * URL redirection is conducted altering the host file that is the file which is checked first when accessing a site via DNS. The attacker updates the file to associate a legitimate URL to a fradulent site that can be used to obtain credentials of the user or other malicious intents.
 * Wireless
 * **On-path attacks** also known as man-in-the-middle attacks occur when an attacker intercepts communication between two systems. The attacker may do this to just eavesdrop on the communication or modify the data in transit. 
@@ -523,7 +523,7 @@ Zero-day attacks are associated with vulnerabilities that are unknown to the ven
 * **Birthday attack** is based on the birthday theorem that asks for the probablity of two people among a group of people sharing the same birthday. This is related to the probability of a collision which need not be 100% but should be high enough to reduce the number of brute-force attempts needed.
 
 #### Password attacks
-* **Spraying attack** is a type of brute-force attack wherein an attacker tries a set of passwords on multiple accounts to find a match. This is to prevent account lockout that might notify the system adminitrators of potential attack attempts.
+* **Spraying attack** is a type of brute-force attack wherein an attacker tries a set of passwords on multiple accounts to find a match. This is to prevent account lockout that might notify the system administrators of potential attack attempts.
 * **Brute force attacks** occur when attackers try a diverse set of generated passwords to login to a user account. Once they find a match, they obtain the credentials of the target. 
 
 #### Indicators
@@ -792,7 +792,7 @@ Covered in [Configuration enforcement](#configuration-enforcement).
         * Wirelss protocols for wireless networking.
         * Primarily relies on 2.4 GHz and 5 GHz radio bands.
         * Signals cannot be contained or controlled when traveling.
-        * Service set identifiers (SSIDs) uniquely identify wi-fi networks.
+        * Service set identifiers (SSIDs) uniquely identify Wi-Fi networks.
         * Secured by WPA2 or WPA3 protocols.
         * Devices can be deployed in either ad-hoc (direct communication) or infrastructure mode (traffic sent via base station).
 
@@ -889,7 +889,7 @@ Covered in [Configuration enforcement](#configuration-enforcement).
     * Top secret
     * Critical
     * Restricted
-    * Each organization that their own classification policy.
+    * Each organization has their own classification policy.
 
 #### Monitoring/asset tracking
 * **Inventory**
@@ -965,7 +965,7 @@ Covered in [Configuration enforcement](#configuration-enforcement).
 * **Prioritize** identified vulnerabilities using CVSS and CVE to determine the order of rememdiation.
 * **Common vulnerability scoring system (CVSS)** provides a vulnerability with a score from 0 to 10 that indicates its severity. 
 * **Common vulnerability enumeration (CVE)** is a database of known vulnerabilities in software and hardware, including CVEID, description and references for each vulnerability.
-* **Vulnerability classification** is done based on the calcluated CVSS.
+* **Vulnerability classification** is done based on the calculated CVSS.
 * Vulnerability analysis reports also include organization-specific information such as exposure factor, environmental variables, impact and risk tolerance.
 * **Exposure factor** is the percentage of loss in case of the compromise of an asset.
 * **Environmental variables** are those that contribute to or are associated with the vulnerability.
@@ -995,7 +995,7 @@ Covered in [Configuration enforcement](#configuration-enforcement).
 
 #### Activities
 * **Log aggregation** 
-    * Gathering all data points into a centralized software tool for correlation and analsysis.
+    * Gathering all data points into a centralized software tool for correlation and analysis.
     * Done using tools such as SIEM, syslog-ng and rsyslog.
 * **Alerting**
     * Generate alarms or alerts based on a defined rule. 
@@ -1003,7 +1003,7 @@ Covered in [Configuration enforcement](#configuration-enforcement).
     * Rules need to be carefully built and tested.
     * Most SIEM devices have pre-defined set of rules that can be adjusted based on organization-specific needs.
 * **Scanning** is done as regularly as possible to ensure all assets are in check.
-* **Reporting** of identified vulnerabilities or issues from logs must be done immediately and in a secure fasion to ensure the organization has enough time to patch the impacted asset(s).
+* **Reporting** of identified vulnerabilities or issues from logs must be done immediately and in a secure fashion to ensure the organization has enough time to patch the impacted asset(s).
 * **Archiving logs** is part of the full lifespan of log data wherein the logs are retained but not in active use. Typically done to maintain logs in case needed for future investigation. 
 * **Alert response and remediation/validation**
     * *Quarantine* or isolation of suspected files places them in a restricted location with no access to or from trusted networks.
@@ -1154,7 +1154,7 @@ Already covered.
     * May include *identity proofing* (using goverment issued IDs and personal information) to verify the user the account is being created for.
     * Includes *permission assignment* based on the user role and following principle of least privilege.
     * Commonly done during employee onboarding.
-    * *Permission creep* occurs when the permissions of an employee from previous roles have not been revoked.
+    * *Privilege creep* occurs when the permissions of an employee from previous roles have not been revoked.
 * Deprovisioning refers to deletion, disabling or termination.
     * Helps ensure that dormant accounts cannot be compromised.
     * Removes all related files, permissions and data associated with the user.
@@ -1308,4 +1308,87 @@ Covered in Indicators subsection.
 * **Dashboards** provide a high-level, visual representation of the information they contain including statistics and findings.
 * **Packet captures** allow analysing raw packet data from network traffic. This data can be correlated with IDS and IPS events, firewall and WAF logs.
 
+
 ## Security Program Management and Oversight
+
+### Explain the importance of policies, procedures, and frameworks
+
+#### Policies
+Policies define strategic direction and security expectations. 
+Examples:
+* **Acceptable Use Policy (AUP)**: Acceptable use of organizational assets
+* **Security Policy**: Security expectations across the organization
+* **Password Policy**: Password creation and management rules
+* **Remote Access Policy**: Secure use of remote connectivity
+* **Data Classification Policy**: Categorizing and handling data based on sensitivity
+
+#### Procedures
+Tactical, step-by-step instructions for executing policies. Examples:
+* User onboarding
+* Backup processes
+* Incident response workflows
+
+#### Standards and Guidelines
+* **Standards**: Mandatory rules (e.g., use AES-256 encryption)
+* **Guidelines**: Best practices (recommended but not enforced)
+
+
+### Describe risk management processes
+
+#### Risk Assessment
+1. Identify assets
+2. Identify threats/vulnerabilities
+3. Assess likelihood and impact
+4. Determine overall risk (e.g., Risk = Likelihood x Impact)
+
+#### Risk Responses
+* **Avoidance**: Eliminate risk by changing plans
+* **Transference**: Use third parties (e.g., insurance)
+* **Mitigation**: Reduce likelihood/impact
+* **Acceptance**: Acknowledge and tolerate the risk
+
+#### Risk Register
+Track identified risks, severity, and controls
+
+
+### Security Awareness and Training
+* **Phishing simulations**: Train against email scams
+* **Role-based training**: Job-specific security content
+* **Policy reviews**: Ensure policy comprehension
+* **Ongoing education**: Address evolving threats
+
+
+### Auditing and Monitoring
+* **Auditing**: Periodic checks for policy compliance (internal/external)
+* **Monitoring**: Continuous log and alert surveillance for threats
+
+
+### Compliance Requirements
+* **Regulations**: Mandatory (e.g., GDPR, HIPAA)
+* **Standards**: Voluntary best practices (e.g., ISO 27001, NIST)
+* **Audits**: Validate compliance controls and enforcement
+
+
+### Benchmarks and Frameworks
+* **CIS Controls**: Prioritized security actions
+* **NIST CSF**: Identify, Protect, Detect, Respond, Recover
+* **ISO/IEC 27001**: ISMS framework
+* **COBIT**: IT governance and management
+
+
+### Business Continuity and Disaster Recovery
+
+#### BCP (Business Continuity Plan)
+* Keep operations running during disruption
+
+#### DRP (Disaster Recovery Plan)
+* Restore IT systems after an outage
+
+#### Metrics
+* **RTO (Recovery Time Objective)**: Max acceptable downtime
+* **RPO (Recovery Point Objective)**: Max acceptable data loss
+
+#### Testing Methods
+* **Tabletop exercise**: Scenario discussion
+* **Simulation**: Test response mechanisms
+* **Full-interruption test**: Complete shutdown (rare)
