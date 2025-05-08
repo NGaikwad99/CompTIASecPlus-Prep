@@ -1,24 +1,68 @@
-# CompTIA Security+ (SY0-701) – Study Repo 🙌
+# CompTIA Security+ (SY0-701) – Public Study Repository
 
-## What’s in here?
-* Curated notes for each exam objective
-* Abbreviation cheat-sheet
-* PBQ (Performance-Based Questions) practice
-* ✅ *Everything is mapped to objective domains*
+A curated, no-fluff resource for students and professionals preparing for the SY0-701 exam.
 
-## Required / Recommended resources
-| Purpose | Link / Note |
-|---------|-------------|
-| Professor Messer SY0-701 videos | https://www.professormesser.com/ |
-| **GC4L** (GetCertified4Less) – discount certs | https://www.getcertified4less.com/ |
-| Pearson Vue voucher discount code | `SECURIT+10` |
-| This repo’s content (clone or download) | `git clone https://github.com/NGaikwad99/CompTIASecPlus-Prep.git` |
+---
 
-## How to use the notes
-1. Watch the Messer playlist in order.  
-2. After each domain, open the matching `.md` file here and fill gaps.  
-3. Hop into the PBQ channel and try at least one scenario.  
-4. Schedule the exam once you’re hitting 85 % on practice tests.
+## 📚 What's Included
 
-## Contributing
-PRs for typos, new links, or updated discount codes are welcome!
+- ✔️ Comprehensive study notes aligned with **all 5 CompTIA exam domains**
+- 🧠 Abbreviation and acronym cheat sheets
+- 🧪 Practice scenarios including **PBQs (Performance-Based Questions)**
+- 📄 Official objectives and formula references
+- ✅ Clean Markdown format for ease of reading and editing
+
+---
+
+## 🔗 Recommended Learning Resources
+
+| Category | Resource |
+|---------|----------|
+| 🎥 Video Lectures | [Professor Messer – SY0-701 Playlist](https://www.professormesser.com/) |
+| 🧪 PBQ Practice | [Mohammad Lotfi – PBQ & Practice](https://www.youtube.com/@MohammadLotfiA) |
+| 💵 Discounted Vouchers | [GetCertified4Less – GC4L](https://www.getcertified4less.com/) |
+| 🎫 Get Certified 4 Less Discount Code | `COMPTIA5` |
+| 📦 Clone This Repository | `git clone https://github.com/NGaikwad99/CompTIASecPlus-Prep.git` |
+
+---
+
+## 📖 How to Use This Repo
+
+1. Watch [Professor Messer’s videos](https://www.professormesser.com/) in domain order.
+2. After each domain, read through the related sections in `All modules.md`.
+3. Use `Abbreviations.md` and `Notes.md` to reinforce quick facts and acronyms.
+4. Practice real-world scenarios using [Mohammad Lotfi’s PBQs](https://www.youtube.com/@MohammadLotfiA).
+5. Once you're scoring **85%+ consistently**, book your exam through Pearson VUE.
+
+> 🎯 **Pro Tip**: Don’t wait for the “perfect time” to feel ready. Just book the exam. Having a deadline will give you focus, urgency, and the push you need to stay consistent and finish strong.
+
+---
+
+## 🤝 Contributors
+
+We welcome pull requests for:
+- Typo corrections
+- Additional reliable study links
+- Updated discount codes
+
+### Current Maintainers:
+- **Basim Al Bulushi**  
+  📧 Email: [basim@dal.ca](mailto:basim@dal.ca)  
+  🔗 LinkedIn: [linkedin.com/in/basimbalushi](https://www.linkedin.com/in/basimbalushi)
+
+- **Nupur Gaikwad**  
+  *(GitHub username: `NGaikwad99`) – profile and contact to be added*
+
+---
+
+## 📄 License
+
+This content is distributed under the [MIT License](https://opensource.org/licenses/MIT) and is intended for **educational use only**.
+
+Please do **not upload copyrighted content** such as full books, commercial practice exams, or official instructor slides.
+
+---
+
+## 🌐 Disclaimer
+
+This repository is not affiliated with CompTIA or Pearson VUE. All trademarks and registered trademarks are the property of their respective owners.
