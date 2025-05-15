@@ -48,6 +48,7 @@ We welcome pull requests for:
 ### Current Maintainers:
 - **Basim Al Bulushi**  
   📧 Email: [basim@dal.ca](mailto:basim@dal.ca)  
+  🌐 Portfolio: [https://basimalbulushi.com](https://basimalbulushi.com)  
   🔗 LinkedIn: [linkedin.com/in/basimbalushi](https://www.linkedin.com/in/basimbalushi)
 
 - **Nupur Gaikwad**  
