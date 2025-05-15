@@ -1,0 +1,83 @@
+## Security Program Management and Oversight
+
+### Explain the importance of policies, procedures, and frameworks
+
+#### Policies
+Policies define strategic direction and security expectations. 
+Examples:
+* **Acceptable Use Policy (AUP)**: Acceptable use of organizational assets
+* **Security Policy**: Security expectations across the organization
+* **Password Policy**: Password creation and management rules
+* **Remote Access Policy**: Secure use of remote connectivity
+* **Data Classification Policy**: Categorizing and handling data based on sensitivity
+
+#### Procedures
+Tactical, step-by-step instructions for executing policies. Examples:
+* User onboarding
+* Backup processes
+* Incident response workflows
+
+#### Standards and Guidelines
+* **Standards**: Mandatory rules (e.g., use AES-256 encryption)
+* **Guidelines**: Best practices (recommended but not enforced)
+
+
+### Describe risk management processes
+
+#### Risk Assessment
+1. Identify assets
+2. Identify threats/vulnerabilities
+3. Assess likelihood and impact
+4. Determine overall risk (e.g., Risk = Likelihood x Impact)
+
+#### Risk Responses
+* **Avoidance**: Eliminate risk by changing plans
+* **Transference**: Use third parties (e.g., insurance)
+* **Mitigation**: Reduce likelihood/impact
+* **Acceptance**: Acknowledge and tolerate the risk
+
+#### Risk Register
+Track identified risks, severity, and controls.
+
+
+### Security Awareness and Training
+* **Phishing simulations**: Train against email scams
+* **Role-based training**: Job-specific security content
+* **Policy reviews**: Ensure policy comprehension
+* **Ongoing education**: Address evolving threats
+
+
+### Auditing and Monitoring
+* **Auditing**: Periodic checks for policy compliance (internal/external)
+* **Monitoring**: Continuous log and alert surveillance for threats
+
+
+### Compliance Requirements
+* **Regulations**: Mandatory (e.g., GDPR, HIPAA)
+* **Standards**: Voluntary best practices (e.g., ISO 27001, NIST)
+* **Audits**: Validate compliance controls and enforcement
+
+
+### Benchmarks and Frameworks
+* **CIS Controls**: Prioritized security actions
+* **NIST CSF**: Identify, Protect, Detect, Respond, Recover
+* **ISO/IEC 27001**: ISMS framework
+* **COBIT**: IT governance and management
+
+
+### Business Continuity and Disaster Recovery
+
+#### BCP (Business Continuity Plan)
+* Keep operations running during disruption
+
+#### DRP (Disaster Recovery Plan)
+* Restore IT systems after an outage
+
+#### Metrics
+* **RTO (Recovery Time Objective) **: Max acceptable downtime
+* **RPO (Recovery Point Objective) **: Max acceptable data loss
+
+#### Testing Methods
+* **Tabletop exercise**: Scenario discussion
+* **Simulation**: Test response mechanisms
+* **Full-interruption test**: Complete shutdown (rare)

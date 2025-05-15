@@ -51,7 +51,8 @@ We welcome pull requests for:
   🔗 LinkedIn: [linkedin.com/in/basimbalushi](https://www.linkedin.com/in/basimbalushi)
 
 - **Nupur Gaikwad**  
-  *(GitHub username: `NGaikwad99`) – profile and contact to be added*
+  📧 Email: [basim@dal.ca](mailto:send2nupur28@gmail.com)  
+  🔗 LinkedIn: [linkedin.com/in/nupurgaikwad](https://www.linkedin.com/in/nupur-gaikwad-2447211a6/)
 
 ---
 
