@@ -52,7 +52,7 @@ We welcome pull requests for:
   🔗 LinkedIn: [linkedin.com/in/basimbalushi](https://www.linkedin.com/in/basimbalushi)
 
 - **Nupur Gaikwad**  
-  📧 Email: [basim@dal.ca](mailto:send2nupur28@gmail.com)  
+  📧 Email: [send2nupur28@gmail.com](mailto:send2nupur28@gmail.com)  
   🔗 LinkedIn: [linkedin.com/in/nupurgaikwad](https://www.linkedin.com/in/nupur-gaikwad-2447211a6/)
 
 ---
